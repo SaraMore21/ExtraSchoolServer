@@ -1,0 +1,225 @@
+C:\Users\This_user\source\repos\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.deps.json
+C:\Users\This_user\source\repos\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.dll
+C:\Users\This_user\source\repos\Web APi\DTO\bin\Debug\netcoreapp5.0\ref\DTO.dll
+C:\Users\This_user\source\repos\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.pdb
+C:\Users\This_user\source\repos\Web APi\DTO\bin\Debug\netcoreapp5.0\DB.dll
+C:\Users\This_user\source\repos\Web APi\DTO\bin\Debug\netcoreapp5.0\DB.pdb
+C:\Users\This_user\source\repos\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.csprojAssemblyReference.cache
+C:\Users\This_user\source\repos\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This_user\source\repos\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfoInputs.cache
+C:\Users\This_user\source\repos\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfo.cs
+C:\Users\This_user\source\repos\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\This_user\source\repos\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CopyComplete
+C:\Users\This_user\source\repos\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.dll
+C:\Users\This_user\source\repos\Web APi\DTO\obj\Debug\netcoreapp5.0\ref\DTO.dll
+C:\Users\This_user\source\repos\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.pdb
+D:\tfs\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.csprojAssemblyReference.cache
+D:\tfs\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\tfs\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfoInputs.cache
+D:\tfs\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfo.cs
+D:\tfs\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CoreCompileInputs.cache
+D:\tfs\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.dll
+D:\tfs\Web APi\DTO\obj\Debug\netcoreapp5.0\ref\DTO.dll
+D:\tfs\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.pdb
+D:\tfs\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.deps.json
+D:\tfs\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.dll
+D:\tfs\Web APi\DTO\bin\Debug\netcoreapp5.0\ref\DTO.dll
+D:\tfs\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.pdb
+D:\tfs\Web APi\DTO\bin\Debug\netcoreapp5.0\DB.dll
+D:\tfs\Web APi\DTO\bin\Debug\netcoreapp5.0\DB.pdb
+D:\tfs\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CopyComplete
+D:\tfs\Web APi\ravcevelNew\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.deps.json
+D:\tfs\Web APi\ravcevelNew\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\DTO\bin\Debug\netcoreapp5.0\ref\DTO.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.pdb
+D:\tfs\Web APi\ravcevelNew\Web APi\DTO\bin\Debug\netcoreapp5.0\DB.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\DTO\bin\Debug\netcoreapp5.0\DB.pdb
+D:\tfs\Web APi\ravcevelNew\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.csprojAssemblyReference.cache
+D:\tfs\Web APi\ravcevelNew\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\tfs\Web APi\ravcevelNew\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfoInputs.cache
+D:\tfs\Web APi\ravcevelNew\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfo.cs
+D:\tfs\Web APi\ravcevelNew\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CoreCompileInputs.cache
+D:\tfs\Web APi\ravcevelNew\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CopyComplete
+D:\tfs\Web APi\ravcevelNew\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\DTO\obj\Debug\netcoreapp5.0\ref\DTO.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.pdb
+D:\ExtraSchool\Server\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.deps.json
+D:\ExtraSchool\Server\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.dll
+D:\ExtraSchool\Server\Web APi\DTO\bin\Debug\netcoreapp5.0\ref\DTO.dll
+D:\ExtraSchool\Server\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.pdb
+D:\ExtraSchool\Server\Web APi\DTO\bin\Debug\netcoreapp5.0\DB.dll
+D:\ExtraSchool\Server\Web APi\DTO\bin\Debug\netcoreapp5.0\DB.pdb
+D:\ExtraSchool\Server\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.csprojAssemblyReference.cache
+D:\ExtraSchool\Server\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\ExtraSchool\Server\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfoInputs.cache
+D:\ExtraSchool\Server\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfo.cs
+D:\ExtraSchool\Server\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CoreCompileInputs.cache
+D:\ExtraSchool\Server\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CopyComplete
+D:\ExtraSchool\Server\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.dll
+D:\ExtraSchool\Server\Web APi\DTO\obj\Debug\netcoreapp5.0\ref\DTO.dll
+D:\ExtraSchool\Server\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.pdb
+D:\תכנות\more21\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.deps.json
+D:\תכנות\more21\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.dll
+D:\תכנות\more21\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\ref\DTO.dll
+D:\תכנות\more21\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.pdb
+D:\תכנות\more21\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DB.dll
+D:\תכנות\more21\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DB.pdb
+D:\תכנות\more21\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csprojAssemblyReference.cache
+D:\תכנות\more21\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\תכנות\more21\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfoInputs.cache
+D:\תכנות\more21\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfo.cs
+D:\תכנות\more21\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CoreCompileInputs.cache
+D:\תכנות\more21\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CopyComplete
+D:\תכנות\more21\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.dll
+D:\תכנות\more21\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\ref\DTO.dll
+D:\תכנות\more21\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.pdb
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.deps.json
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.dll
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\ref\DTO.dll
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.pdb
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DB.dll
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DB.pdb
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csprojAssemblyReference.cache
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfoInputs.cache
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfo.cs
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CopyComplete
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.dll
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\ref\DTO.dll
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.pdb
+D:\extraSchool\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.deps.json
+D:\extraSchool\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.dll
+D:\extraSchool\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\ref\DTO.dll
+D:\extraSchool\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.pdb
+D:\extraSchool\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DB.dll
+D:\extraSchool\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DB.pdb
+D:\extraSchool\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csprojAssemblyReference.cache
+D:\extraSchool\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\extraSchool\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfoInputs.cache
+D:\extraSchool\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfo.cs
+D:\extraSchool\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CoreCompileInputs.cache
+D:\extraSchool\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CopyComplete
+D:\extraSchool\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.dll
+D:\extraSchool\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\ref\DTO.dll
+D:\extraSchool\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.pdb
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.deps.json
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.dll
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\ref\DTO.dll
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.pdb
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DB.dll
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DB.pdb
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.AssemblyReference.cache
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfoInputs.cache
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfo.cs
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CopyComplete
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.dll
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\ref\DTO.dll
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.pdb
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.deps.json
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.dll
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\ref\DTO.dll
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.pdb
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DB.dll
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DB.pdb
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csprojAssemblyReference.cache
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfoInputs.cache
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfo.cs
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CopyComplete
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.dll
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\ref\DTO.dll
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.pdb
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.deps.json
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.runtimeconfig.json
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.runtimeconfig.dev.json
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.dll
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\ref\DTO.dll
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.pdb
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DB.dll
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DB.pdb
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.AssemblyReference.cache
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfoInputs.cache
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfo.cs
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CopyComplete
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.dll
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\ref\DTO.dll
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.pdb
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.genruntimeconfig.cache
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.deps.json
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.runtimeconfig.json
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.runtimeconfig.dev.json
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.dll
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\ref\DTO.dll
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.pdb
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DB.dll
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DB.pdb
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csprojAssemblyReference.cache
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfoInputs.cache
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfo.cs
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CoreCompileInputs.cache
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CopyComplete
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.dll
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\ref\DTO.dll
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.pdb
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.genruntimeconfig.cache
+D:\ExtraSchool\Server\נוכחי\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.deps.json
+D:\ExtraSchool\Server\נוכחי\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.runtimeconfig.json
+D:\ExtraSchool\Server\נוכחי\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.runtimeconfig.dev.json
+D:\ExtraSchool\Server\נוכחי\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\DTO\bin\Debug\netcoreapp5.0\ref\DTO.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.pdb
+D:\ExtraSchool\Server\נוכחי\Web APi\DTO\bin\Debug\netcoreapp5.0\DB.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\DTO\bin\Debug\netcoreapp5.0\DB.pdb
+D:\ExtraSchool\Server\נוכחי\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.csprojAssemblyReference.cache
+D:\ExtraSchool\Server\נוכחי\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\ExtraSchool\Server\נוכחי\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfoInputs.cache
+D:\ExtraSchool\Server\נוכחי\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfo.cs
+D:\ExtraSchool\Server\נוכחי\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CoreCompileInputs.cache
+D:\ExtraSchool\Server\נוכחי\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CopyComplete
+D:\ExtraSchool\Server\נוכחי\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\DTO\obj\Debug\netcoreapp5.0\ref\DTO.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.pdb
+D:\ExtraSchool\Server\נוכחי\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.genruntimeconfig.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.deps.json
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.runtimeconfig.json
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.runtimeconfig.dev.json
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\ref\DTO.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DTO.pdb
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DB.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DTO\bin\Debug\netcoreapp5.0\DB.pdb
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csprojAssemblyReference.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfoInputs.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfo.cs
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CoreCompileInputs.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CopyComplete
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\ref\DTO.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.pdb
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DTO\obj\Debug\netcoreapp5.0\DTO.genruntimeconfig.cache
+D:\ExtraSchool\Server\current\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.deps.json
+D:\ExtraSchool\Server\current\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.runtimeconfig.json
+D:\ExtraSchool\Server\current\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.runtimeconfig.dev.json
+D:\ExtraSchool\Server\current\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.dll
+D:\ExtraSchool\Server\current\Web APi\DTO\bin\Debug\netcoreapp5.0\ref\DTO.dll
+D:\ExtraSchool\Server\current\Web APi\DTO\bin\Debug\netcoreapp5.0\DTO.pdb
+D:\ExtraSchool\Server\current\Web APi\DTO\bin\Debug\netcoreapp5.0\DB.dll
+D:\ExtraSchool\Server\current\Web APi\DTO\bin\Debug\netcoreapp5.0\DB.pdb
+D:\ExtraSchool\Server\current\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\ExtraSchool\Server\current\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfoInputs.cache
+D:\ExtraSchool\Server\current\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.AssemblyInfo.cs
+D:\ExtraSchool\Server\current\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CoreCompileInputs.cache
+D:\ExtraSchool\Server\current\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.CopyComplete
+D:\ExtraSchool\Server\current\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.dll
+D:\ExtraSchool\Server\current\Web APi\DTO\obj\Debug\netcoreapp5.0\ref\DTO.dll
+D:\ExtraSchool\Server\current\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.pdb
+D:\ExtraSchool\Server\current\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.genruntimeconfig.cache
+D:\ExtraSchool\Server\current\Web APi\DTO\obj\Debug\netcoreapp5.0\DTO.csproj.AssemblyReference.cache

@@ -1,0 +1,2351 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "RavCevelGood",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Course/GetAllCourseBySchoolDAndYearbookId/{SchoolId}/{YearbookId}": {
+      "get": {
+        "tags": [
+          "Course"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "YearbookId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Course/GetAllCourseBySchoolId/{SchoolId}": {
+      "get": {
+        "tags": [
+          "Course"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Course/GetAllSemester/{YearbookId}": {
+      "get": {
+        "tags": [
+          "Course"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "YearbookId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Course/AddCourse/{SchoolId}/{SemesterId}/{CourseId}/{GroupId}/{SemesterFromDate}/{SemesterToDate}/{TeacherId}/{YearbookId}": {
+      "put": {
+        "tags": [
+          "Course"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "SemesterId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "CourseId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "GroupId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "SemesterFromDate",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "SemesterToDate",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "TeacherId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "YearbookId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AppCourseDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Course/DeleteCourse/{GroupSemesterPerCourseId}": {
+      "delete": {
+        "tags": [
+          "Course"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "GroupSemesterPerCourseId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Course/GetUsersPerCourse/{CourseId}": {
+      "get": {
+        "tags": [
+          "Course"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "CourseId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DocumentPerCourse/GetLstDocumentPerCourse/{SchoolId}/{CourseId}": {
+      "get": {
+        "tags": [
+          "DocumentPerCourse"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "CourseId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DocumentPerCourse/UploadDocumentPerCourse": {
+      "post": {
+        "tags": [
+          "DocumentPerCourse"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AppDocumentPerCourseDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DocumentPerCourse/DeleteDocumentPerCourse/{idDocumentPerCourse}/{idCourse}": {
+      "delete": {
+        "tags": [
+          "DocumentPerCourse"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "idDocumentPerCourse",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "idCourse",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DocumentPerGroup/GetLstDocumentPerGroup/{SchoolId}/{GroupId}": {
+      "get": {
+        "tags": [
+          "DocumentPerGroup"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "GroupId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DocumentPerGroup/UploadDocumentPerGroup": {
+      "post": {
+        "tags": [
+          "DocumentPerGroup"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AppDocumentPerGroupDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DocumentPerGroup/DeleteDocumentPerGroup/{idDocumentPerGroup}/{idGroup}": {
+      "delete": {
+        "tags": [
+          "DocumentPerGroup"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "idDocumentPerGroup",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "idGroup",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DocumentPerSchool/GetLstDocumentPerSchool/{SchoolId}": {
+      "get": {
+        "tags": [
+          "DocumentPerSchool"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DocumentPerSchool/UploadDocumentPerSchool": {
+      "post": {
+        "tags": [
+          "DocumentPerSchool"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AppDocumentPerSchoolDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DocumentPerSchool/DeleteDocumentPerSchool/{idDocumentPerSchool}/{idSchool}": {
+      "delete": {
+        "tags": [
+          "DocumentPerSchool"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "idDocumentPerSchool",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "idSchool",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DocumentPerStudent/GetLstDocumentPerStudent/{SchoolId}/{studentId}": {
+      "get": {
+        "tags": [
+          "DocumentPerStudent"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "studentId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DocumentPerStudent/UploadDocumentPerStudent": {
+      "post": {
+        "tags": [
+          "DocumentPerStudent"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AppDocumentPerStudentDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DocumentPerStudent/DeleteDocumentPerStudent/{idDocumentPerStudent}/{idStudent}": {
+      "delete": {
+        "tags": [
+          "DocumentPerStudent"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "idDocumentPerStudent",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "idStudent",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Excel/UploadExcelFile/{schoolId}/{userId}": {
+      "post": {
+        "tags": [
+          "Excel"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "schoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "query",
+            "name": "isFull",
+            "type": "boolean",
+            "default": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/FilesAzure/UploadAsync": {
+      "post": {
+        "tags": [
+          "FilesAzure"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/FilesAzure/Upload": {
+      "post": {
+        "tags": [
+          "FilesAzure"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "path",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "in": "query",
+            "name": "FileName",
+            "type": "string",
+            "default": " "
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/FilesAzure/GetAllFiles": {
+      "get": {
+        "tags": [
+          "FilesAzure"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/FilesAzure/Download/{path}": {
+      "get": {
+        "tags": [
+          "FilesAzure"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/FilesAzure/delete/{path}": {
+      "get": {
+        "tags": [
+          "FilesAzure"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/FilesAzure/GetAzureSASToken": {
+      "get": {
+        "tags": [
+          "FilesAzure"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Group/GetGroupsByIdSchool/{SchoolId}/{YearbookId}": {
+      "get": {
+        "tags": [
+          "Group"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "YearbookId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Group/GetStudentPerGroup/{GroupId}/{YearbookId}": {
+      "get": {
+        "tags": [
+          "Group"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "GroupId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "YearbookId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Group/DeleteGroup/{GroupId}/{YearbookId}": {
+      "delete": {
+        "tags": [
+          "Group"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "GroupId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "YearbookId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Group/EditGroup/{UserUpdateId}/{YearbookId}/{UserId}/{FromDate}/{ToDate}": {
+      "post": {
+        "tags": [
+          "Group"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "UserUpdateId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "YearbookId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "UserId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "FromDate",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "ToDate",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AppGroupDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Group/AddGroup/{UserCreatedId}/{SchoolId}/{YearbookId}/{userId}": {
+      "put": {
+        "tags": [
+          "Group"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "UserCreatedId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "YearbookId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AppGroupDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Group/AddStudentInGroup/{StudentId}/{GroupId}/{YearbookId}/{FromDate}/{ToDate}": {
+      "get": {
+        "tags": [
+          "Group"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "StudentId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "GroupId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "YearbookId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "FromDate",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "ToDate",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Group/GetAllNameGroup/{SchoolId}": {
+      "get": {
+        "tags": [
+          "Group"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Group/AddGroupInYearbook/{UserId}/{GroupId}/{YearbookId}": {
+      "get": {
+        "tags": [
+          "Group"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "UserId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "GroupId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "YearbookId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Group/GetUserPerGroupByGroupId/{GroupId}/{YearbookId}": {
+      "get": {
+        "tags": [
+          "Group"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "GroupId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "YearbookId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Profession/GetAllProfessionByIdSchool/{SchoolId}": {
+      "get": {
+        "tags": [
+          "Profession"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/School/School/{schoolId}": {
+      "get": {
+        "tags": [
+          "School"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "schoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/School/TableCode": {
+      "get": {
+        "tags": [
+          "School"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/School/GetPasswordToEmailByUserCode/{UserCode}/{SchoolId}": {
+      "get": {
+        "tags": [
+          "School"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "UserCode",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/School/GetSchoolByUserCodeAndPassword/{UserCode}/{UserPassword}": {
+      "get": {
+        "tags": [
+          "School"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "UserCode",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "UserPassword",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/School/GetAllYearbook/{SchoolId}": {
+      "get": {
+        "tags": [
+          "School"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Student/ListStudents/{SchoolID}": {
+      "get": {
+        "tags": [
+          "Student"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SchoolID",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Student/DeleteStudent/{StudentID}": {
+      "delete": {
+        "tags": [
+          "Student"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "StudentID",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Student/GetStudentDetailsByIDStudent/{StudentID}": {
+      "get": {
+        "tags": [
+          "Student"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "StudentID",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Student/AddStudent/{UserCreatedId}/{SchoolId}": {
+      "put": {
+        "tags": [
+          "Student"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "UserCreatedId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AppStudentWhithDetailsDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Student/UpdateStudent/{UserCreatedId}/{SchoolId}": {
+      "post": {
+        "tags": [
+          "Student"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "UserCreatedId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AppStudentWhithDetailsDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Student/UpdateProfilePathToStudent/{StudentID}/{path}/{SchoolId}/{Userid}": {
+      "get": {
+        "tags": [
+          "Student"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "StudentID",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "Userid",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Task/GetAllTaskBySchoolId/{SchoolID}/{YearbookId}": {
+      "get": {
+        "tags": [
+          "Task"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SchoolID",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "YearbookId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/GetAllUserBySchoolId/{SchoolId}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/GetUsersBySchoolIDAndYearbookId/{SchoolId}/{YearbookId}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "YearbookId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/GetUserDetailsByIDUser/{UserId}/{SchoolId}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "UserId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/AddUser/{UserCreatedId}/{SchoolId}/{yearbookId}/{emailAddress}/{message}": {
+      "put": {
+        "tags": [
+          "User"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "UserCreatedId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "yearbookId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "emailAddress",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "message",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AppUserPerSchoolWithDetailsDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/UpdateUser/{userId}/{SchoolId}": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "schoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AppUserPerSchoolWithDetailsDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/DeleteUser/{UserID}/{SchoolId}": {
+      "delete": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "UserID",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "SchoolId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/WeatherForecast"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "AppCourseDTO": {
+      "type": "object",
+      "properties": {
+        "idcourse": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "profesionId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "teacherId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "yearId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "hoursPerWeek": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "hours": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "credits": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "courseCode": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "cost": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "minimumScore": {
+          "format": "double",
+          "type": "number"
+        },
+        "learningStyle": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "schoolId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userCreatedId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateCreate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "groupName": {
+          "type": "string"
+        }
+      }
+    },
+    "AppDocumentPerCourseDTO": {
+      "type": "object",
+      "properties": {
+        "iddocumentPerCourse": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "schoolId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userCreated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateCreated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "userUpdated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateUpdated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "courseId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "requiredDocumentPerCourseId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "AppDocumentPerGroupDTO": {
+      "type": "object",
+      "properties": {
+        "iddocumentPerGroup": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "schoolId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userCreated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateCreated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "userUpdated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateUpdated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "groupId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "requiredDocumentPerGroupId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "AppDocumentPerSchoolDTO": {
+      "type": "object",
+      "properties": {
+        "iddocumentPerSchool": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "schoolId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userCreated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateCreated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "userUpdated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateUpdated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "requiredDocumentPerSchoolId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "folderId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "AppDocumentPerStudentDTO": {
+      "type": "object",
+      "properties": {
+        "iddocumentPerStudent": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "schoolId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userCreated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateCreated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "userUpdated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateUpdated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "studentId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "requiredDocumentPerStudentId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "AppUserPerGroupDTO": {
+      "type": "object",
+      "properties": {
+        "iduserPerGroup": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "groupId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "fromDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "toDate": {
+          "format": "date-time",
+          "type": "string"
+        }
+      }
+    },
+    "AppGroupPerYearbookDTO": {
+      "type": "object",
+      "properties": {
+        "idgroupPerYearbook": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "groupId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "yearbookId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "appUserPerGroups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AppUserPerGroupDTO"
+          }
+        }
+      }
+    },
+    "AppGroupDTO": {
+      "type": "object",
+      "properties": {
+        "idgroup": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ageGroupId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "schoolId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "typeGroupId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "extensionId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "voiceSpaceId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "listeningTimeId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userCreated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateCreated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "userUpdated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateUpdated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "nameGroup": {
+          "type": "string"
+        },
+        "idgroupPeryearbook": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "appGroupPerYearbooks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AppGroupPerYearbookDTO"
+          }
+        }
+      }
+    },
+    "AppAddressDTO": {
+      "type": "object",
+      "properties": {
+        "idaddress": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "cityId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "streetId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "houseNumber": {
+          "type": "string"
+        },
+        "apartmentNumber": {
+          "type": "string"
+        },
+        "poBox": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "zipCode": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "neighborhoodId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userCreated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateCreated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "userUpdated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateUpdated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "comment": {
+          "type": "string"
+        }
+      }
+    },
+    "AppBirthDTO": {
+      "type": "object",
+      "properties": {
+        "idbirth": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "birthCountryId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "birthDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "birthHebrewDate": {
+          "type": "string"
+        },
+        "citizenshipId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateOfImmigration": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "countryIdofImmigration": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userCreated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateCreated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "userUpdated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateUpdated": {
+          "format": "date-time",
+          "type": "string"
+        }
+      }
+    },
+    "AppContactInformationDTO": {
+      "type": "object",
+      "properties": {
+        "idcontactInformation": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "telephoneNumber1": {
+          "type": "string"
+        },
+        "telephoneNumber2": {
+          "type": "string"
+        },
+        "phoneNumber1": {
+          "type": "string"
+        },
+        "phoneNumber2": {
+          "type": "string"
+        },
+        "phoneNumber3": {
+          "type": "string"
+        },
+        "faxNumber": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "comment": {
+          "type": "string"
+        },
+        "userCreated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateCreated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "userUpdated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateUpdated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "isMobile": {
+          "type": "string"
+        },
+        "idadress": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "job": {
+          "type": "string"
+        }
+      }
+    },
+    "AppStudentWhithDetailsDTO": {
+      "type": "object",
+      "properties": {
+        "idstudent": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "tz": {
+          "type": "string"
+        },
+        "typeIdentityId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "birthId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "code": {
+          "type": "string"
+        },
+        "genderId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "passportPicture": {
+          "type": "string"
+        },
+        "foreignLastName": {
+          "type": "string"
+        },
+        "foreignFirstName": {
+          "type": "string"
+        },
+        "previusName": {
+          "type": "string"
+        },
+        "fatherTz": {
+          "type": "string"
+        },
+        "motherTz": {
+          "type": "string"
+        },
+        "fatherTypeIdentity": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "motherTypeIdentity": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "note": {
+          "type": "string"
+        },
+        "anatherDetails": {
+          "type": "string"
+        },
+        "statusId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "statusStudentId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "reasonForLeavingId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "addressId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "field1": {
+          "type": "string"
+        },
+        "field2": {
+          "type": "string"
+        },
+        "field3": {
+          "type": "string"
+        },
+        "field4": {
+          "type": "string"
+        },
+        "field5": {
+          "type": "string"
+        },
+        "userCreated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateCreated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "userUpdated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateUpdated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "apotropusTz": {
+          "type": "string"
+        },
+        "apotropusTypeIdentity": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "contactInformationId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "previousSchoolId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "schoolId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "address": {
+          "$ref": "#/definitions/AppAddressDTO"
+        },
+        "birth": {
+          "$ref": "#/definitions/AppBirthDTO"
+        },
+        "contactInformation": {
+          "$ref": "#/definitions/AppContactInformationDTO"
+        }
+      }
+    },
+    "SecUserDTO": {
+      "type": "object",
+      "properties": {
+        "iduser": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "tz": {
+          "type": "string"
+        },
+        "typeIdentityId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userPassword": {
+          "type": "string"
+        },
+        "userCode": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "fullName": {
+          "type": "string"
+        },
+        "genderId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "addressId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userCreated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateCreated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "userUpdated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateUpdated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "birthId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "address": {
+          "$ref": "#/definitions/AppAddressDTO"
+        },
+        "birth": {
+          "$ref": "#/definitions/AppBirthDTO"
+        }
+      }
+    },
+    "AppUserPerSchoolWithDetailsDTO": {
+      "type": "object",
+      "properties": {
+        "iduserPerSchool": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "schoolId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userCreated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateCreated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "userUpdeted": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "dateUpdated": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "contactInformationId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "statusId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "note": {
+          "type": "string"
+        },
+        "typeUserId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "user": {
+          "$ref": "#/definitions/SecUserDTO"
+        },
+        "contactInformation": {
+          "$ref": "#/definitions/AppContactInformationDTO"
+        }
+      }
+    },
+    "WeatherForecast": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "temperatureC": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "temperatureF": {
+          "format": "int32",
+          "type": "integer",
+          "readOnly": true
+        },
+        "summary": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,265 @@
+C:\Users\This_user\source\repos\Web APi\Services\bin\Debug\netcoreapp5.0\Services.deps.json
+C:\Users\This_user\source\repos\Web APi\Services\bin\Debug\netcoreapp5.0\Services.dll
+C:\Users\This_user\source\repos\Web APi\Services\bin\Debug\netcoreapp5.0\ref\Services.dll
+C:\Users\This_user\source\repos\Web APi\Services\bin\Debug\netcoreapp5.0\Services.pdb
+C:\Users\This_user\source\repos\Web APi\Services\bin\Debug\netcoreapp5.0\DB.dll
+C:\Users\This_user\source\repos\Web APi\Services\bin\Debug\netcoreapp5.0\DTO.dll
+C:\Users\This_user\source\repos\Web APi\Services\bin\Debug\netcoreapp5.0\DB.pdb
+C:\Users\This_user\source\repos\Web APi\Services\bin\Debug\netcoreapp5.0\DTO.pdb
+C:\Users\This_user\source\repos\Web APi\Services\obj\Debug\netcoreapp5.0\Services.csprojAssemblyReference.cache
+C:\Users\This_user\source\repos\Web APi\Services\obj\Debug\netcoreapp5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This_user\source\repos\Web APi\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfoInputs.cache
+C:\Users\This_user\source\repos\Web APi\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfo.cs
+C:\Users\This_user\source\repos\Web APi\Services\obj\Debug\netcoreapp5.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\This_user\source\repos\Web APi\Services\obj\Debug\netcoreapp5.0\Services.csproj.CopyComplete
+C:\Users\This_user\source\repos\Web APi\Services\obj\Debug\netcoreapp5.0\Services.dll
+C:\Users\This_user\source\repos\Web APi\Services\obj\Debug\netcoreapp5.0\ref\Services.dll
+C:\Users\This_user\source\repos\Web APi\Services\obj\Debug\netcoreapp5.0\Services.pdb
+D:\tfs\Web APi\Services\obj\Debug\netcoreapp5.0\Services.csprojAssemblyReference.cache
+D:\tfs\Web APi\Services\obj\Debug\netcoreapp5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\tfs\Web APi\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfoInputs.cache
+D:\tfs\Web APi\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfo.cs
+D:\tfs\Web APi\Services\obj\Debug\netcoreapp5.0\Services.csproj.CoreCompileInputs.cache
+D:\tfs\Web APi\Services\obj\Debug\netcoreapp5.0\Services.dll
+D:\tfs\Web APi\Services\obj\Debug\netcoreapp5.0\ref\Services.dll
+D:\tfs\Web APi\Services\obj\Debug\netcoreapp5.0\Services.pdb
+D:\tfs\Web APi\Services\bin\Debug\netcoreapp5.0\Services.deps.json
+D:\tfs\Web APi\Services\bin\Debug\netcoreapp5.0\Services.dll
+D:\tfs\Web APi\Services\bin\Debug\netcoreapp5.0\ref\Services.dll
+D:\tfs\Web APi\Services\bin\Debug\netcoreapp5.0\Services.pdb
+D:\tfs\Web APi\Services\bin\Debug\netcoreapp5.0\DB.dll
+D:\tfs\Web APi\Services\bin\Debug\netcoreapp5.0\DTO.dll
+D:\tfs\Web APi\Services\bin\Debug\netcoreapp5.0\DB.pdb
+D:\tfs\Web APi\Services\bin\Debug\netcoreapp5.0\DTO.pdb
+D:\tfs\Web APi\Services\obj\Debug\netcoreapp5.0\Services.csproj.CopyComplete
+D:\tfs\Web APi\ravcevelNew\Web APi\Services\bin\Debug\netcoreapp5.0\NOTICE.TXT
+D:\tfs\Web APi\ravcevelNew\Web APi\Services\bin\Debug\netcoreapp5.0\Services.deps.json
+D:\tfs\Web APi\ravcevelNew\Web APi\Services\bin\Debug\netcoreapp5.0\Services.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\Services\bin\Debug\netcoreapp5.0\ref\Services.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\Services\bin\Debug\netcoreapp5.0\Services.pdb
+D:\tfs\Web APi\ravcevelNew\Web APi\Services\bin\Debug\netcoreapp5.0\DB.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\Services\bin\Debug\netcoreapp5.0\DTO.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\Services\bin\Debug\netcoreapp5.0\DB.pdb
+D:\tfs\Web APi\ravcevelNew\Web APi\Services\bin\Debug\netcoreapp5.0\DTO.pdb
+D:\tfs\Web APi\ravcevelNew\Web APi\Services\obj\Debug\netcoreapp5.0\Services.csprojAssemblyReference.cache
+D:\tfs\Web APi\ravcevelNew\Web APi\Services\obj\Debug\netcoreapp5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\tfs\Web APi\ravcevelNew\Web APi\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfoInputs.cache
+D:\tfs\Web APi\ravcevelNew\Web APi\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfo.cs
+D:\tfs\Web APi\ravcevelNew\Web APi\Services\obj\Debug\netcoreapp5.0\Services.csproj.CoreCompileInputs.cache
+D:\tfs\Web APi\ravcevelNew\Web APi\Services\obj\Debug\netcoreapp5.0\Services.csproj.CopyComplete
+D:\tfs\Web APi\ravcevelNew\Web APi\Services\obj\Debug\netcoreapp5.0\Services.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\Services\obj\Debug\netcoreapp5.0\ref\Services.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\Services\obj\Debug\netcoreapp5.0\Services.pdb
+D:\ExtraSchool\Server\Web APi\Services\bin\Debug\netcoreapp5.0\NOTICE.TXT
+D:\ExtraSchool\Server\Web APi\Services\bin\Debug\netcoreapp5.0\Services.deps.json
+D:\ExtraSchool\Server\Web APi\Services\bin\Debug\netcoreapp5.0\Services.dll
+D:\ExtraSchool\Server\Web APi\Services\bin\Debug\netcoreapp5.0\ref\Services.dll
+D:\ExtraSchool\Server\Web APi\Services\bin\Debug\netcoreapp5.0\Services.pdb
+D:\ExtraSchool\Server\Web APi\Services\bin\Debug\netcoreapp5.0\DB.dll
+D:\ExtraSchool\Server\Web APi\Services\bin\Debug\netcoreapp5.0\DTO.dll
+D:\ExtraSchool\Server\Web APi\Services\bin\Debug\netcoreapp5.0\DB.pdb
+D:\ExtraSchool\Server\Web APi\Services\bin\Debug\netcoreapp5.0\DTO.pdb
+D:\ExtraSchool\Server\Web APi\Services\obj\Debug\netcoreapp5.0\Services.csprojAssemblyReference.cache
+D:\ExtraSchool\Server\Web APi\Services\obj\Debug\netcoreapp5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\ExtraSchool\Server\Web APi\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfoInputs.cache
+D:\ExtraSchool\Server\Web APi\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfo.cs
+D:\ExtraSchool\Server\Web APi\Services\obj\Debug\netcoreapp5.0\Services.csproj.CoreCompileInputs.cache
+D:\ExtraSchool\Server\Web APi\Services\obj\Debug\netcoreapp5.0\Services.csproj.CopyComplete
+D:\ExtraSchool\Server\Web APi\Services\obj\Debug\netcoreapp5.0\Services.dll
+D:\ExtraSchool\Server\Web APi\Services\obj\Debug\netcoreapp5.0\ref\Services.dll
+D:\ExtraSchool\Server\Web APi\Services\obj\Debug\netcoreapp5.0\Services.pdb
+D:\תכנות\more21\extraschoolserver\Services\bin\Debug\netcoreapp5.0\NOTICE.TXT
+D:\תכנות\more21\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.deps.json
+D:\תכנות\more21\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.dll
+D:\תכנות\more21\extraschoolserver\Services\bin\Debug\netcoreapp5.0\ref\Services.dll
+D:\תכנות\more21\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.pdb
+D:\תכנות\more21\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DB.dll
+D:\תכנות\more21\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DTO.dll
+D:\תכנות\more21\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DB.pdb
+D:\תכנות\more21\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DTO.pdb
+D:\תכנות\more21\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csprojAssemblyReference.cache
+D:\תכנות\more21\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\תכנות\more21\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfoInputs.cache
+D:\תכנות\more21\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfo.cs
+D:\תכנות\more21\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csproj.CoreCompileInputs.cache
+D:\תכנות\more21\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csproj.CopyComplete
+D:\תכנות\more21\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.dll
+D:\תכנות\more21\extraschoolserver\Services\obj\Debug\netcoreapp5.0\ref\Services.dll
+D:\תכנות\more21\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.pdb
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\Services\bin\Debug\netcoreapp5.0\NOTICE.TXT
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.deps.json
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.dll
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\Services\bin\Debug\netcoreapp5.0\ref\Services.dll
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.pdb
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DB.dll
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DTO.dll
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DB.pdb
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DTO.pdb
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csprojAssemblyReference.cache
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfoInputs.cache
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfo.cs
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csproj.CopyComplete
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.dll
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\Services\obj\Debug\netcoreapp5.0\ref\Services.dll
+C:\Users\This_User\Desktop\‏‏תיקיה חדשה (3)\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.pdb
+D:\extraSchool\extraschoolserver\Services\bin\Debug\netcoreapp5.0\NOTICE.TXT
+D:\extraSchool\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.deps.json
+D:\extraSchool\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.dll
+D:\extraSchool\extraschoolserver\Services\bin\Debug\netcoreapp5.0\ref\Services.dll
+D:\extraSchool\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.pdb
+D:\extraSchool\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DB.dll
+D:\extraSchool\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DTO.dll
+D:\extraSchool\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DB.pdb
+D:\extraSchool\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DTO.pdb
+D:\extraSchool\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csprojAssemblyReference.cache
+D:\extraSchool\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\extraSchool\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfoInputs.cache
+D:\extraSchool\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfo.cs
+D:\extraSchool\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csproj.CoreCompileInputs.cache
+D:\extraSchool\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csproj.CopyComplete
+D:\extraSchool\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.dll
+D:\extraSchool\extraschoolserver\Services\obj\Debug\netcoreapp5.0\ref\Services.dll
+D:\extraSchool\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.pdb
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\Services\bin\Debug\netcoreapp5.0\NOTICE.TXT
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.deps.json
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.dll
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\Services\bin\Debug\netcoreapp5.0\ref\Services.dll
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.pdb
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DB.dll
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DTO.dll
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DB.pdb
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DTO.pdb
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csproj.AssemblyReference.cache
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfoInputs.cache
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfo.cs
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csproj.CopyComplete
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.dll
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\Services\obj\Debug\netcoreapp5.0\ref\Services.dll
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.pdb
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\Services\bin\Debug\netcoreapp5.0\NOTICE.TXT
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.deps.json
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.dll
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\Services\bin\Debug\netcoreapp5.0\ref\Services.dll
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.pdb
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DB.dll
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DTO.dll
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DB.pdb
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DTO.pdb
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csprojAssemblyReference.cache
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfoInputs.cache
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfo.cs
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csproj.CopyComplete
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.dll
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\Services\obj\Debug\netcoreapp5.0\ref\Services.dll
+C:\Users\This_user\Documents\ExtraSchool\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.pdb
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\bin\Debug\netcoreapp5.0\NOTICE.TXT
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.deps.json
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.runtimeconfig.json
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.runtimeconfig.dev.json
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.dll
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\bin\Debug\netcoreapp5.0\ref\Services.dll
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.pdb
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DB.dll
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DTO.dll
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DB.pdb
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DTO.pdb
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csproj.AssemblyReference.cache
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfoInputs.cache
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfo.cs
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csproj.CopyComplete
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.dll
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\obj\Debug\netcoreapp5.0\ref\Services.dll
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.pdb
+C:\Users\This_User\Desktop\Job-ExtraSchool\27-01-2022\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.genruntimeconfig.cache
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\bin\Debug\netcoreapp5.0\NOTICE.TXT
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.deps.json
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.runtimeconfig.json
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.runtimeconfig.dev.json
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.dll
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\bin\Debug\netcoreapp5.0\ref\Services.dll
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.pdb
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DB.dll
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DTO.dll
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DB.pdb
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DTO.pdb
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csprojAssemblyReference.cache
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfoInputs.cache
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfo.cs
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csproj.CoreCompileInputs.cache
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csproj.CopyComplete
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.dll
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\obj\Debug\netcoreapp5.0\ref\Services.dll
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.pdb
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.genruntimeconfig.cache
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\bin\Debug\netcoreapp5.0\NOTICE.TXT
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\bin\Debug\netcoreapp5.0\Services.deps.json
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\bin\Debug\netcoreapp5.0\Services.runtimeconfig.json
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\bin\Debug\netcoreapp5.0\Services.runtimeconfig.dev.json
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\bin\Debug\netcoreapp5.0\Services.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\bin\Debug\netcoreapp5.0\ref\Services.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\bin\Debug\netcoreapp5.0\Services.pdb
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\bin\Debug\netcoreapp5.0\DB.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\bin\Debug\netcoreapp5.0\DTO.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\bin\Debug\netcoreapp5.0\DB.pdb
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\bin\Debug\netcoreapp5.0\DTO.pdb
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\obj\Debug\netcoreapp5.0\Services.csprojAssemblyReference.cache
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\obj\Debug\netcoreapp5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfoInputs.cache
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfo.cs
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\obj\Debug\netcoreapp5.0\Services.csproj.CoreCompileInputs.cache
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\obj\Debug\netcoreapp5.0\Services.csproj.CopyComplete
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\obj\Debug\netcoreapp5.0\Services.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\obj\Debug\netcoreapp5.0\ref\Services.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\obj\Debug\netcoreapp5.0\Services.pdb
+D:\ExtraSchool\Server\נוכחי\Web APi\Services\obj\Debug\netcoreapp5.0\Services.genruntimeconfig.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\bin\Debug\netcoreapp5.0\NOTICE.TXT
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.deps.json
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.runtimeconfig.json
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.runtimeconfig.dev.json
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\bin\Debug\netcoreapp5.0\ref\Services.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\bin\Debug\netcoreapp5.0\Services.pdb
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DB.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DTO.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DB.pdb
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\bin\Debug\netcoreapp5.0\DTO.pdb
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csprojAssemblyReference.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfoInputs.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfo.cs
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csproj.CoreCompileInputs.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.csproj.CopyComplete
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\obj\Debug\netcoreapp5.0\ref\Services.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.pdb
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\Services\obj\Debug\netcoreapp5.0\Services.genruntimeconfig.cache
+D:\ExtraSchool\Server\current\Web APi\Services\bin\Debug\netcoreapp5.0\NOTICE.TXT
+D:\ExtraSchool\Server\current\Web APi\Services\bin\Debug\netcoreapp5.0\Services.deps.json
+D:\ExtraSchool\Server\current\Web APi\Services\bin\Debug\netcoreapp5.0\Services.runtimeconfig.json
+D:\ExtraSchool\Server\current\Web APi\Services\bin\Debug\netcoreapp5.0\Services.runtimeconfig.dev.json
+D:\ExtraSchool\Server\current\Web APi\Services\bin\Debug\netcoreapp5.0\Services.dll
+D:\ExtraSchool\Server\current\Web APi\Services\bin\Debug\netcoreapp5.0\ref\Services.dll
+D:\ExtraSchool\Server\current\Web APi\Services\bin\Debug\netcoreapp5.0\Services.pdb
+D:\ExtraSchool\Server\current\Web APi\Services\bin\Debug\netcoreapp5.0\DB.dll
+D:\ExtraSchool\Server\current\Web APi\Services\bin\Debug\netcoreapp5.0\DTO.dll
+D:\ExtraSchool\Server\current\Web APi\Services\bin\Debug\netcoreapp5.0\DB.pdb
+D:\ExtraSchool\Server\current\Web APi\Services\bin\Debug\netcoreapp5.0\DTO.pdb
+D:\ExtraSchool\Server\current\Web APi\Services\obj\Debug\netcoreapp5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\ExtraSchool\Server\current\Web APi\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfoInputs.cache
+D:\ExtraSchool\Server\current\Web APi\Services\obj\Debug\netcoreapp5.0\Services.AssemblyInfo.cs
+D:\ExtraSchool\Server\current\Web APi\Services\obj\Debug\netcoreapp5.0\Services.csproj.CoreCompileInputs.cache
+D:\ExtraSchool\Server\current\Web APi\Services\obj\Debug\netcoreapp5.0\Services.csproj.CopyComplete
+D:\ExtraSchool\Server\current\Web APi\Services\obj\Debug\netcoreapp5.0\Services.dll
+D:\ExtraSchool\Server\current\Web APi\Services\obj\Debug\netcoreapp5.0\ref\Services.dll
+D:\ExtraSchool\Server\current\Web APi\Services\obj\Debug\netcoreapp5.0\Services.pdb
+D:\ExtraSchool\Server\current\Web APi\Services\obj\Debug\netcoreapp5.0\Services.genruntimeconfig.cache
+D:\ExtraSchool\Server\current\Web APi\Services\obj\Debug\netcoreapp5.0\Services.csproj.AssemblyReference.cache

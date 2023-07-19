@@ -1,0 +1,564 @@
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\NOTICE.TXT
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\appsettings.Development.json
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\appsettings.json
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\RavCevelGood.exe
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\RavCevelGood.deps.json
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\RavCevelGood.runtimeconfig.json
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\RavCevelGood.runtimeconfig.dev.json
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\RavCevelGood.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\ref\RavCevelGood.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\RavCevelGood.pdb
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\AutoMapper.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\DocumentFormat.OpenXml.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\NPOI.OOXML.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\NPOI.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\NPOI.OpenXml4Net.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\NPOI.OpenXmlFormats.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Humanizer.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.AspNetCore.Http.Features.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Azure.Services.AppAuthentication.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Data.SqlClient.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Extensions.Primitives.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Identity.Client.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Office.Interop.Excel.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.OpenApi.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Newtonsoft.Json.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Serilog.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Serilog.Sinks.MSSqlServer.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Serilog.Sinks.PeriodicBatching.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\ICSharpCode.SharpZipLib.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\System.Configuration.ConfigurationManager.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\System.IO.Packaging.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\System.IO.Pipelines.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\System.Runtime.Caching.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\DB.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\DTO.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Services.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\Services.pdb
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\DB.pdb
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\bin\Release\net5.0\DTO.pdb
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.csprojAssemblyReference.cache
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.GeneratedMSBuildEditorConfig.editorconfig
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.AssemblyInfoInputs.cache
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.AssemblyInfo.cs
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.csproj.CoreCompileInputs.cache
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.MvcApplicationPartsAssemblyInfo.cs
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.MvcApplicationPartsAssemblyInfo.cache
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\obj\Release\net5.0\staticwebassets\RavCevelGood.StaticWebAssets.Manifest.cache
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\obj\Release\net5.0\staticwebassets\RavCevelGood.StaticWebAssets.xml
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\obj\Release\net5.0\scopedcss\bundle\RavCevelGood.styles.css
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.RazorTargetAssemblyInfo.cache
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.csproj.CopyComplete
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\obj\Release\net5.0\ref\RavCevelGood.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.pdb
+D:\tfs\Web APi\ravcevelNew\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.genruntimeconfig.cache
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\NOTICE.TXT
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\appsettings.Development.json
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\appsettings.json
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\RavCevelGood.exe
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\RavCevelGood.deps.json
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\RavCevelGood.runtimeconfig.json
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\RavCevelGood.runtimeconfig.dev.json
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\RavCevelGood.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\ref\RavCevelGood.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\RavCevelGood.pdb
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\AutoMapper.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\DocumentFormat.OpenXml.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\NPOI.OOXML.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\NPOI.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\NPOI.OpenXml4Net.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\NPOI.OpenXmlFormats.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Humanizer.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.AspNetCore.Http.Features.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.Azure.Services.AppAuthentication.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.Data.SqlClient.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.Extensions.Primitives.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.Identity.Client.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.Office.Interop.Excel.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.OpenApi.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Newtonsoft.Json.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Serilog.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Serilog.Sinks.MSSqlServer.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Serilog.Sinks.PeriodicBatching.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\ICSharpCode.SharpZipLib.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\System.Configuration.ConfigurationManager.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\System.IO.Packaging.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\System.IO.Pipelines.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\System.Runtime.Caching.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\DB.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\DTO.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Services.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Services.pdb
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\DB.pdb
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\DTO.pdb
+D:\extraSchool\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.csprojAssemblyReference.cache
+D:\extraSchool\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.GeneratedMSBuildEditorConfig.editorconfig
+D:\extraSchool\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.AssemblyInfoInputs.cache
+D:\extraSchool\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.AssemblyInfo.cs
+D:\extraSchool\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.csproj.CoreCompileInputs.cache
+D:\extraSchool\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.MvcApplicationPartsAssemblyInfo.cs
+D:\extraSchool\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.MvcApplicationPartsAssemblyInfo.cache
+D:\extraSchool\extraschoolserver\RavCevelGood\obj\Release\net5.0\staticwebassets\RavCevelGood.StaticWebAssets.Manifest.cache
+D:\extraSchool\extraschoolserver\RavCevelGood\obj\Release\net5.0\staticwebassets\RavCevelGood.StaticWebAssets.xml
+D:\extraSchool\extraschoolserver\RavCevelGood\obj\Release\net5.0\scopedcss\bundle\RavCevelGood.styles.css
+D:\extraSchool\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.RazorTargetAssemblyInfo.cache
+D:\extraSchool\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.csproj.CopyComplete
+D:\extraSchool\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\obj\Release\net5.0\ref\RavCevelGood.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.pdb
+D:\extraSchool\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.genruntimeconfig.cache
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Castle.Core.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Ninject.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Azure.Core.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Azure.Identity.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Azure.Storage.Blobs.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Azure.Storage.Common.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Google.Apis.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Google.Apis.Auth.PlatformServices.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Google.Apis.Auth.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Google.Apis.Core.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Google.Apis.Drive.v3.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\RestSharp.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\System.Memory.Data.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.WindowsAzure.Storage.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.Owin.dll
+D:\extraSchool\extraschoolserver\RavCevelGood\bin\Release\net5.0\Owin.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\NOTICE.TXT
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\appsettings.Development.json
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\appsettings.json
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\RavCevelGood.exe
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\RavCevelGood.deps.json
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\RavCevelGood.runtimeconfig.json
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\RavCevelGood.runtimeconfig.dev.json
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\RavCevelGood.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\ref\RavCevelGood.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\RavCevelGood.pdb
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\AutoMapper.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Azure.Core.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Azure.Identity.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Azure.Storage.Blobs.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Azure.Storage.Common.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Castle.Core.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\DocumentFormat.OpenXml.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\NPOI.OOXML.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\NPOI.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\NPOI.OpenXml4Net.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\NPOI.OpenXmlFormats.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Google.Apis.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Google.Apis.Auth.PlatformServices.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Google.Apis.Auth.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Google.Apis.Core.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Google.Apis.Drive.v3.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Humanizer.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.AspNetCore.Http.Features.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.Azure.Services.AppAuthentication.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.Data.SqlClient.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.Extensions.Primitives.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.Identity.Client.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.Office.Interop.Excel.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.OpenApi.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.Owin.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Newtonsoft.Json.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Ninject.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Owin.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\RestSharp.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Serilog.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Serilog.Sinks.MSSqlServer.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Serilog.Sinks.PeriodicBatching.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\ICSharpCode.SharpZipLib.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\System.Configuration.ConfigurationManager.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\System.IO.Packaging.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\System.IO.Pipelines.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\System.Memory.Data.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\System.Runtime.Caching.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Microsoft.WindowsAzure.Storage.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\DB.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\DTO.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Services.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Services.pdb
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\DB.pdb
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\DTO.pdb
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.csprojAssemblyReference.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.GeneratedMSBuildEditorConfig.editorconfig
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.AssemblyInfoInputs.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.AssemblyInfo.cs
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.csproj.CoreCompileInputs.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.MvcApplicationPartsAssemblyInfo.cs
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.MvcApplicationPartsAssemblyInfo.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\obj\Release\net5.0\staticwebassets\RavCevelGood.StaticWebAssets.Manifest.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\obj\Release\net5.0\staticwebassets\RavCevelGood.StaticWebAssets.xml
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\obj\Release\net5.0\scopedcss\bundle\RavCevelGood.styles.css
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.RazorTargetAssemblyInfo.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.csproj.CopyComplete
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\obj\Release\net5.0\ref\RavCevelGood.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.pdb
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\obj\Release\net5.0\RavCevelGood.genruntimeconfig.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\EntityFramework.SqlServer.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\EntityFramework.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\System.CodeDom.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\System.Data.SqlClient.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-arm64\native\sni.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-x64\native\sni.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win-x86\native\sni.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\NOTICE.TXT
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\appsettings.Development.json
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\appsettings.json
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\RavCevelGood.exe
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\RavCevelGood.deps.json
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\RavCevelGood.runtimeconfig.json
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\RavCevelGood.runtimeconfig.dev.json
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\RavCevelGood.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\ref\RavCevelGood.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\RavCevelGood.pdb
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\AutoMapper.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Azure.Core.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Azure.Identity.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Azure.Storage.Blobs.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Azure.Storage.Common.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Castle.Core.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\DocumentFormat.OpenXml.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\NPOI.OOXML.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\NPOI.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\NPOI.OpenXml4Net.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\NPOI.OpenXmlFormats.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\EntityFramework.SqlServer.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\EntityFramework.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Google.Apis.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Google.Apis.Auth.PlatformServices.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Google.Apis.Auth.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Google.Apis.Core.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Google.Apis.Drive.v3.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Humanizer.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.AspNetCore.Http.Features.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Azure.Services.AppAuthentication.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Data.SqlClient.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Extensions.Primitives.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Identity.Client.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Office.Interop.Excel.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.OpenApi.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Owin.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Newtonsoft.Json.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Ninject.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Owin.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\RestSharp.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Serilog.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Serilog.Sinks.MSSqlServer.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Serilog.Sinks.PeriodicBatching.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\ICSharpCode.SharpZipLib.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\System.CodeDom.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\System.Configuration.ConfigurationManager.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\System.Data.SqlClient.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\System.IO.Packaging.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\System.IO.Pipelines.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\System.Memory.Data.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\System.Runtime.Caching.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.WindowsAzure.Storage.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-arm64\native\sni.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-x64\native\sni.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-x86\native\sni.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\DB.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\DTO.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Services.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Services.pdb
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\DB.pdb
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\DTO.pdb
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.csprojAssemblyReference.cache
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.GeneratedMSBuildEditorConfig.editorconfig
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.AssemblyInfoInputs.cache
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.AssemblyInfo.cs
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.csproj.CoreCompileInputs.cache
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.MvcApplicationPartsAssemblyInfo.cs
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.MvcApplicationPartsAssemblyInfo.cache
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\obj\Release\net5.0\staticwebassets\RavCevelGood.StaticWebAssets.Manifest.cache
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\obj\Release\net5.0\staticwebassets\RavCevelGood.StaticWebAssets.xml
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\obj\Release\net5.0\scopedcss\bundle\RavCevelGood.styles.css
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.RazorTargetAssemblyInfo.cache
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.csproj.CopyComplete
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\obj\Release\net5.0\ref\RavCevelGood.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.pdb
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.genruntimeconfig.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\web.config
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\Azure.Storage.Queues.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\web.config
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\Azure.Storage.Queues.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\ClosedXML.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\ExcelNumberFormat.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\GemBox.Spreadsheet.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\BouncyCastle.Crypto.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\unix\lib\netcoreapp3.1\GemBox.Spreadsheet.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\ClosedXML.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\ExcelNumberFormat.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\GemBox.Spreadsheet.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\BouncyCastle.Crypto.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\RavCevelGood\bin\Release\net5.0\runtimes\unix\lib\netcoreapp3.1\GemBox.Spreadsheet.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\NOTICE.TXT
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\web.config
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\appsettings.Development.json
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\appsettings.json
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\RavCevelGood.exe
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\RavCevelGood.deps.json
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\RavCevelGood.runtimeconfig.json
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\RavCevelGood.runtimeconfig.dev.json
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\RavCevelGood.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\ref\RavCevelGood.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\RavCevelGood.pdb
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\AutoMapper.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Azure.Core.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Azure.Identity.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Azure.Storage.Blobs.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Azure.Storage.Common.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Azure.Storage.Queues.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Castle.Core.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\ClosedXML.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\DocumentFormat.OpenXml.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\NPOI.OOXML.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\NPOI.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\NPOI.OpenXml4Net.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\NPOI.OpenXmlFormats.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\EntityFramework.SqlServer.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\EntityFramework.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\ExcelNumberFormat.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\GemBox.Spreadsheet.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Google.Apis.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Google.Apis.Auth.PlatformServices.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Google.Apis.Auth.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Google.Apis.Core.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Google.Apis.Drive.v3.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Humanizer.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.AspNetCore.Http.Features.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Azure.Services.AppAuthentication.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Data.SqlClient.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Extensions.Primitives.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Identity.Client.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Office.Interop.Excel.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.OpenApi.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.Owin.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Newtonsoft.Json.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Ninject.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Owin.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\BouncyCastle.Crypto.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\RestSharp.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Serilog.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Serilog.Sinks.MSSqlServer.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Serilog.Sinks.PeriodicBatching.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\ICSharpCode.SharpZipLib.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\System.CodeDom.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\System.Configuration.ConfigurationManager.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\System.Data.SqlClient.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\System.IO.Packaging.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\System.IO.Pipelines.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\System.Memory.Data.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\System.Runtime.Caching.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Microsoft.WindowsAzure.Storage.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\unix\lib\netcoreapp3.1\GemBox.Spreadsheet.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-arm64\native\sni.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-x64\native\sni.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win-x86\native\sni.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\DB.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\DTO.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Services.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Services.pdb
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\DB.pdb
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\DTO.pdb
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.GeneratedMSBuildEditorConfig.editorconfig
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.AssemblyInfoInputs.cache
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.AssemblyInfo.cs
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.csproj.CoreCompileInputs.cache
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.MvcApplicationPartsAssemblyInfo.cs
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.MvcApplicationPartsAssemblyInfo.cache
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\staticwebassets\RavCevelGood.StaticWebAssets.Manifest.cache
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\staticwebassets\RavCevelGood.StaticWebAssets.xml
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\scopedcss\bundle\RavCevelGood.styles.css
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.RazorTargetAssemblyInfo.cache
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.csproj.CopyComplete
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\ref\RavCevelGood.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.pdb
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.genruntimeconfig.cache
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.csproj.AssemblyReference.cache

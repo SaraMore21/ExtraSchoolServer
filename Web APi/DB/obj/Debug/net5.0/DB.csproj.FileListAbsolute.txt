@@ -1,0 +1,164 @@
+C:\Users\This_user\source\repos\Web APi\DB\bin\Debug\net5.0\DB.deps.json
+C:\Users\This_user\source\repos\Web APi\DB\bin\Debug\net5.0\DB.runtimeconfig.json
+C:\Users\This_user\source\repos\Web APi\DB\bin\Debug\net5.0\DB.runtimeconfig.dev.json
+C:\Users\This_user\source\repos\Web APi\DB\bin\Debug\net5.0\DB.dll
+C:\Users\This_user\source\repos\Web APi\DB\bin\Debug\net5.0\ref\DB.dll
+C:\Users\This_user\source\repos\Web APi\DB\bin\Debug\net5.0\DB.pdb
+C:\Users\This_user\source\repos\Web APi\DB\obj\Debug\net5.0\DB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This_user\source\repos\Web APi\DB\obj\Debug\net5.0\DB.AssemblyInfoInputs.cache
+C:\Users\This_user\source\repos\Web APi\DB\obj\Debug\net5.0\DB.AssemblyInfo.cs
+C:\Users\This_user\source\repos\Web APi\DB\obj\Debug\net5.0\DB.csproj.CoreCompileInputs.cache
+C:\Users\This_user\source\repos\Web APi\DB\obj\Debug\net5.0\DB.dll
+C:\Users\This_user\source\repos\Web APi\DB\obj\Debug\net5.0\ref\DB.dll
+C:\Users\This_user\source\repos\Web APi\DB\obj\Debug\net5.0\DB.pdb
+C:\Users\This_user\source\repos\Web APi\DB\obj\Debug\net5.0\DB.genruntimeconfig.cache
+C:\Users\This_user\source\repos\Web APi\DB\obj\Debug\net5.0\DB.csprojAssemblyReference.cache
+D:\tfs\Web APi\DB\bin\Debug\net5.0\DB.deps.json
+D:\tfs\Web APi\DB\bin\Debug\net5.0\DB.runtimeconfig.json
+D:\tfs\Web APi\DB\bin\Debug\net5.0\DB.runtimeconfig.dev.json
+D:\tfs\Web APi\DB\bin\Debug\net5.0\DB.dll
+D:\tfs\Web APi\DB\bin\Debug\net5.0\ref\DB.dll
+D:\tfs\Web APi\DB\bin\Debug\net5.0\DB.pdb
+D:\tfs\Web APi\DB\obj\Debug\net5.0\DB.GeneratedMSBuildEditorConfig.editorconfig
+D:\tfs\Web APi\DB\obj\Debug\net5.0\DB.AssemblyInfoInputs.cache
+D:\tfs\Web APi\DB\obj\Debug\net5.0\DB.AssemblyInfo.cs
+D:\tfs\Web APi\DB\obj\Debug\net5.0\DB.csproj.CoreCompileInputs.cache
+D:\tfs\Web APi\DB\obj\Debug\net5.0\DB.dll
+D:\tfs\Web APi\DB\obj\Debug\net5.0\ref\DB.dll
+D:\tfs\Web APi\DB\obj\Debug\net5.0\DB.pdb
+D:\tfs\Web APi\DB\obj\Debug\net5.0\DB.genruntimeconfig.cache
+D:\tfs\Web APi\DB\obj\Debug\net5.0\DB.csprojAssemblyReference.cache
+D:\tfs\Web APi\ravcevelNew\Web APi\DB\bin\Debug\net5.0\DB.deps.json
+D:\tfs\Web APi\ravcevelNew\Web APi\DB\bin\Debug\net5.0\DB.runtimeconfig.json
+D:\tfs\Web APi\ravcevelNew\Web APi\DB\bin\Debug\net5.0\DB.runtimeconfig.dev.json
+D:\tfs\Web APi\ravcevelNew\Web APi\DB\bin\Debug\net5.0\DB.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\DB\bin\Debug\net5.0\ref\DB.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\DB\bin\Debug\net5.0\DB.pdb
+D:\tfs\Web APi\ravcevelNew\Web APi\DB\obj\Debug\net5.0\DB.GeneratedMSBuildEditorConfig.editorconfig
+D:\tfs\Web APi\ravcevelNew\Web APi\DB\obj\Debug\net5.0\DB.AssemblyInfoInputs.cache
+D:\tfs\Web APi\ravcevelNew\Web APi\DB\obj\Debug\net5.0\DB.AssemblyInfo.cs
+D:\tfs\Web APi\ravcevelNew\Web APi\DB\obj\Debug\net5.0\DB.csproj.CoreCompileInputs.cache
+D:\tfs\Web APi\ravcevelNew\Web APi\DB\obj\Debug\net5.0\DB.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\DB\obj\Debug\net5.0\ref\DB.dll
+D:\tfs\Web APi\ravcevelNew\Web APi\DB\obj\Debug\net5.0\DB.pdb
+D:\tfs\Web APi\ravcevelNew\Web APi\DB\obj\Debug\net5.0\DB.genruntimeconfig.cache
+D:\tfs\Web APi\ravcevelNew\Web APi\DB\obj\Debug\net5.0\DB.csprojAssemblyReference.cache
+D:\ExtraSchool\Server\Web APi\DB\bin\Debug\net5.0\DB.deps.json
+D:\ExtraSchool\Server\Web APi\DB\bin\Debug\net5.0\DB.runtimeconfig.json
+D:\ExtraSchool\Server\Web APi\DB\bin\Debug\net5.0\DB.runtimeconfig.dev.json
+D:\ExtraSchool\Server\Web APi\DB\bin\Debug\net5.0\DB.dll
+D:\ExtraSchool\Server\Web APi\DB\bin\Debug\net5.0\ref\DB.dll
+D:\ExtraSchool\Server\Web APi\DB\bin\Debug\net5.0\DB.pdb
+D:\ExtraSchool\Server\Web APi\DB\obj\Debug\net5.0\DB.GeneratedMSBuildEditorConfig.editorconfig
+D:\ExtraSchool\Server\Web APi\DB\obj\Debug\net5.0\DB.AssemblyInfoInputs.cache
+D:\ExtraSchool\Server\Web APi\DB\obj\Debug\net5.0\DB.AssemblyInfo.cs
+D:\ExtraSchool\Server\Web APi\DB\obj\Debug\net5.0\DB.csproj.CoreCompileInputs.cache
+D:\ExtraSchool\Server\Web APi\DB\obj\Debug\net5.0\DB.dll
+D:\ExtraSchool\Server\Web APi\DB\obj\Debug\net5.0\ref\DB.dll
+D:\ExtraSchool\Server\Web APi\DB\obj\Debug\net5.0\DB.pdb
+D:\ExtraSchool\Server\Web APi\DB\obj\Debug\net5.0\DB.genruntimeconfig.cache
+D:\תכנות\more21\extraschoolserver\DB\bin\Debug\net5.0\DB.deps.json
+D:\תכנות\more21\extraschoolserver\DB\bin\Debug\net5.0\DB.runtimeconfig.json
+D:\תכנות\more21\extraschoolserver\DB\bin\Debug\net5.0\DB.runtimeconfig.dev.json
+D:\תכנות\more21\extraschoolserver\DB\bin\Debug\net5.0\DB.dll
+D:\תכנות\more21\extraschoolserver\DB\bin\Debug\net5.0\ref\DB.dll
+D:\תכנות\more21\extraschoolserver\DB\bin\Debug\net5.0\DB.pdb
+D:\תכנות\more21\extraschoolserver\DB\obj\Debug\net5.0\DB.GeneratedMSBuildEditorConfig.editorconfig
+D:\תכנות\more21\extraschoolserver\DB\obj\Debug\net5.0\DB.AssemblyInfoInputs.cache
+D:\תכנות\more21\extraschoolserver\DB\obj\Debug\net5.0\DB.AssemblyInfo.cs
+D:\תכנות\more21\extraschoolserver\DB\obj\Debug\net5.0\DB.csproj.CoreCompileInputs.cache
+D:\תכנות\more21\extraschoolserver\DB\obj\Debug\net5.0\DB.dll
+D:\תכנות\more21\extraschoolserver\DB\obj\Debug\net5.0\ref\DB.dll
+D:\תכנות\more21\extraschoolserver\DB\obj\Debug\net5.0\DB.pdb
+D:\תכנות\more21\extraschoolserver\DB\obj\Debug\net5.0\DB.genruntimeconfig.cache
+D:\ExtraSchool\Server\Web APi\DB\obj\Debug\net5.0\DB.csprojAssemblyReference.cache
+D:\תכנות\more21\extraschoolserver\DB\obj\Debug\net5.0\DB.csprojAssemblyReference.cache
+D:\extraSchool\extraschoolserver\DB\bin\Debug\net5.0\DB.deps.json
+D:\extraSchool\extraschoolserver\DB\bin\Debug\net5.0\DB.runtimeconfig.json
+D:\extraSchool\extraschoolserver\DB\bin\Debug\net5.0\DB.runtimeconfig.dev.json
+D:\extraSchool\extraschoolserver\DB\bin\Debug\net5.0\DB.dll
+D:\extraSchool\extraschoolserver\DB\bin\Debug\net5.0\ref\DB.dll
+D:\extraSchool\extraschoolserver\DB\bin\Debug\net5.0\DB.pdb
+D:\extraSchool\extraschoolserver\DB\obj\Debug\net5.0\DB.csprojAssemblyReference.cache
+D:\extraSchool\extraschoolserver\DB\obj\Debug\net5.0\DB.GeneratedMSBuildEditorConfig.editorconfig
+D:\extraSchool\extraschoolserver\DB\obj\Debug\net5.0\DB.AssemblyInfoInputs.cache
+D:\extraSchool\extraschoolserver\DB\obj\Debug\net5.0\DB.AssemblyInfo.cs
+D:\extraSchool\extraschoolserver\DB\obj\Debug\net5.0\DB.csproj.CoreCompileInputs.cache
+D:\extraSchool\extraschoolserver\DB\obj\Debug\net5.0\DB.dll
+D:\extraSchool\extraschoolserver\DB\obj\Debug\net5.0\ref\DB.dll
+D:\extraSchool\extraschoolserver\DB\obj\Debug\net5.0\DB.pdb
+D:\extraSchool\extraschoolserver\DB\obj\Debug\net5.0\DB.genruntimeconfig.cache
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DB\bin\Debug\net5.0\DB.deps.json
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DB\bin\Debug\net5.0\DB.runtimeconfig.json
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DB\bin\Debug\net5.0\DB.runtimeconfig.dev.json
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DB\bin\Debug\net5.0\DB.dll
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DB\bin\Debug\net5.0\ref\DB.dll
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DB\bin\Debug\net5.0\DB.pdb
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DB\obj\Debug\net5.0\DB.csproj.AssemblyReference.cache
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DB\obj\Debug\net5.0\DB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DB\obj\Debug\net5.0\DB.AssemblyInfoInputs.cache
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DB\obj\Debug\net5.0\DB.AssemblyInfo.cs
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DB\obj\Debug\net5.0\DB.csproj.CoreCompileInputs.cache
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DB\obj\Debug\net5.0\DB.dll
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DB\obj\Debug\net5.0\ref\DB.dll
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DB\obj\Debug\net5.0\DB.pdb
+C:\Users\This_user\Desktop\MORE21\extraschoolserver\DB\obj\Debug\net5.0\DB.genruntimeconfig.cache
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DB\bin\Debug\net5.0\DB.deps.json
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DB\bin\Debug\net5.0\DB.runtimeconfig.json
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DB\bin\Debug\net5.0\DB.runtimeconfig.dev.json
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DB\bin\Debug\net5.0\DB.dll
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DB\bin\Debug\net5.0\ref\DB.dll
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DB\bin\Debug\net5.0\DB.pdb
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DB\obj\Debug\net5.0\DB.csprojAssemblyReference.cache
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DB\obj\Debug\net5.0\DB.GeneratedMSBuildEditorConfig.editorconfig
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DB\obj\Debug\net5.0\DB.AssemblyInfoInputs.cache
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DB\obj\Debug\net5.0\DB.AssemblyInfo.cs
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DB\obj\Debug\net5.0\DB.csproj.CoreCompileInputs.cache
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DB\obj\Debug\net5.0\DB.dll
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DB\obj\Debug\net5.0\ref\DB.dll
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DB\obj\Debug\net5.0\DB.pdb
+D:\הנדסאים\עבודה\MORE21\ExtraSchool\ExtraSchoolServer\extraschoolserver\DB\obj\Debug\net5.0\DB.genruntimeconfig.cache
+D:\ExtraSchool\Server\נוכחי\Web APi\DB\bin\Debug\net5.0\DB.deps.json
+D:\ExtraSchool\Server\נוכחי\Web APi\DB\bin\Debug\net5.0\DB.runtimeconfig.json
+D:\ExtraSchool\Server\נוכחי\Web APi\DB\bin\Debug\net5.0\DB.runtimeconfig.dev.json
+D:\ExtraSchool\Server\נוכחי\Web APi\DB\bin\Debug\net5.0\DB.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\DB\bin\Debug\net5.0\ref\DB.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\DB\bin\Debug\net5.0\DB.pdb
+D:\ExtraSchool\Server\נוכחי\Web APi\DB\obj\Debug\net5.0\DB.GeneratedMSBuildEditorConfig.editorconfig
+D:\ExtraSchool\Server\נוכחי\Web APi\DB\obj\Debug\net5.0\DB.AssemblyInfoInputs.cache
+D:\ExtraSchool\Server\נוכחי\Web APi\DB\obj\Debug\net5.0\DB.AssemblyInfo.cs
+D:\ExtraSchool\Server\נוכחי\Web APi\DB\obj\Debug\net5.0\DB.csproj.CoreCompileInputs.cache
+D:\ExtraSchool\Server\נוכחי\Web APi\DB\obj\Debug\net5.0\DB.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\DB\obj\Debug\net5.0\ref\DB.dll
+D:\ExtraSchool\Server\נוכחי\Web APi\DB\obj\Debug\net5.0\DB.pdb
+D:\ExtraSchool\Server\נוכחי\Web APi\DB\obj\Debug\net5.0\DB.genruntimeconfig.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DB\obj\Debug\net5.0\DB.GeneratedMSBuildEditorConfig.editorconfig
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DB\obj\Debug\net5.0\DB.AssemblyInfoInputs.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DB\obj\Debug\net5.0\DB.AssemblyInfo.cs
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DB\obj\Debug\net5.0\DB.csproj.CoreCompileInputs.cache
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DB\bin\Debug\net5.0\DB.deps.json
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DB\bin\Debug\net5.0\DB.runtimeconfig.json
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DB\bin\Debug\net5.0\DB.runtimeconfig.dev.json
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DB\bin\Debug\net5.0\DB.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DB\bin\Debug\net5.0\ref\DB.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DB\bin\Debug\net5.0\DB.pdb
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DB\obj\Debug\net5.0\DB.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DB\obj\Debug\net5.0\ref\DB.dll
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DB\obj\Debug\net5.0\DB.pdb
+D:\extraSchool\גיבוי פרויקט\נוכחי\extraschoolserver\DB\obj\Debug\net5.0\DB.genruntimeconfig.cache
+D:\ExtraSchool\Server\נוכחי\Web APi\DB\obj\Debug\net5.0\DB.csprojAssemblyReference.cache
+D:\ExtraSchool\Server\current\Web APi\DB\bin\Debug\net5.0\DB.deps.json
+D:\ExtraSchool\Server\current\Web APi\DB\bin\Debug\net5.0\DB.runtimeconfig.json
+D:\ExtraSchool\Server\current\Web APi\DB\bin\Debug\net5.0\DB.runtimeconfig.dev.json
+D:\ExtraSchool\Server\current\Web APi\DB\bin\Debug\net5.0\DB.dll
+D:\ExtraSchool\Server\current\Web APi\DB\bin\Debug\net5.0\ref\DB.dll
+D:\ExtraSchool\Server\current\Web APi\DB\bin\Debug\net5.0\DB.pdb
+D:\ExtraSchool\Server\current\Web APi\DB\obj\Debug\net5.0\DB.GeneratedMSBuildEditorConfig.editorconfig
+D:\ExtraSchool\Server\current\Web APi\DB\obj\Debug\net5.0\DB.AssemblyInfoInputs.cache
+D:\ExtraSchool\Server\current\Web APi\DB\obj\Debug\net5.0\DB.AssemblyInfo.cs
+D:\ExtraSchool\Server\current\Web APi\DB\obj\Debug\net5.0\DB.csproj.CoreCompileInputs.cache
+D:\ExtraSchool\Server\current\Web APi\DB\obj\Debug\net5.0\DB.dll
+D:\ExtraSchool\Server\current\Web APi\DB\obj\Debug\net5.0\ref\DB.dll
+D:\ExtraSchool\Server\current\Web APi\DB\obj\Debug\net5.0\DB.pdb
+D:\ExtraSchool\Server\current\Web APi\DB\obj\Debug\net5.0\DB.genruntimeconfig.cache
+D:\ExtraSchool\Server\current\Web APi\DB\obj\Debug\net5.0\DB.csproj.AssemblyReference.cache
