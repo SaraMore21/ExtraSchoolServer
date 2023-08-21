@@ -6,18 +6,20 @@ using System.Threading.Tasks;
 using DB.Model;
 using DB.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
-
+using DB.Repository.Classes;
 namespace DB.Repository.Classes
 {
     public class StudentRepository : IStudentRepository
     {
         private readonly ExtraSchoolContext _context;
         private readonly ICheckTZRepository _checkTZRepository;
+        private readonly IGroupRepository _GroupRepository;
 
-        public StudentRepository(ExtraSchoolContext context, ICheckTZRepository checkTZRepository)
+        public StudentRepository(ExtraSchoolContext context, ICheckTZRepository checkTZRepository, IGroupRepository GroupRepository)
         {
             _context = context;
             _checkTZRepository = checkTZRepository;
+            _GroupRepository = GroupRepository;
         }
 
 
@@ -87,8 +89,14 @@ namespace DB.Repository.Classes
 
                     var list = _context.AppContactPerStudents.Where(w => w.StudentId == StudentID).ToList();
                     _context.AppContactPerStudents.RemoveRange(list);
-
+                    var listDocument = _context.AppDocumentPerStudents.Where(d => d.StudentId == StudentID).ToList();
+                    _context.AppDocumentPerStudents.RemoveRange(listDocument);
+                    var g =(int) _context.AppStudentPerGroups.FirstOrDefault(g => g.StudentId == StudentID).GroupId;
+                    if (g != null)
+                    _GroupRepository.DeleteStudentInGroup(StudentID,g);
+                    
                 }
+                
                 _context.AppStudents.Remove(Student);
                 //Student.IsActive = false;
                 _context.SaveChanges();
@@ -281,8 +289,7 @@ namespace DB.Repository.Classes
             //    student.ForeignLastName = s.ForeignLastName;
             //    student.ForeignFirstName = s.ForeignFirstName;
             //    student.PreviusName = s.PreviusName;
-            //    student.FatherTz = s.FatherTz;
-            //    student.MotherTz = s.MotherTz;
+            //    student.FatherTz = s.FatherTz;erTz = s.MotherTz;
             //    student.FatherTypeIdentity = s.FatherTypeIdentity;
             //    student.MotherTypeIdentity = s.MotherTypeIdentity;
             //    student.Note = s.Note;
@@ -298,6 +305,7 @@ namespace DB.Repository.Classes
             //        student.Address = new AppAddress();
             //    }
             //    if (s.Address != null)
+            //    student.Moth
             //    {
             //        student.Address.UserUpdated = userId;
             //        student.Address.DateUpdated = DateTime.Today;
