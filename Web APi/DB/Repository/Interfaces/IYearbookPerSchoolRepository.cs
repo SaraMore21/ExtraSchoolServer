@@ -12,5 +12,6 @@ namespace DB.Repository.Interfaces
         List<AppYearbookPerSchool> GetYearbookPerSchool(int schoolId);
 
         AppYearbookPerSchool GetYearBookById(int idYearBook);
+        int GetYearbookPerSchoolIdByYearbookIdSchoolId(int idYearbook, int idschool);
     }
 }

@@ -23,5 +23,7 @@ namespace Services.Interfaces
         bool AddTasksToStudent(List<AppTaskExsistDTO> ListTaskExsist, int StudentId, int UserCreatedId);
         AppStudentPerGroupDTO GetStudentPerGroupById(int StudentPerGroupId);
         List<TReasonForLeavingDTO> GetReasonForLeavingPerSchool(int SchoolId);
+        List<AppStudentDTO> GetPartlyListStudent(int page, int pageSize, int YearbookId, string SchoolsId);
+        List<AppStudentDTO> SearchInStudentList(string str, int YearbookId, string SchoolsId);
     }
 }

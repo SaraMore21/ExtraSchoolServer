@@ -26,6 +26,7 @@ namespace DB.Repository.Interfaces
         AppGroupPerYearbook IsGroupHasTasks(int groupId);
         AppGroupPerYearbook GetGroupByCourseID(int courseId);
         AppGroup EditGroup2(AppGroup group, int userUpdatedId);
-        List<AppGroupPerYearbook> GetGroupsByCoordinationCode(string coordinationCode);
+        AppGroupPerYearbook checkIfExistGroupInSchoolByYearbook(int groupId, int yearbookid);
+    //😀    List<AppGroupPerYearbook> GetGroupsByCoordinationCode(string coordinationCode);
     }
 }

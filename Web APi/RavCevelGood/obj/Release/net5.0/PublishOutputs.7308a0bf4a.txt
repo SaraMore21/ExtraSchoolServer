@@ -62,6 +62,7 @@ D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\PubTmp\Out
 D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\PubTmp\Out\Serilog.Sinks.MSSqlServer.dll
 D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\PubTmp\Out\Serilog.Sinks.PeriodicBatching.dll
 D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\PubTmp\Out\ICSharpCode.SharpZipLib.dll
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\PubTmp\Out\Spire.XLS.dll
 D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

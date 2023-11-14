@@ -77,7 +77,7 @@ namespace DB.Model
         public int? UserUpdatedId { get; set; }
         public DateTime? DateUpdated { get; set; }
         public int? CustomerId { get; set; }
-        public string CoordinationCode { get; set; }
+        //😀public string CoordinationCode { get; set; }
 
         public virtual AppAddress Adress { get; set; }
         public virtual AppContactInformation ContactInformation { get; set; }

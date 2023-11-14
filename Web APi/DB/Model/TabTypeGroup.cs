@@ -20,7 +20,7 @@ namespace DB.Model
         public DateTime? DateCreated { get; set; }
         public int? UserUpdatedId { get; set; }
         public DateTime? DateUpdated { get; set; }
-        public string CoordinationCode { get; set; }
+        //😀public string CoordinationCode { get; set; }
 
         public virtual AppSchool School { get; set; }
         public virtual AppUserPerSchool UserCreated { get; set; }

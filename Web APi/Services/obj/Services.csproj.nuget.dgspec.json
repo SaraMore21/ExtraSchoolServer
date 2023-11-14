@@ -249,6 +249,10 @@
             "RestSharp": {
               "target": "Package",
               "version": "[106.12.0, )"
+            },
+            "Spire.XLS": {
+              "target": "Package",
+              "version": "[13.10.1, )"
             }
           },
           "imports": [

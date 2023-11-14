@@ -562,3 +562,4 @@ D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\ref\RavCev
 D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.pdb
 D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.genruntimeconfig.cache
 D:\ExtraSchool\Server\current\Web APi\RavCevelGood\obj\Release\net5.0\RavCevelGood.csproj.AssemblyReference.cache
+D:\ExtraSchool\Server\current\Web APi\RavCevelGood\bin\Release\net5.0\Spire.XLS.dll

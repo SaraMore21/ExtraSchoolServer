@@ -29,6 +29,8 @@ namespace DB.Repository.Interfaces
         int? getNumRequiredPerStudent(int schoolId);
         AppStudent IsStudentExsist(string tz, int schoolId);
         List<TReasonForLeaving> GetReasonForLeavingPerSchool(int SchoolId);
+        public List<AppStudent> GetPartlyListStudent(int page, int pageSize, int YearbookId, string SchoolsId);
+        public List<AppStudent> SearchInStudentList(string str, int YearbookId, string SchoolsId);
     }
 
 }

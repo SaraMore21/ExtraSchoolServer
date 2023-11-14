@@ -155,10 +155,10 @@ namespace RavCevelGood.Controllers
             return Ok(_groupService.AddCoordinatedGroup(Group, UserCreatedId, YearbookId, userId));
         }
 
-        [HttpGet("GetGroupsByCoordinationCode/{coordinationCode}")]
-        public IActionResult GetGroupsByCoordinationCode(string coordinationCode)
-        {
-            return Ok(_groupService.GetGroupsByCoordinationCode(coordinationCode));
-        }
+        //[HttpGet("GetGroupsByCoordinationCode/{coordinationCode}")]
+        //public IActionResult GetGroupsByCoordinationCode(string coordinationCode)
+        //{
+        //    return Ok(_groupService.GetGroupsByCoordinationCode(coordinationCode));
+        //😀}
     }
 }

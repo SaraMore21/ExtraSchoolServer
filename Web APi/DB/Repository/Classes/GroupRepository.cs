@@ -62,7 +62,7 @@ namespace DB.Repository.Classes
                 var a = b.ToList();
                 return a;
             }
-            catch (Exception )
+            catch (Exception e)
             {
                 return null;
             }
@@ -305,7 +305,7 @@ namespace DB.Repository.Classes
             return StudentPerGroups;
         }
 
-        public List<string> EditStudentInGroup(AppStudentPerGroup StudentPerGroup, DateTime SPGFromDate, DateTime SPGToDate, int UserUpdateId)
+        public List<string> EditStudentInGroup( AppStudentPerGroup StudentPerGroup, DateTime SPGFromDate, DateTime SPGToDate, int UserUpdateId)
         {
             StudentPerGroup = _context.AppStudentPerGroups.FirstOrDefault(f => f.IdstudentPerGroup == StudentPerGroup.IdstudentPerGroup);
             //var SPG = _context.AppStudentPerGroups.FirstOrDefault(f => f.IdstudentPerGroup == StudentPerGroup.IdstudentPerGroup);
@@ -353,6 +353,11 @@ namespace DB.Repository.Classes
 
             return null;
                 //lGroup;
+        }
+
+        public AppGroupPerYearbook checkIfExistGroupInSchoolByYearbook(int groupId, int yearbookid)
+        {
+            return _context.AppGroupPerYearbooks.FirstOrDefault(g => g.IdgroupPerYearbook == groupId && g.YearbookId == yearbookid);
         }
     }
 }

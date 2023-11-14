@@ -52,7 +52,7 @@ namespace DB.Repository.Classes
            
             
     
-           for(int i=0; i<=luser.Length;i++ )
+           for(int i=0; i<luser.Length;i++ )
             {
                 var user = _context.AppUserPerSchools.Include(u => u.User).Include(b => b.Birth).Include(u => u.Address).Include(c => c.ContactInformation).FirstOrDefault(f => f.User.Iduser == luser[i][0] && f.SchoolId == luser[i][1]);
                 users.Add(user);
@@ -426,7 +426,7 @@ namespace DB.Repository.Classes
         public Tuple<AppUserPerSchool, int, bool> AddCopyUserPerSchool(AppUserPerSchool userPerSchool, AppSchool School, int CoustomerId, int? UserCreatedId, int YearbookId)
         {
             SecUser users = _context.SecUsers.Include(i => i.AppUserPerSchools).ThenInclude(i => i.ContactInformation).Include(i => i.AppUserPerSchools).ThenInclude(i => i.AppUserPerYearbookUsers).Include(s => s.AppUserPerSchools).ThenInclude(s => s.School).FirstOrDefault(w => userPerSchool.User != null && w.Iduser == userPerSchool.User.Iduser);
-            AppUserPerSchool appUserPerSchool = users.AppUserPerSchools.FirstOrDefault(f => f.UniqueCodeId != null && f.UniqueCodeId != 0 && f.School != null && f.School.CoordinationCode == School.CoordinationCode);
+            AppUserPerSchool appUserPerSchool = users.AppUserPerSchools.FirstOrDefault(f => f.UniqueCodeId != null && f.UniqueCodeId != 0 && f.School != null /*😀&& f.School.CoordinationCode == School.CoordinationCode*/);
             //קוד ייחודי למשתמש במוסד
             int UniqeCodeToUserPerSchoolId;
             if (appUserPerSchool == null)
@@ -556,5 +556,7 @@ namespace DB.Repository.Classes
                 return s.IduserPerSchool;
             return 0;
         }
+
+       
     }
 }

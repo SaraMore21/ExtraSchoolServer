@@ -21,5 +21,6 @@ namespace DB.Repository.Interfaces
         SecUser IsUserExsist(string tz, int schoolId);
         int IsUserExsistinSchool(string tz, int schoolId);
         List<AppUserPerSchool> GetListUserDetailsByIDUser(int[][] luser);
+       
     }
 }

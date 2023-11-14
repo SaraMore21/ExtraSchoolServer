@@ -21,5 +21,6 @@ namespace DB.Repository.Interfaces
         Tuple<List<AppProfession>, List<AppUserPerSchool>, int> UpdateCoordinationProfession(List<SchoolWithYearBookAndUserPerSchool> schools,AppProfession Profession,int CustomerId,int YearbookId);
          List<AppProfession> GetAllProfessionsByCoordinationId(int coordinationId);
         int GetCoordinatedProfessionPerSchool(int coordinationTypeId, int schoolId);
+        bool checkIfProfessionIdExistInSchool(int professionId, int schoolId);
     }
 }

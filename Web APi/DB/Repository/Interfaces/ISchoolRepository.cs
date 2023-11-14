@@ -24,6 +24,7 @@ namespace DB.Repository.Interfaces
         List<AppUserPerSchool> GetAllSchoolAndYearbookPerUser(SecUser User);
         List<int> GetSchoolIdsByCoordinationId(string coordinationId);
         int GetSchoolIdYearbookPerSchoollByYearBookId(int schoolId, int YearbookId);
+        public List<TLearningStyle> GetAllLearningStyles();
 
     }
 }

@@ -22,5 +22,17 @@ namespace Services.Classes
                 throw;
             }
         }
+        public void SendEmailWithAttachment(string toEmail, string subject, string body, string attachmentPath)
+        {
+            try
+            {
+                new MailRepository().SendEmailWithAttachment(toEmail, subject, body,attachmentPath);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }

@@ -12,6 +12,7 @@ namespace DB.Repository.Interfaces
         List<AppGroupSemesterPerCourse> GetAllCourseBySchoolDAndYearbookId(string ShoolsId, int YearbookId);
         List<AppCourse> GetAllCourseBySchoolId(int ShoolId);
         List<AppSemester> GetAllSemester(int YearbookId);
+        AppSemester GetSemesterById(int semesterid,int yearbookid);
         //AppGroupSemesterPerCourse AddCourse(int SchoolId, int SemesterId, int CourseId, int GroupId, DateTime SemesterFromDate, DateTime SemesterToDate, int TeacherId, int YearbookId,int UserCreatedId, AppCourse Course);
         int DeleteCourse(int CourseId);
         List<AppUserPerCourse> GetUsersPerCourse(int CourseId);
@@ -24,6 +25,7 @@ namespace DB.Repository.Interfaces
         AppCourse GetCourseById(int lessonNameId);
         AppGroupSemesterPerCourse AddCordinatedCourse(AppGroupSemesterPerCourse course);
         Tuple<AppGroupSemesterPerCourse,List<AppSchool>> TestGetCoordinatedCourse();
+        AppCourse checkIfExistCourseIdInSchoolByYearbook(int courseId, int yearbookId);
 
     }
 }

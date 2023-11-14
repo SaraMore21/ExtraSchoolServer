@@ -23,6 +23,6 @@ namespace Services.Interfaces
         AppStudentPerGroupDTO DeleteStudentInGroup(int StudentId, int GroupId);
         ReturnObjectOfStudentPerGroupDTO EditStudentInGroup(AppStudentPerGroupDTO StudentPerGroup,DateTime FromDate,DateTime ToDate, int UserUpdateId);
         AppGroupDTO EditGroup2(AppGroupDTO group, int userUpdatedId);
-        List<AppGroupPerYearbookDTO> GetGroupsByCoordinationCode(string coordinationCode);
+      //😀  List<AppGroupPerYearbookDTO> GetGroupsByCoordinationCode(string coordinationCode);
     }
 }

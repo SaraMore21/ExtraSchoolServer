@@ -172,8 +172,8 @@ namespace RavCevelGood.Controllers
             }
         }
 
-        [HttpGet("GetListStudentsBySchoolIdAndYearbookId/{SchoolsId}/{YearbookId}")]
-        public IActionResult GetListStudentsBySchoolIdAndYearbookId(string SchoolsId, int YearbookId)
+        [HttpGet("GetListStudentsBySchoolIdAndYearbookId/{SchoolsId}/{YearbookId}/")]
+        public IActionResult GetListStudentsBySchoolIdAndYearbookId(int page, int pageSize,string SchoolsId, int YearbookId)
         {
             try
             {
@@ -184,7 +184,31 @@ namespace RavCevelGood.Controllers
                 return BadRequest();
             }
         }
-
+        [HttpGet("GetPartlyListStudent/{page}/{pageSize}/{YearbookId}/{SchoolsId}")]
+        public IActionResult GetPartlyListStudent(int page, int pageSize, int YearbookId, string SchoolsId)
+        {
+            try
+            {
+                return Ok(_StudentService.GetPartlyListStudent(page, pageSize, YearbookId, SchoolsId));
+            }
+            catch (Exception e)
+            {
+                return BadRequest();
+            }
+        }
+        
+        [HttpGet("SearchInStudentList/{str}/{YearbookId}/{SchoolsId}")]
+        public IActionResult SearchInStudentList(string str, int YearbookId, string SchoolsId)
+        {
+            try
+            {
+                return Ok(_StudentService.SearchInStudentList(str, YearbookId, SchoolsId));
+            }
+            catch (Exception e)
+            {
+                return BadRequest();
+            }
+        }
         //שליפת אפשרויות סיבת עזיבה למוסד
         [HttpGet("GetReasonForLeavingPerSchool/{SchoolId}")]
         public IActionResult GetReasonForLeavingPerSchool(int SchoolId)
@@ -198,5 +222,7 @@ namespace RavCevelGood.Controllers
                 return BadRequest(e.InnerException != null ? e.InnerException.Message : e.Message);
             }
         }
+
+
     }
 }

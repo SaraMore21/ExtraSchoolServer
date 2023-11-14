@@ -9,5 +9,7 @@ namespace Services.Interfaces
     public interface IMailService
     {
         public void SendEmail(string contactAddress, string subject, string body);
+
+        public void SendEmailWithAttachment(string toEmail, string subject, string body, string attachmentPath);
     }
 }

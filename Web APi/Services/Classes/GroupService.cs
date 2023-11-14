@@ -42,8 +42,10 @@ namespace Services.Classes
         //}
 
 
+
         public List<AppGroupPerYearbookDTO> GetGroupsByIdSchool(string Schools, int YearbookId)
         {
+             
             var x = _groupRepository.GetGroupsByIdSchool(Schools, YearbookId);
             return _mapper.Map<List<AppGroupPerYearbookDTO>>(x);
             //var group = _groupRepository.GetGroupsByIdSchool(SchoolId, YearbookId);
@@ -136,6 +138,10 @@ namespace Services.Classes
         {
             var student = _mapper.Map<AppStudentPerGroup>(StudentPerGroup);
             var result = _groupRepository.EditStudentInGroup(student, FromDate, ToDate, UserUpdateId);
+            student.ToDate = ToDate;
+            student.FromDate = FromDate;
+            student.UserUpdatedId = UserUpdateId;
+
             var r = new ReturnObjectOfStudentPerGroupDTO()
             {
                 ID = result[0],
@@ -163,9 +169,9 @@ namespace Services.Classes
             //listGroups;
         }
 
-        public List<AppGroupPerYearbookDTO> GetGroupsByCoordinationCode(string coordinationCode)
-        {
-            return _mapper.Map<List<AppGroupPerYearbookDTO>>(_groupRepository.GetGroupsByCoordinationCode(coordinationCode));
-        }
+        //public List<AppGroupPerYearbookDTO> GetGroupsByCoordinationCode(string coordinationCode)
+        //{
+        //    return _mapper.Map<List<AppGroupPerYearbookDTO>>(_groupRepository.GetGroupsByCoordinationCode(coordinationCode));
+        //😀}
     }
 }

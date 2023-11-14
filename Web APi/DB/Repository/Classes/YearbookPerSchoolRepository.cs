@@ -26,5 +26,13 @@ namespace DB.Repository.Classes
         {
             return _context.AppYearbookPerSchools.Where(w => w.SchoolId == schoolId).ToList();
         }
+
+        public int GetYearbookPerSchoolIdByYearbookIdSchoolId(int idschool, int idYearbook)
+        {
+            var a= _context.AppYearbookPerSchools.FirstOrDefault(w => w.SchoolId == idschool && w.YearbookId==idYearbook);
+            if (a != null)
+              return  a.IdyearbookPerSchool;
+            return -1;
+        }
     }
 }

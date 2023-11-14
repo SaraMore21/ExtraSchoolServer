@@ -19,6 +19,8 @@ using System.Text.RegularExpressions;
 using DB.Repository.Classes;
 using ClosedXML.Excel;
 using GemBox.Spreadsheet;
+using Spire.Xls;
+
 
 namespace Services.Classes
 {
@@ -41,7 +43,8 @@ namespace Services.Classes
         private readonly ILessonPerGroupRepository _LessonPerGroupRepository;
         private readonly IProfessionRepository _ProfessionRepository;
         private readonly IProfessinCategoryRepository _ProfessinCategoryRepository;
-        
+        private readonly ICourseRepository _CourseRepository;
+        private readonly IFatherCourseRepository _FatherCourseRepository;
 
 
         //private readonly ICacheService _CacheService;
@@ -58,6 +61,7 @@ namespace Services.Classes
         private Dictionary<string, int> _DictUser = new Dictionary<string, int>();
         private List<AppStudentPerGroupDTO> _lstStudentPerGroup = new List<AppStudentPerGroupDTO>();
         private List<AppLessonPerGroupDTO> _lstLessonPerGroup = new List<AppLessonPerGroupDTO>(); 
+        
 
 
         public ExcelService(IMapper mapper, ISchoolRepository SchoolRepository, IStudentRepository StudentRepository,
@@ -66,8 +70,9 @@ namespace Services.Classes
             IYearbookPerSchoolRepository YearbookPerSchool, IAgeGroupRepository AgeGroupRepository,
             ITypeGroupRepository TypeGroupRepository, IUserRepository UserRepository, IScheduleRegularRepository ScheduleRegularRepository
             , IDailyScheduleRepository DailyScheduleRepository, ILessonPerGroupRepository LessonPerGroupRepository,
-            IProfessionRepository ProfessionRepository, IProfessinCategoryRepository ProfessinCategoryRepository
-          
+            IProfessionRepository ProfessionRepository, IProfessinCategoryRepository ProfessinCategoryRepository, ICourseRepository CourseRepository,
+            IFatherCourseRepository FatherCourseRepositor
+
             )
         {
             _mapper = mapper;
@@ -87,6 +92,8 @@ namespace Services.Classes
             _LessonPerGroupRepository = LessonPerGroupRepository;
             _ProfessionRepository = ProfessionRepository;
             _ProfessinCategoryRepository = ProfessinCategoryRepository;
+            _CourseRepository = CourseRepository;
+            _FatherCourseRepository = FatherCourseRepositor;
         }
 
         //שליחה לפונקציות קריאת אקסלים עפ"י שמות הטבלאות שנבחרו באנגולר.
@@ -146,6 +153,16 @@ namespace Services.Classes
                                     case "שעות שיעורים לקבוצה":
                                     {
                                             tasks.Add("שעות שיעורים לקבוצה", ReadLessonPerGroup(schoolId, userId, path, table));
+                                            break;
+                                     }
+                                    case "קורסי אב":
+                                        {
+                                            tasks.Add("קורסי אב", ReadFatherCourse(schoolId, userId, path, table,idyearbookPerSchool));
+                                            break;
+                                        }
+                                    case "קורסים":
+                                        {
+                                            tasks.Add("קורסים", ReadGroupSemesterPerCourse(schoolId, userId, path, table, idyearbookPerSchool));
                                             break;
                                         }
 
@@ -2108,6 +2125,366 @@ namespace Services.Classes
 
 
         }
+
+
+        //העלאת קורסי אב מאקסל
+        private bool ReadFatherCourse(int schoolId, int userId, string path, string nameTab, int idyearbookPerSchool)
+        {
+            try
+            {
+
+                bool isValid = true;
+                string body1 = "<h3>" + "הרשומות הבאות הן רשומות שלא הועלו כיוון שהיתה בהם תקלה." + "<br>" +
+                        "</h3>";
+                #region
+                body1 += "<table  border=" + 1 + " cellpadding=" + 0 + " cellspacing=" + 0 + " width = " + 600 + ">";
+                body1 += "<tr bgcolor='#4da6ff'>";
+                body1 += "<th>" + "שם קורס אב" + "</th>";
+                body1 += "<th>" + "קוד" + "</th>";
+                body1 += "<th>" + "מקצוע" + "</th>";
+                body1 += "<th>" + "מס' שעות" + "</th>";
+                body1 += "<th>" + "שעות שבועיות" + "</th>";
+                body1 += "<th>" + "נקודות זיכוי" + "</th>";
+                body1 += "<th>" + "מחיר" + "</th>";
+                body1 += "<th>" + "ציון מינימלי" + "</th>";
+                body1 += "<th>" + "סגנון למידה" + "</th>";
+                body1 += "</tr>";
+                #endregion
+
+
+                List<AppFatherCourseXL> TzInvalid = new List<AppFatherCourseXL>();
+
+                string str = ReadExcel(path, nameTab);
+
+                List<AppFatherCourseXL> listFatherCourses = JsonConvert.DeserializeObject<List<AppFatherCourseXL>>(str);
+
+                int result;
+                AppCourseDTO fatherCourse;
+
+                listFatherCourses.ForEach(con =>
+                {
+                    try
+                    {
+                        fatherCourse = new AppCourseDTO();
+                       if( con.ProfessionId != null)
+                        {
+
+                            int Index = con.ProfessionId.IndexOf(' ');
+                            if (Index != -1)
+                            {
+                                con.ProfessionId  = con.ProfessionId.Substring(0,Index);
+                                
+                            }
+                            else
+                            {
+                                TzInvalid.Add(con);
+                            }
+
+                        }
+                        if (con.LearningStyleId != null)
+                        {
+                            int Index = con.LearningStyleId.IndexOf(' ');
+                            if (Index != -1)
+                            {
+                                con.LearningStyleId = con.LearningStyleId.Substring(0,Index);
+
+                            }
+                            else
+                            {
+                                TzInvalid.Add(con);
+                            }
+                        }
+
+                            if (con.Name == null || con.Name == "" || con.Cost == null || con.Credits == null|| con.Hours == null|| con.HoursPerWeek == null
+                        || con.LearningStyleId == null || con.MinimumScore == null || con.ProfessionId == null)
+                        {
+                            TzInvalid.Add(con);
+                        }
+
+                        else if (!_ProfessionRepository.checkIfProfessionIdExistInSchool(int.Parse(con.ProfessionId), schoolId))
+                            TzInvalid.Add(con);
+                        else
+                        {
+                            #region
+                            fatherCourse.Name = con.Name;
+                            fatherCourse.HoursPerWeek = con.HoursPerWeek;
+                            fatherCourse.Hours = con.Hours;
+                            fatherCourse.Credits = con.Credits;
+                            fatherCourse.Cost = con.Cost;
+                            fatherCourse.MinimumScore = con.MinimumScore;
+                            fatherCourse.LearningStyleId = int.Parse(con.LearningStyleId);
+                            fatherCourse.SchoolId = schoolId;
+                            fatherCourse.UserCreatedId = userId;
+                            fatherCourse.DateCreate = DateTime.Now;
+                            fatherCourse.ProfessionId = int.Parse(con.ProfessionId);
+                            //fatherCourse.UniqueCodeId
+                            fatherCourse.YearbookId = idyearbookPerSchool;
+                            fatherCourse.Code = con.Code;
+
+
+                            #endregion
+
+
+                            _CourseRepository.AddFatherCourse(_mapper.Map<AppCourse>(fatherCourse));
+
+                        }
+                        }
+                   
+                    catch (Exception e)
+                    {
+                        TzInvalid.Add(con);
+                    }
+
+                });
+
+                if (TzInvalid != null && TzInvalid.Count() > 0)
+                {
+
+
+                    var i = 0;
+
+
+                    foreach (var item in TzInvalid)
+                    {
+                        //TabProfessionCategory professionCategory = _ProfessinCategoryRepository.GetProfessionCategoriesById((int)item.ProfessionCategoryId);
+
+                        body1 += "<tr>";
+
+                        body1 += "<td>" + item.Name + "</td>";
+                        body1 += "<td>" + item.Code + "</td>";
+                        body1 += "<td>" + item.ProfessionId + "</td>";
+                        body1 += "<td>" + item.Hours + "</td>";
+                        body1 += "<td>" + item.HoursPerWeek + "</td>";
+                        body1 += "<td>" + item.Credits + "</td>";
+                        body1 += "<td>" + item.Cost + "</td>";
+                        body1 += "<td>" + item.MinimumScore + "</td>";
+                        body1 += "<td>" + item.LearningStyleId + "</td>";
+                        body1 += "</tr>";
+
+                        i++;
+                    }
+                    body1 += "</table>";
+                    string contact_email = _AppSchoolDTO != null && _AppSchoolDTO.ContactInformation != null ? _AppSchoolDTO.ContactInformation.Email : null;
+                    if (contact_email == null)
+                        contact_email = "ravcevel@gmail.com";
+
+                    new MailService().SendEmail(contact_email, "רשימת קורסים לא תקינים", body1);
+
+                }
+                return true;
+            }
+
+
+            catch (Exception e)
+            {
+                new MailService().SendEmail("more21soft@gmail.com", "השגיאה בהעלאת הקורסי אב", e.Message+" מיקום השגיאה "+e.StackTrace);
+                Console.WriteLine(e);
+                return false;
+            }
+
+        }
+        //העלאת קורסים מאקסל
+        private bool ReadGroupSemesterPerCourse(int schoolId, int userId, string path, string nameTab, int idyearbookPerSchool)
+        {
+            try
+            {
+
+                bool isValid = true;
+                string body1 = "<h3>" + "הרשומות הבאות הן רשומות שלא הועלו כיוון שהיתה בהם תקלה." + "<br>" +
+                        "</h3>";
+                #region
+                body1 += "<table  border=" + 1 + " cellpadding=" + 0 + " cellspacing=" + 0 + " width = " + 600 + ">";
+                body1 += "<tr bgcolor='#4da6ff'>";
+                body1 += "<th>" + "קוד סמסטר" + "</th>";
+                body1 += "<th>" + "קוד קורס" + "</th>";
+                body1 += "<th>" + "קוד קבוצה" + "</th>";
+                body1 += "<th>" + "קוד" + "</th>";
+                body1 += "<th>" + "תז" + "</th>";
+                body1 += "<th>" + "מתאריך" + "</th>";
+                body1 += "<th>" + "עד תאריך" + "</th>";
+             
+                body1 += "</tr>";
+                #endregion
+
+                List<AppCourseXL> TzInvalid = new List<AppCourseXL>();
+
+                string str = ReadExcel(path, nameTab);
+
+                List<AppCourseXL> listCourses = JsonConvert.DeserializeObject<List<AppCourseXL>>(str);
+
+                int result;
+                double timeSpanRes1;
+                AppGroupSemesterPerCourseDTO Course;
+
+                listCourses.ForEach(con =>
+                {
+                    try
+                    {
+                        Course = new AppGroupSemesterPerCourseDTO();
+
+                        if (con.SemesterId != null)
+                        {
+
+                            int Index = con.SemesterId.IndexOf(' ');
+                            if (Index != -1)
+                            {
+                                con.SemesterId = con.SemesterId.Substring(0, Index);
+
+                            }
+                            else
+                            {
+                                TzInvalid.Add(con);
+                            }
+
+                        }
+                        if (con.CourseId != null)
+                        {
+                            int Index = con.CourseId.IndexOf(' ');
+                            if (Index != -1)
+                            {
+                                con.CourseId = con.CourseId.Substring(0, Index);
+
+                            }
+                            else
+                            {
+                                TzInvalid.Add(con);
+                            }
+                        }
+                        if (con.GroupId != null)
+                        {
+                            int Index = con.GroupId.IndexOf(' ');
+                            if (Index != -1)
+                            {
+                                con.GroupId = con.GroupId.Substring(0, Index);
+
+                            }
+                            else
+                            {
+                                TzInvalid.Add(con);
+                            }
+                        }
+                        if (con.teacherTz != null)
+                        {
+                            int Index = con.teacherTz.IndexOf(' ');
+                            if (Index != -1)
+                            {
+                                con.teacherTz = con.teacherTz.Substring(0, Index);
+
+                            }
+                            else
+                            {
+                                TzInvalid.Add(con);
+                            }
+                        }
+
+                        if (con.SemesterId == null || con.CourseId == null || con.GroupId == null || con.Code == null)
+                        {
+                            TzInvalid.Add(con);
+                        }
+                        else {
+                            int user = _UserRepository.IsUserExsistinSchool(con.teacherTz.ToString(), schoolId);
+                            //לא קיימת כזאת מורה במוסד
+                            if (user == 0 || user == null)
+                            {
+                                TzInvalid.Add(con);
+                            }
+                           
+                            else {
+                                var FromDate = double.TryParse(con.fromDate, out timeSpanRes1) ? DateTime.FromOADate(timeSpanRes1) : (DateTime?)null;
+                                var ToDate = double.TryParse(con.toDate, out timeSpanRes1) ? DateTime.FromOADate(timeSpanRes1) : (DateTime?)null;
+                                var semester = _CourseRepository.GetSemesterById(int.Parse(con.SemesterId),idyearbookPerSchool);
+                                if (FromDate > ToDate)
+                                    TzInvalid.Add(con);
+                                else if (semester == null)
+                                    TzInvalid.Add(con);
+                                else if (semester.FromDate > FromDate)
+                                    TzInvalid.Add(con);
+                                else if (semester.ToDate < ToDate)
+                                    TzInvalid.Add(con);
+                                else if(_CourseRepository.checkIfExistCourseIdInSchoolByYearbook(int.Parse(con.CourseId),idyearbookPerSchool)==null)
+                                        TzInvalid.Add(con);
+                                else if(_GroupRepository.checkIfExistGroupInSchoolByYearbook(int.Parse(con.GroupId),idyearbookPerSchool)==null)
+                                    TzInvalid.Add(con);
+                                else
+                                    {
+                                        #region
+                                        Course.SemesterId = int.Parse(con.SemesterId);
+                                        Course.CourseId = int.Parse(con.CourseId);
+                                        Course.GroupId = int.Parse(con.GroupId);
+                                        Course.Code = con.Code;
+                                        Course.FromDate =FromDate;
+                                        Course.ToDate = ToDate;
+                                        Course.UserCreatedId = userId;
+                                        Course.DateCreated = DateTime.Now;
+                                        Course.SchoolId = schoolId;
+                                        Course.YearbookId = idyearbookPerSchool;
+
+                                        #endregion
+
+                                   
+                                        _CourseRepository.AddCourse(_mapper.Map<AppGroupSemesterPerCourse>(Course), user);
+                                    }
+                                }
+                            }
+                    }
+
+                    catch (Exception e)
+                    {
+                        TzInvalid.Add(con);
+                    }
+
+                });
+
+                if (TzInvalid != null && TzInvalid.Count() > 0)
+                {
+
+
+                    var i = 0;
+
+
+                    foreach (var item in TzInvalid)
+                    {
+                        //TabProfessionCategory professionCategory = _ProfessinCategoryRepository.GetProfessionCategoriesById((int)item.ProfessionCategoryId);
+                        var FromDate = double.TryParse(item.fromDate, out timeSpanRes1) ? DateTime.FromOADate(timeSpanRes1) : (DateTime?)null;
+                        var ToDate = double.TryParse(item.toDate, out timeSpanRes1) ? DateTime.FromOADate(timeSpanRes1) : (DateTime?)null;
+
+                        body1 += "<tr>";
+
+                        body1 += "<td>" + item.SemesterId + "</td>";
+                        body1 += "<td>" + item.CourseId + "</td>";
+                        body1 += "<td>" + item.GroupId + "</td>";
+                        body1 += "<td>" + item.Code + "</td>";
+                        body1 += "<td>" + item.teacherTz + "</td>";
+                        body1 += "<td>" + FromDate + "</td>";
+                        body1 += "<td>" + ToDate + "</td>";
+
+                        body1 += "</tr>";
+
+                        i++;
+                    }
+                    body1 += "</table>";
+                    string contact_email = _AppSchoolDTO != null && _AppSchoolDTO.ContactInformation != null ? _AppSchoolDTO.ContactInformation.Email : null;
+                    if (contact_email == null)
+                        contact_email = "ravcevel@gmail.com";
+
+                    new MailService().SendEmail(contact_email, "רשימת קורסים לא תקינים", body1);
+
+                }
+                return true;
+            }
+
+
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return false;
+            }
+
+        }
+
+
+
+
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         #region json-קריאת דף אקסל והחזרתו כסטרינג 
 
@@ -2122,7 +2499,7 @@ namespace Services.Classes
                     IEnumerable<Sheet> sheets = spreadSheetDocument.WorkbookPart.Workbook.GetFirstChild<Sheets>().Elements<Sheet>();
                     string relationshipId = sheets.FirstOrDefault(f => f.Name == nameTab)?.Id.Value;
                     WorksheetPart worksheetPart = (WorksheetPart)spreadSheetDocument.WorkbookPart.GetPartById(relationshipId);
-                    Worksheet workSheet = worksheetPart.Worksheet;
+                    DocumentFormat.OpenXml.Spreadsheet.Worksheet workSheet = worksheetPart.Worksheet;
                     SheetData sheetData = workSheet.GetFirstChild<SheetData>();
                     IEnumerable<Row> rows = sheetData.Descendants<Row>();
                     //var r= sheet.Descendants<Row>();
@@ -2254,109 +2631,265 @@ namespace Services.Classes
             }
 
         }
-        static void down()
+       
+
+        public byte[] downloadFatherCourseExcel(string idschool)
         {
-            // If you are using the Professional version, enter your serial key below.
-            SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
-
-            var workbook = new ExcelFile();
-            var worksheet = workbook.Worksheets.Add("DataTable to Sheet");
-
-            var dataTable = new DataTable();
-
-            dataTable.Columns.Add("ID", typeof(int));
-            dataTable.Columns.Add("FirstName", typeof(string));
-            dataTable.Columns.Add("LastName", typeof(string));
-
-            dataTable.Rows.Add(new object[] { 100, "John", "Doe" });
-            dataTable.Rows.Add(new object[] { 101, "Fred", "Nurk" });
-            dataTable.Rows.Add(new object[] { 103, "Hans", "Meier" });
-            dataTable.Rows.Add(new object[] { 104, "Ivan", "Horvat" });
-            dataTable.Rows.Add(new object[] { 105, "Jean", "Dupont" });
-            dataTable.Rows.Add(new object[] { 106, "Mario", "Rossi" });
-
-            // worksheet.Cells[0, 0].Value = "DataTable insert example:";
-
-            // Insert DataTable to an Excel worksheet.
-            worksheet.InsertDataTable(dataTable,
-                new InsertDataTableOptions()
-                {
-                    ColumnHeaders = true,
-                    StartRow = 0
-                });
-
-            workbook.Save("C:/Users/This_user/Downloads/DataTable to Sheet.xlsx");
-        }
-        public void DownloadExcel()
-        {
-
-            //required using ClosedXML.Excel;
-            string contentType = "application/vnd.openxmlformats-officedocument.ssedsheetml.sheet";
-            string fileName = "authors.xlsx";
-            List<AppScheduleRegularDTO> ListAppScheduleRegularDTO = new List<AppScheduleRegularDTO>() { new AppScheduleRegularDTO() { CourseId = 1, NumLesson = 2 }, new AppScheduleRegularDTO() { CourseId = 2, NumLesson = 5 } };
-            string path = Path.Combine("Resources", "Excel", "ExcelToExport.xlsx");
-
             try
             {
-                using (var workbook = new XLWorkbook())
-                {
-                    IXLWorksheet worksheet =
-                    workbook.Worksheets.Add("Authors");
-                    worksheet.Cell(1, 1).Value = "CourseId";
-                    worksheet.Cell(1, 2).Value = "NumLesson";
-                    worksheet.Cell(1, 3).Value = "LastName";
-                    for (int index = 1; index <= ListAppScheduleRegularDTO.Count; index++)
-                    {
-                        worksheet.Cell(index + 1, 1).Value = ListAppScheduleRegularDTO[index - 1].CourseId;
-                        worksheet.Cell(index + 1, 2).Value = ListAppScheduleRegularDTO[index - 1].NumLesson;
+                //Create a Workbook object
+                Spire.Xls.Workbook workbook = new Spire.Xls.Workbook();
 
-                    }
-                    //required using System.IO;
-                    using (var stream = new MemoryStream())
-                    {
-                        workbook.SaveAs(stream);
-                        var content = stream.ToArray();
-                        //return File(content, contentType, fileName);
-                    }
+                //Get the first worksheet
+
+                Spire.Xls.Worksheet sheet = workbook.Worksheets[0];
+                sheet.Name = "קורסי אב";
+                sheet.IsRightToLeft = true;
+                //Add text to cell B2 and set its font style
+
+                sheet.Range["A1"].Value = "שם";
+                sheet.Range["A1"].Style.Font.IsBold = true;
+                sheet.Range["B1"].Value = "קוד מקצוע";
+                sheet.Range["B1"].Style.Font.IsBold = true;
+                sheet.Range["C1"].Value = "מס' שעות שבועיות";
+                sheet.Range["C1"].Style.Font.IsBold = true;
+                sheet.Range["D1"].Value = "מס' שעות";
+                sheet.Range["D1"].Style.Font.IsBold = true;
+                sheet.Range["E1"].Value = "נקודות זיכוי";
+                sheet.Range["E1"].Style.Font.IsBold = true;
+                sheet.Range["F1"].Value = "מחיר";
+                sheet.Range["F1"].Style.Font.IsBold = true;
+                sheet.Range["G1"].Value = "ציון מינימלי";
+                sheet.Range["G1"].Style.Font.IsBold = true;
+                sheet.Range["H1"].Value = "צורת למידה";
+                sheet.Range["H1"].Style.Font.IsBold = true;
+                sheet.Range["I1"].Value = "קוד";
+                sheet.Range["I1"].Style.Font.IsBold = true;
+                //sheet.Range["B2"].Style.KnownColor = ExcelColors.LightTurquoise;
+
+
+
+                Spire.Xls.Worksheet sheet1 = workbook.Worksheets[1];
+                sheet1.Name = "codeList";
+                sheet1.Range["A1"].Value = "מקצועות";
+                sheet1.Range["A1"].Style.Font.IsBold = true;
+                sheet1.Range["B1"].Value = "צורות למידה";
+                sheet1.Range["B1"].Style.Font.IsBold = true;
+                sheet1.IsRightToLeft = true;
+
+
+                Spire.Xls.Worksheet sheet2 = workbook.Worksheets[2];
+                sheet2.Remove();
+
+                //Set the values of the drop-down list
+
+                List<AppProfessionDTO> lp = _mapper.Map<List<AppProfessionDTO>>(_ProfessionRepository.GetAllProfessionByIdSchool(idschool + ','));
+
+                lp = lp.OrderBy(p => p.Name).ToList();
+                String currStr;
+                int i;
+                for (i = 0; i < lp.Count; i++)
+                {
+
+                    currStr = "A" + (i + 2);
+                    sheet1.Range[currStr].Value = "" + lp[i].Idprofession + " " + lp[i].Name;
+                }
+                List<TLearningStyleDTO> lls = _mapper.Map<List<TLearningStyleDTO>>(_SchoolRepository.GetAllLearningStyles());
+
+                lls = lls.OrderBy(p => p.Name).ToList();
+
+                int i1;
+                for (i1 = 0; i1 < lls.Count; i1++)
+                {
+
+                    currStr = "B" + (i1 + 2);
+                    sheet1.Range[currStr].Value = "" + lls[i1].IdlearningStyle + " " + lls[i1].Name;
+                }
+
+
+                sheet.Range["B2"].DataValidation.Values = new string[] { "=codeList!$A$2:$A$" + (i + 1) }; //new string[] { "France", "Japan", "Canada", "China", "Germany" };
+                                                                                                           //Create a drop-down list in the specified cell
+
+                sheet.Range["B2"].DataValidation.IsSuppressDropDownArrow = false;
+
+                sheet.Range["H2"].DataValidation.Values = new string[] { "=codeList!$B$2:$B$" + (i1 + 1) }; //new string[] { "France", "Japan", "Canada", "China", "Germany" };
+                                                                                                            //Create a drop-down list in the specified cell
+
+                sheet.Range["H2"].DataValidation.IsSuppressDropDownArrow = false;
+
+
+                var fileName = "fatherCourse" + DateTime.UtcNow.AddHours(2).ToString("dd-MM-yyyyHH_mm") + ".xlsx";
+
+                //Save the result document
+                //  var a = Regex.Replace(KnownFolders.GetPath(KnownFolder.Downloads), @"\\\\", "\\") + "\\";
+                //string userProfilePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                //string downloadsPath = System.IO.Path.Combine(userProfilePath, "Downloads\\");
+
+                //var a = Regex.Replace(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\Downloads", @"\\\\", "\\") + "\\";
+                //workbook.SaveToFile("D:\\ExtraSchool\\Server\\current\\Web APi\\Services\\Downloaded Excels\\" + fileName, ExcelVersion.Version2016);
+
+            
+               // new MailService().SendEmailWithAttachment(email, "קובץ קורסי אב", "מצורף קובץ תבנית עבור טבלת קורסי אב להעלאה", "D:\\ExtraSchool\\Server\\current\\Web APi\\Services\\Downloaded Excels\\" + fileName);
+                //new MailService().SendEmail("more21soft@gmail.com", "מיקום נוכחי", "userProfilePath: " + userProfilePath+ " downloadsPath: "+ downloadsPath);
+                using (var memoryStream = new MemoryStream())
+                {
+                    workbook.SaveToStream(memoryStream, FileFormat.Version2016);
+                    return memoryStream.ToArray();
                 }
             }
-            catch (Exception ex)
+            catch(Exception e)
             {
-                //return Error();
+                new MailService().SendEmail("more21soft@gmail.com", "שגיאה בהורדת קובץ אקסל של קורסי אב", e.Message + "מיקום השגיאה:" + e.StackTrace );
+                throw e;
             }
+
         }
-        protected void Button1_Click(object sender, EventArgs e)
+
+        public byte[] downloadCourseExcel(string idschool ,int idYearbook)
         {
-            DataTable dt = new DataTable();//GetDataTableFromExcel();
-            List<DataTable> dts = dt.AsEnumerable()
-            .GroupBy(row => row.Field<string>("Ref_ID"))
-            .Select(g => g.CopyToDataTable()).ToList();
+            try
+            {
+                //Create a Workbook object
+                Spire.Xls.Workbook workbook = new Spire.Xls.Workbook();
 
-            string path = "D:\\Excel\\";
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);
-            }
-            using (XLWorkbook wb = new XLWorkbook())
-            {
-                for (int i = 0; i < dts.Count; i++)
+                //Get the first worksheet
+
+                Spire.Xls.Worksheet sheet = workbook.Worksheets[0];
+                sheet.Name = "קורסים";
+                sheet.IsRightToLeft = true;
+                //Add text to cell B2 and set its font style
+
+                sheet.Range["A1"].Value = "קוד סמסטר";
+                sheet.Range["A1"].Style.Font.IsBold = true;
+                sheet.Range["B1"].Value = "קוד קורס אב";
+                sheet.Range["B1"].Style.Font.IsBold = true;
+                sheet.Range["C1"].Value = "קוד קבוצה";
+                sheet.Range["C1"].Style.Font.IsBold = true;
+                sheet.Range["D1"].Value = "קוד";
+                sheet.Range["D1"].Style.Font.IsBold = true;
+                sheet.Range["E1"].Value = "תז מורה";
+                sheet.Range["E1"].Style.Font.IsBold = true;
+                sheet.Range["F1"].Value = "מתאריך";
+                sheet.Range["F1"].Style.Font.IsBold = true;
+                sheet.Range["G1"].Value = "עד תאריך";
+                sheet.Range["G1"].Style.Font.IsBold = true;
+                //sheet.Range["B2"].Style.KnownColor = ExcelColors.LightTurquoise;
+
+
+
+                Spire.Xls.Worksheet sheet1 = workbook.Worksheets[1];
+                sheet1.Name = "codeList";
+                sheet1.Range["A1"].Value = "סמסטר";
+                sheet1.Range["A1"].Style.Font.IsBold = true;
+                sheet1.Range["B1"].Value = "קורסי אב";
+                sheet1.Range["B1"].Style.Font.IsBold = true;
+                sheet1.Range["C1"].Value = "קבוצות";
+                sheet1.Range["C1"].Style.Font.IsBold = true;
+                sheet1.Range["D1"].Value = "מורות";
+                sheet1.Range["D1"].Style.Font.IsBold = true;
+                sheet1.IsRightToLeft = true;
+
+
+                Spire.Xls.Worksheet sheet2 = workbook.Worksheets[2];
+                sheet2.Remove();
+
+                //Set the values of the drop-down list
+                int idYearbookPerSchool = _YearbookPerSchool.GetYearbookPerSchoolIdByYearbookIdSchoolId(int.Parse(idschool), idYearbook);
+                List<AppSemesterDTO> ls = _mapper.Map<List<AppSemesterDTO>>(_CourseRepository.GetAllSemester(idYearbookPerSchool));
+
+                ls = ls.OrderBy(p => p.Name).ToList();
+                string currStr;
+                int i;
+                for (i = 0; i < ls.Count; i++)
                 {
-                    if (!string.IsNullOrEmpty(dts[i].Rows[0][0].ToString()))
-                    {
-                        wb.Worksheets.Add(dts[i], dts[i].Rows[0][0].ToString());
-                    }
+
+                    currStr = "A" + (i + 2);
+                    sheet1.Range[currStr].Value = "" + ls[i].Idsemester + " " + ls[i].Name;
                 }
-                wb.SaveAs(path + "OrderDetails.xlsx");
+                List<AppCourseDTO> lfc = _mapper.Map<List<AppCourseDTO>>(_FatherCourseRepository.GetListFatherCoursesBySchoolAndYearbook(idschool+',',idYearbook));
+
+                lfc = lfc.OrderBy(p => p.Name).ToList();
+
+                int i1;
+                for (i1 = 0; i1 < lfc.Count; i1++)
+                {
+
+                    currStr = "B" + (i1 + 2);
+                    sheet1.Range[currStr].Value = "" + lfc[i1].Idcourse + " " + lfc[i1].Name;
+                }
+
+                List<AppGroupPerYearbookDTO> lg = _mapper.Map<List<AppGroupPerYearbookDTO>>(_GroupRepository.GetGroupsByIdSchool(idschool + ',', idYearbook));
+
+                lg = lg.OrderBy(p => p.Group.NameGroup).ToList();
+
+                int i2;
+                for (i2 = 0; i2 < lg.Count; i2++)
+                {
+
+                    currStr = "C" + (i2 + 2);
+                    sheet1.Range[currStr].Value = "" + lg[i2].IdgroupPerYearbook + " " + lg[i2].Group.NameGroup;
+                }
+                List<AppUserPerSchoolDTO> lups = _mapper.Map<List<AppUserPerSchoolDTO>>(_UserRepository.GetUsersBySchoolIDAndYearbookId(idschool + ',', idYearbook));
+
+                lups = lups.OrderBy(p => p.LastName).ToList();
+
+                int i3;
+                for (i3 = 0; i3 < lups.Count; i3++)
+                {
+
+                    currStr = "D" + (i3 + 2);
+                    sheet1.Range[currStr].Value = "" + lups[i3].User.Tz + " " + lups[i3].LastName +" "+ lups[i3].FirstName;
+                }
+
+
+                sheet.Range["A2"].DataValidation.Values = new string[] { "=codeList!$A$2:$A$" + (i + 1) }; //new string[] { "France", "Japan", "Canada", "China", "Germany" };
+                                                                                                           //Create a drop-down list in the specified cell
+
+                sheet.Range["A2"].DataValidation.IsSuppressDropDownArrow = false;
+
+                sheet.Range["B2"].DataValidation.Values = new string[] { "=codeList!$B$2:$B$" + (i1 + 1) }; //new string[] { "France", "Japan", "Canada", "China", "Germany" };
+                                                                                                            //Create a drop-down list in the specified cell
+
+                sheet.Range["B2"].DataValidation.IsSuppressDropDownArrow = false;
+
+                sheet.Range["C2"].DataValidation.Values = new string[] { "=codeList!$C$2:$C$" + (i2 + 1) }; //new string[] { "France", "Japan", "Canada", "China", "Germany" };
+                                                                                                            //Create a drop-down list in the specified cell
+
+                sheet.Range["C2"].DataValidation.IsSuppressDropDownArrow = false;
+                sheet.Range["E2"].DataValidation.Values = new string[] { "=codeList!$D$2:$D$" + (i3 + 1) }; //new string[] { "France", "Japan", "Canada", "China", "Germany" };
+                                                                                                            //Create a drop-down list in the specified cell
+
+                sheet.Range["E2"].DataValidation.IsSuppressDropDownArrow = false;
+
+
+                // var fileName = "fatherCourse" + DateTime.UtcNow.AddHours(2).ToString("dd-MM-yyyyHH_mm") + ".xlsx";
+
+                //Save the result document
+                //  var a = Regex.Replace(KnownFolders.GetPath(KnownFolder.Downloads), @"\\\\", "\\") + "\\";
+                //string userProfilePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                //string downloadsPath = System.IO.Path.Combine(userProfilePath, "Downloads\\");
+
+                //var a = Regex.Replace(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\Downloads", @"\\\\", "\\") + "\\";
+                //workbook.SaveToFile("D:\\ExtraSchool\\Server\\current\\Web APi\\Services\\Downloaded Excels\\" + fileName, ExcelVersion.Version2016);
+
+
+                // new MailService().SendEmailWithAttachment(email, "קובץ קורסי אב", "מצורף קובץ תבנית עבור טבלת קורסי אב להעלאה", "D:\\ExtraSchool\\Server\\current\\Web APi\\Services\\Downloaded Excels\\" + fileName);
+                //new MailService().SendEmail("more21soft@gmail.com", "מיקום נוכחי", "userProfilePath: " + userProfilePath+ " downloadsPath: "+ downloadsPath);
+                using (var memoryStream = new MemoryStream())
+                {
+                    workbook.SaveToStream(memoryStream, FileFormat.Version2016);
+                    return memoryStream.ToArray();
+                }
             }
-            // DownloadFile(path + "OrderDetails.xlsx");
+            catch (Exception e)
+            {
+                new MailService().SendEmail("more21soft@gmail.com", "שגיאה בהורדת קובץ אקסל של קורסים", e.Message + "מיקום השגיאה:" + e.StackTrace);
+                throw e;
+            }
+
         }
-        //public void DownloadFile(string path)
-        //{
-        //    Response.Clear();
-        //    Response.ContentType = "application/octet-stream";
-        //    Response.AddHeader("content-disposition", "attachment;filename=" + Path.GetFileName(path));
-        //    Response.WriteFile(path);
-        //    Response.End();
-        //}
+
+        
     }
+
 }

@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using DB.Model;
 using DB.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using DB.Repository.Classes;
+using Microsoft.Data.SqlClient;
 
 namespace DB.Repository.Classes
 {
@@ -13,11 +15,13 @@ namespace DB.Repository.Classes
     {
         private readonly ExtraSchoolContext _context;
         private readonly ICheckTZRepository _checkTZRepository;
+        private readonly IGroupRepository _GroupRepository;
 
-        public StudentRepository(ExtraSchoolContext context, ICheckTZRepository checkTZRepository)
+        public StudentRepository(ExtraSchoolContext context, ICheckTZRepository checkTZRepository, IGroupRepository GroupRepository)
         {
             _context = context;
             _checkTZRepository = checkTZRepository;
+            _GroupRepository = GroupRepository;
         }
 
 
@@ -55,6 +59,58 @@ namespace DB.Repository.Classes
         {
             try
             {
+
+
+
+
+
+
+
+
+
+
+                //using (var cmd = _context.Database.GetDbConnection().CreateCommand())
+                //{
+
+                //    cmd.CommandText = "select * from App_StudentPerYearbook as spy  join[dbo].[APP_Student] as s on s.[IDStudent] = spy.[StudentID] join App_DocumentPerStudent as dps on dps.studentid = s.idstudentjoin app_school as sc on sc.idschool = s.schoolidjoin Tab_RequiredDocumentPerStudent as trdpson trdps.schoolid = sc.idschool join[APP_YearbookPerSchool] as yps on yps.idYearbookPerSchool = spy.yearbookid where" + SchoolsId + " like '%' + cast(s.schoolid AS varchar) + '%' and spy.yearbookid = " + YearbookId;
+                //    cmd.CommandType = System.Data.CommandType.Text;
+                //    if (cmd.Connection.State != System.Data.ConnectionState.Open) cmd.Connection.Open();
+
+
+
+                //    SqlDataReader rdr = (SqlDataReader)cmd.ExecuteReader();
+
+
+                //    if (rdr.HasRows)
+                //    {
+                //        List<AppStudent> ls = new List<AppStudent>();
+                //        while (rdr.Read())
+                //        {
+                //            AppStudent std = new AppStudent();
+                //            if (rdr["StudentId"] != DBNull.Value) std.Idstudent = int.Parse(rdr["StudentId"].ToString());
+                //            if (rdr["StudentId"] != DBNull.Value) std.Idstudent = int.Parse(rdr["StudentId"].ToString());
+                //            if (rdr["StudentId"] != DBNull.Value) std.Idstudent = int.Parse(rdr["StudentId"].ToString());
+                //        }
+                //    }
+
+                //    gvGrid.DataSource = lessons;
+                //    gvGrid.DataBind();
+                //    cmd.Connection.Close();
+                //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 SchoolsId = SchoolsId.Remove(SchoolsId.Length - 1);
 
                 var Array = SchoolsId.Split(",").ToList();
@@ -66,6 +122,42 @@ namespace DB.Repository.Classes
 
                 throw new Exception(e.Message);
             }
+        }
+        public List<AppStudent> SearchInStudentList(string str, int YearbookId, string SchoolsId)
+        {
+            try
+            {
+                SchoolsId = SchoolsId.Remove(SchoolsId.Length - 1);
+                var Array = SchoolsId.Split(",").ToList();
+                return _context.AppStudentPerYearbooks.Include(s=>s.Student).ThenInclude(sc=>sc.School).Include(y=>y.Yearbook).Where(w => Array.Contains(w.Student.SchoolId.ToString()) == true && w.Yearbook != null && w.Yearbook.YearbookId == YearbookId
+                && (w.Student.Tz.Contains(str)|| w.Student.FirstName.Contains(str)|| w.Student.LastName.Contains(str)|| w.Student.School.Name.Contains(str))
+                ).Select(s => s.Student).ToList();
+            }
+            catch (Exception e)
+            {
+
+                throw new Exception(e.Message);
+            }
+
+        }
+
+
+
+        public List<AppStudent> GetPartlyListStudent(int page, int pageSize,int YearbookId, string SchoolsId)
+        {
+            try
+            {
+                SchoolsId = SchoolsId.Remove(SchoolsId.Length - 1);
+                var Array = SchoolsId.Split(",").ToList();
+                int skipCount = (page - 1) * pageSize;
+                return _context.AppStudentPerYearbooks.Include(s => s.Student.AppDocumentPerStudents).Include(i => i.Student.School.TabRequiredDocumentPerStudents).Include(y => y.Yearbook).Where(w => Array.Contains(w.Student.SchoolId.ToString()) == true && w.Yearbook != null && w.Yearbook.YearbookId == YearbookId).Select(s => s.Student).Skip(skipCount).Take(pageSize).ToList();
+            }
+            catch (Exception e)
+            {
+
+                throw new Exception(e.Message);
+            }
+
         }
 
         //מחיקת תלמיד
@@ -87,8 +179,14 @@ namespace DB.Repository.Classes
 
                     var list = _context.AppContactPerStudents.Where(w => w.StudentId == StudentID).ToList();
                     _context.AppContactPerStudents.RemoveRange(list);
-
+                    var listDocument = _context.AppDocumentPerStudents.Where(d => d.StudentId == StudentID).ToList();
+                    _context.AppDocumentPerStudents.RemoveRange(listDocument);
+                    var g =(int) _context.AppStudentPerGroups.FirstOrDefault(g => g.StudentId == StudentID).GroupId;
+                    if (g != null)
+                    _GroupRepository.DeleteStudentInGroup(StudentID,g);
+                    
                 }
+                
                 _context.AppStudents.Remove(Student);
                 //Student.IsActive = false;
                 _context.SaveChanges();
@@ -281,8 +379,7 @@ namespace DB.Repository.Classes
             //    student.ForeignLastName = s.ForeignLastName;
             //    student.ForeignFirstName = s.ForeignFirstName;
             //    student.PreviusName = s.PreviusName;
-            //    student.FatherTz = s.FatherTz;
-            //    student.MotherTz = s.MotherTz;
+            //    student.FatherTz = s.FatherTz;erTz = s.MotherTz;
             //    student.FatherTypeIdentity = s.FatherTypeIdentity;
             //    student.MotherTypeIdentity = s.MotherTypeIdentity;
             //    student.Note = s.Note;
@@ -298,6 +395,7 @@ namespace DB.Repository.Classes
             //        student.Address = new AppAddress();
             //    }
             //    if (s.Address != null)
+            //    student.Moth
             //    {
             //        student.Address.UserUpdated = userId;
             //        student.Address.DateUpdated = DateTime.Today;

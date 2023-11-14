@@ -206,7 +206,9 @@ namespace DB.Repository.Classes
                 //הדרוש של הקבצים המועלים
                 TabRequiredDocumentPerSchool tabRequiredDocumentPerSchool = _context.TabRequiredDocumentPerSchools.Include(i => i.UniqueCode.TabRequiredDocumentPerSchools).FirstOrDefault(w => w.IdrequiredDocumentPerSchool == lists[0].RequiredDocumentPerSchoolId);
                 //המוסדות התואמים אליהם צריך להעלות את הקבצים
-                List<AppSchool> AppSchools = _context.AppSchools.Where(w => w.CoordinationCode == uniqueCodeID).ToList();
+                //😀List<AppSchool> AppSchools = _context.AppSchools.Where(w => w.CoordinationCode == uniqueCodeID).ToList();
+                //משתנה שעשיתי זמנית!!
+                List<AppSchool> AppSchools = null;
                 int? UniqueCode = null;
                 bool isFirstTime = true;
                 List<int?> ListUnique = new List<int?>();

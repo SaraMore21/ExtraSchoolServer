@@ -140,7 +140,7 @@ namespace DB.Repository.Classes
         {
             int UniqeCodeIdToProfession;
 
-            var professions = _context.AppProfessions.Include(p => p.ProfessionCategory).Include(s => s.School).Include(u => u.Coordinator.User).Where(f => f.School.CoordinationCode == school.CoordinationCode && f.Name == ProfessioName);
+            var professions = _context.AppProfessions.Include(p => p.ProfessionCategory).Include(s => s.School);/*😀.Include(u => u.Coordinator.User).Where(f => f.School.CoordinationCode == school.CoordinationCode && f.Name == ProfessioName);*/
             var CurrentProfession = professions.FirstOrDefault(f => f.UniqueCodeId != null && f.UniqueCodeId != 0);
             if (CurrentProfession == null)
             {
@@ -186,7 +186,7 @@ namespace DB.Repository.Classes
         //בדיקה האם קיים מקצוע בשם זה באחת המוסדות המבוקשים
         public bool CheackIfExsistProfession(string ProfessionName, string CoordinationCode)
         {
-            if (_context.AppProfessions.Include(s => s.School).FirstOrDefault(f => f.Name == ProfessionName && f.School.CoordinationCode == CoordinationCode) != null) return true;
+            if (_context.AppProfessions.Include(s => s.School).FirstOrDefault(f => f.Name == ProfessionName /*&& f.School.CoordinationCode == CoordinationCode*/) != null) return true;
             return false;
         }
 
@@ -247,8 +247,14 @@ namespace DB.Repository.Classes
         {
             return _context.AppProfessions.FirstOrDefault(p => p.CoordinationTypeId == coordinationTypeId && p.SchoolId == schoolId).Idprofession;
         }
-    
-    
+
+        public bool checkIfProfessionIdExistInSchool(int professionId, int schoolId)
+        {
+            var a = _context.AppProfessions.FirstOrDefault(p => p.Idprofession == professionId && p.SchoolId == schoolId);
+            if (a == null)
+                return false;
+                    return true;
+        }
     }
 
 }

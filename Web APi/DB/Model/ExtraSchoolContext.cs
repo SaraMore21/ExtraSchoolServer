@@ -2336,7 +2336,7 @@ namespace DB.Model
 
                 entity.Property(e => e.ContactInformationId).HasColumnName("ContactInformationID");
 
-                entity.Property(e => e.CoordinationCode).HasMaxLength(50);
+                //😀entity.Property(e => e.CoordinationCode).HasMaxLength(50);
 
                 entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
 
@@ -4679,7 +4679,7 @@ namespace DB.Model
 
                 entity.Property(e => e.IdtypeGroup).HasColumnName("IDTypeGroup");
 
-                entity.Property(e => e.CoordinationCode).IsUnicode(false);
+                //😀entity.Property(e => e.CoordinationCode).IsUnicode(false);
 
                 entity.Property(e => e.DateCreated).HasColumnType("date");
 

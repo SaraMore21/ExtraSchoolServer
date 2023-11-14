@@ -46,6 +46,7 @@ namespace DB.Repository.Classes
         {
             return _context.AppSemesters.Include(y => y.Yearbook).Where(w => w.YearbookId == YearbookId).ToList();
         }
+
         //public AppGroupSemesterPerCourse AddCourse(int SchoolId, int SemesterId, int CourseId, int GroupId, DateTime SemesterFromDate, DateTime SemesterToDate, int TeacherId,int YearbookId,int UserCreatedId, AppCourse AppCourse)
         //{
         //    AppCourse.UserCreatedId = UserCreatedId;
@@ -200,6 +201,17 @@ namespace DB.Repository.Classes
         {
             var gpc = _context.AppGroupSemesterPerCourses.FirstOrDefault(g => g.IdgroupSemesterPerCourse == 16);
             return null;
+        }
+
+        public AppSemester GetSemesterById(int semesterId,int yearbookid)
+        {
+          
+           return _context.AppSemesters.FirstOrDefault(s => s.Idsemester == semesterId && s.YearbookId==yearbookid );
+        }
+
+        public AppCourse checkIfExistCourseIdInSchoolByYearbook(int courseId, int yearbookId)
+        {
+            return _context.AppCourses.FirstOrDefault(c => c.Idcourse == courseId && c.YearbookId == yearbookId);
         }
     }
 }

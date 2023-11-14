@@ -115,17 +115,23 @@ namespace DB.Repository.Classes
         }
 
         public List<int> GetSchoolIdsByCoordinationId(string coordinationId)
-        {
-            var listSchool= _context.AppSchools.Where(s => s.CoordinationCode == coordinationId).ToList();
-            List<int> listIdSchools = new List<int>();
-            listSchool.ForEach(s =>listIdSchools.Add(s.Idschool));
-            return listIdSchools;
+        {/*😀😀😀😀😀*/
+            //var listSchool= _context.AppSchools.Where(s => s.CoordinationCode == coordinationId).ToList();
+            //List<int> listIdSchools = new List<int>();
+            //listSchool.ForEach(s =>listIdSchools.Add(s.Idschool));
+            //return listIdSchools;
+            return null;
         }
 
        // YearBookId//לפי// yearbookIdPerSchooll//שליפת
         public int GetSchoolIdYearbookPerSchoollByYearBookId(int schoolId, int YearbookId)
         {
             return _context.AppYearbookPerSchools.FirstOrDefault(s => s.SchoolId==schoolId && s.YearbookId == YearbookId).IdyearbookPerSchool;
+        }
+
+        public List<TLearningStyle> GetAllLearningStyles()
+        {
+            return _context.TLearningStyles.ToList();
         }
     }
 }

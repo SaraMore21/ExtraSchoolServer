@@ -98,6 +98,12 @@ namespace Services.Classes
             //if(list.Count != 0) list[0].YearbookId = YearbookId;
             return list;
         }
+        public List<AppStudentDTO> GetPartlyListStudent(int page, int pageSize,int YearbookId, string SchoolsId)
+        {
+            var list1=_studentRepository.GetPartlyListStudent(page, pageSize, YearbookId, SchoolsId);
+            var list = _mapper.Map<List<AppStudentDTO>>(list1);
+            return list;
+        }
         //שליפת הקבוצות לפי תלמידה ושנתון
         public List<GroupWithCourseDTO> GetGroupsToStudent(int StudentId, int YearbookId)
         {
@@ -136,5 +142,10 @@ namespace Services.Classes
         {
             return _mapper.Map<List<TReasonForLeavingDTO>>(_studentRepository.GetReasonForLeavingPerSchool(SchoolId));
         }
+        public List<AppStudentDTO> SearchInStudentList(string str, int YearbookId, string SchoolsId)
+        {
+            return _mapper.Map<List<AppStudentDTO>>(_studentRepository.SearchInStudentList(str, YearbookId, SchoolsId));
+        }
+
     }
 }
