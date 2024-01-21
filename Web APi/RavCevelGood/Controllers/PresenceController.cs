@@ -37,11 +37,26 @@ namespace RavCevelGood.Controllers
         }
 
         [HttpPost("GetNochectByDateIdgroup/{date}/{idGroup}")]
-        public ActionResult<List<AttendencePerDay>> GetNochectByDateIdgroup(DateTime date, int idGroup)
+        public ActionResult<List<AttendencePerDayDTO>> GetNochectByDateIdgroup(DateTime date, int idGroup)
         {
             try
             {
-                List<AttendencePerDay> a = _presenceService.GetNochectByDateIdgroup(date, idGroup);
+                List<AttendencePerDayDTO> a = _presenceService.GetNochectByDateIdgroup(date, idGroup);
+                return Ok(a);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return null;
+            }
+        }
+
+        [HttpPost("GetNochectByDay/{date}/{idGroup}")]
+        public ActionResult<List<AttendencePerDayDTO>> GetNochectByDay(DateTime date, int idGroup)
+        {
+            try
+            {
+                List<AttendencePerDayDTO> a = _presenceService.GetNochectByDay(date, idGroup);
                 return Ok(a);
             }
             catch (Exception e)
@@ -55,5 +70,9 @@ namespace RavCevelGood.Controllers
         {
             return Ok(_presenceService.addOrUpdateAttendance(date, userId, AppPresenceDTO));
         }
+
+
+
+
     }
 }

@@ -21,9 +21,9 @@ namespace Services.Classes
             _mapper = mapper;
         }
 
-        public List<TTypePresenceDTO> GetAllPresence()
-        {
-            return _mapper.Map<List<TTypePresenceDTO>>(_TypePresenceRepository.GetAllPresence());
-        }
+        //public List<TTypePresenceDTO> GetAllPresence()
+        //{
+        //    return _mapper.Map<List<TTypePresenceDTO>>(_TypePresenceRepository.GetAllPresence());
+        //}
     }
 }

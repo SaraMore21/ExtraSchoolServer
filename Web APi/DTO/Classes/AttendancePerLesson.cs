@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 namespace DTO.Classes
 {
     
-        public class AttendancePerLesson
+        public class AttendancePerLessonDTO
         {
             public AppPresenceDTO presence { get; set; }
             public LessonDTO lesson { get; set; }
 
 
 
-            public AttendancePerLesson(LessonDTO lesson, AppPresenceDTO presence)
+            public AttendancePerLessonDTO(LessonDTO lesson, AppPresenceDTO presence)
             {
                 this.presence = presence;
            

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using DB.Model;
+using DB.Repository;
 using DB.Repository.Classes;
 using DTO.Classes;
 using DTO.ExcelClasses;
@@ -96,8 +97,34 @@ namespace RavCevelGood
                 .ForMember(m => m.PassportPicture, opt => opt.MapFrom(mp => mp.PassportPicture != null && mp.PassportPicture != "" ? mp.PassportPicture + "?sp=r&st=2021-09-05T07:09:22Z&se=4000-01-01T16:09:22Z&spr=https&sv=2020-08-04&sr=c&sig=rfQUXoumLEarC%2BNrpsSX1d0tH%2FmupgC%2F0QWn4qpq49k%3D" : ""))
                 .ForMember(m => m.NumExsistRequiredPerStudent, opt => opt.MapFrom(mp => mp.AppDocumentPerStudents != null ? mp.AppDocumentPerStudents.ToList().Count(w => w.RequiredDocumentPerStudentId != null && w.RequiredDocumentPerStudentId != 0) : 0))
                 .ForMember(m => m.NumRequiredPerStudent, opt => opt.MapFrom(mp => mp.School != null && mp.School.TabRequiredDocumentPerStudents != null ? mp.School.TabRequiredDocumentPerStudents.ToList().Count : 0))
-            .ReverseMap();
+                .ForMember(m => m.HouseNum, opt => opt.MapFrom(mp => mp.Address != null ? mp.Address.HouseNumber : null))
+                .ForMember(m => m.AptNum, opt => opt.MapFrom(mp => mp.Address != null ? mp.Address.ApartmentNumber : null))
+                .ForMember(m => m.ZipCode, opt => opt.MapFrom(mp => mp.Address != null ? mp.Address.ZipCode : null))
+                .ForMember(m => m.PoBox, opt => opt.MapFrom(mp => mp.Address != null ? mp.Address.PoBox : null))
+                .ForMember(m => m.Phone1, opt => opt.MapFrom(mp => mp.ContactInformation != null ? mp.ContactInformation.TelephoneNumber1 : null))
+                .ForMember(m => m.Phone2, opt => opt.MapFrom(mp => mp.ContactInformation != null ? mp.ContactInformation.TelephoneNumber2 : null))
+                .ForMember(m => m.Cell1, opt => opt.MapFrom(mp => mp.ContactInformation != null ? mp.ContactInformation.PhoneNumber1 : null))
+                  .ForMember(m => m.Cell2, opt => opt.MapFrom(mp => mp.ContactInformation != null ? mp.ContactInformation.PhoneNumber2 : null))
+                    .ForMember(m => m.Cell3, opt => opt.MapFrom(mp => mp.ContactInformation != null ? mp.ContactInformation.PhoneNumber3 : null))
+                    .ForMember(m => m.Fax, opt => opt.MapFrom(mp => mp.ContactInformation != null ? mp.ContactInformation.FaxNumber : null))
+                     .ForMember(m => m.Mail, opt => opt.MapFrom(mp => mp.ContactInformation != null ? mp.ContactInformation.Email : null))
+                     .ForMember(m => m.Status, opt => opt.MapFrom(mp => mp.Status != null ? mp.Status.Name : null))
+                     .ForMember(m => m.StatusStudent, opt => opt.MapFrom(mp => mp.StatusStudent != null ? mp.StatusStudent.Name :null))
+                     .ForMember(m=>m.MotherTypeIdentity,opt =>opt.MapFrom(mp=>mp.MotherTypeIdentity!=null? mp.MotherTypeIdentity.Name:null))
+                     .ForMember(m => m.FatherTypeIdentity, opt => opt.MapFrom(mp => mp.FatherTypeIdentity != null ? mp.FatherTypeIdentity.Name : null))
+                     .ForMember(m=>m.Gender,opt=>opt.MapFrom(mp=>mp.Gender!=null?mp.Gender.Name:null))
+                     .ForMember(m=>m.Citizenship,opt=>opt.MapFrom(mp=>mp.Birth!=null? mp.Birth.Citizenship.Name:null))
+                     .ForMember(m=>m.BirtheDate,opt=>opt.MapFrom(mp=>mp.Birth!=null?mp.Birth.BirthDate:null))
+                     //.ForMember(m=>m.BirtheCountry,opt=>opt.MapFrom(mp=>mp.Birth!=null?mp.Birth.BirthCountry.Name:null))
+                     .ForMember(m => m.BirtheCountry, opt => opt.MapFrom(mp => mp.Birth != null  && mp.Birth.BirthCountry != null ? mp.Birth.BirthCountry.Name : null))
+                      .ForMember(m=>m.ImigrationCountry,opt=>opt.MapFrom(mp=>mp.Birth!=null?mp.Birth.CountryIdofImmigration:null))
+                     .ForMember(m=>m.ImigrationDate,opt=>opt.MapFrom(mp=>mp.Birth!=null?mp.Birth.DateOfImmigration:null))
+                     .ForMember(m=>m.IdentityType,opt=>opt.MapFrom(mp=>mp.TypeIdentity!=null?mp.TypeIdentity.Name:null))
+                     .ForMember(m=>m.CityName,opt=>opt.MapFrom(mp=>mp.Address!=null && mp.Address.City!=null?mp.Address.City.Name:null))
+                     .ForMember(m=>m.StreetName,opt=>opt.MapFrom(mp => mp.Address != null && mp.Address.Street != null ? mp.Address.Street.Name : null))
+               .ReverseMap();
 
+            
             //להראות לסימי - אם מעלים משתמשים!!!!!!!!!!!!! כזה הפוך לא עובד
             CreateMap<AppUserPerSchoolWithDetailsDTO, SecUser>().ReverseMap();
 
@@ -509,13 +536,26 @@ namespace RavCevelGood
             CreateMap<AppPresenceDTO, AppPresence>().ReverseMap();
                
             CreateMap<AppPresence, AppPresenceDTO>()
-                .ForMember(m => m.TypePresenceName, opt => opt.MapFrom(mp => mp != null && mp.TypePresence != null ? mp.TypePresence.TypePresenceDes : ""))
+                .ForMember(m => m.TypePresenceName, opt => opt.MapFrom(mp => mp != null && mp.TypePresence != null ? mp.TypePresence.MarkingName : ""))
                 .ReverseMap();
             //.ForPath(m=>m.TypePresence.IdtypePresence,opt=>opt.MapFrom())
             CreateMap<LessonDTO, Lesson>().ReverseMap();
             CreateMap<Lesson, LessonDTO>().ReverseMap();
+
+            CreateMap<PresencePerDayDTO, PresencePerDay>().ReverseMap();
+            CreateMap<PresencePerDay, PresencePerDayDTO>().ReverseMap();
+
+            CreateMap<AttendencePerDay, AttendencePerDayDTO>().ReverseMap();
+            CreateMap<AttendencePerDayDTO, AttendencePerDay>().ReverseMap();
+
+            CreateMap<AttendancePerLessonDTO, AttendancePerLesson>().ReverseMap();
+            CreateMap<AttendancePerLesson, AttendancePerLessonDTO>().ReverseMap();
+
             CreateMap<TTypePresenceDTO, TTypePresence>().ReverseMap();
             CreateMap<TTypePresence, TTypePresenceDTO>().ReverseMap();
+
+            CreateMap<TabAttendanceMarkingDTO, TabAttendanceMarking>().ReverseMap();
+            CreateMap<TabAttendanceMarking, TabAttendanceMarkingDTO>().ReverseMap();
 
             CreateMap<AppCoordinationDTO, AppCoordination>().ReverseMap();
             CreateMap<AppCoordination, AppCoordinationDTO>().ReverseMap();

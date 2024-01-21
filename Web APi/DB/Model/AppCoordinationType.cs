@@ -15,6 +15,7 @@ namespace DB.Model
             AppSemesters = new HashSet<AppSemester>();
             AppTasks = new HashSet<AppTask>();
             TabAgeGroups = new HashSet<TabAgeGroup>();
+            TabTypeGroups = new HashSet<TabTypeGroup>();
         }
 
         public int IdCoordinationType { get; set; }
@@ -32,5 +33,6 @@ namespace DB.Model
         public virtual ICollection<AppSemester> AppSemesters { get; set; }
         public virtual ICollection<AppTask> AppTasks { get; set; }
         public virtual ICollection<TabAgeGroup> TabAgeGroups { get; set; }
+        public virtual ICollection<TabTypeGroup> TabTypeGroups { get; set; }
     }
 }

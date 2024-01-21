@@ -56,8 +56,20 @@ namespace Services.Classes
         //הוספת מערכת יומית
         public Tuple<AppDailyScheduleDTO, string> AddDailySchedule(AppDailyScheduleDTO DailySchedule)
         {
-            var result = _DailyScheduleRepository.AddDailySchedule(_mapper.Map<AppDailySchedule>(DailySchedule));
-            return Tuple.Create(_mapper.Map<AppDailyScheduleDTO>(result.Item1),result.Item2);
+            try
+            {
+                var result = _DailyScheduleRepository.AddDailySchedule(_mapper.Map<AppDailySchedule>(DailySchedule));
+
+                return Tuple.Create(_mapper.Map<AppDailyScheduleDTO>(result.Item1), result.Item2);
+            }
+            catch (Exception e)
+            {
+            
+                string contact_email = "more21soft@gmail.com";
+                new MailService().SendEmail(contact_email, "הייתה בעיה בהעלאת מערכת יומית:", e.Message + " \nבתאריך\n " +' '+ DailySchedule);
+                return null;
+            
+            }
         }
         //שליפת נתוני מערכת יומית לפי מערכת קבועה 
         public Tuple<AppGroupSemesterPerCourseDTO, AppUserPerSchoolDTO,int> GetDailyScheduleDetailsByScheduleRegular(int GroupId, DateTime ScheduleDate, TimeSpan StartTime, TimeSpan EndTime)

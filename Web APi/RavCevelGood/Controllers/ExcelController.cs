@@ -186,6 +186,27 @@ namespace RavCevelGood.Controllers
             }
 
         }
+        [HttpGet("downloadScheduleRegularExcel/{idschool}/{idYearbook}")]
+        public IActionResult downloadScheduleRegularExcel(string idschool, int idYearbook)
+        {
+            try
+            {
+                // Generate your Excel data and save it as a byte array
+                byte[] excelData = _ExcelService.downloadScheduleRegularExcel(idschool, idYearbook);
+
+                // Set the content type and provide the byte array as a file attachment
+                var a = File(excelData, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "Course" + DateTime.UtcNow.AddHours(2).ToString("dd-MM-yyyyHH_mm") + ".xlsx");
+                return a;
+
+
+                //return Ok(_ExcelService.downloadFatherCourseExcel(idschool,email));
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+
+        }
 
 
     }

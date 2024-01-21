@@ -10,6 +10,7 @@ namespace DB.Model
         public AppAddress()
         {
             AppContactInformations = new HashSet<AppContactInformation>();
+            AppLocations = new HashSet<AppLocation>();
             AppSchools = new HashSet<AppSchool>();
             AppStudents = new HashSet<AppStudent>();
             AppUserPerSchools = new HashSet<AppUserPerSchool>();
@@ -35,6 +36,7 @@ namespace DB.Model
         public virtual AppUserPerSchool UserCreated { get; set; }
         public virtual AppUserPerSchool UserUpdated { get; set; }
         public virtual ICollection<AppContactInformation> AppContactInformations { get; set; }
+        public virtual ICollection<AppLocation> AppLocations { get; set; }
         public virtual ICollection<AppSchool> AppSchools { get; set; }
         public virtual ICollection<AppStudent> AppStudents { get; set; }
         public virtual ICollection<AppUserPerSchool> AppUserPerSchools { get; set; }

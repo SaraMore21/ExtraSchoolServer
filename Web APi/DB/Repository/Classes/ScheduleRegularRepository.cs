@@ -498,8 +498,9 @@ namespace DB.Repository.Classes
                         }
 
                     }
-                    _context.AppDailySchedules.AddRange(LstDailySchedulesToAdd);
+                    //_context.AppDailySchedules.AddRange(LstDailySchedulesToAdd);
 
+                    _DailyScheduleRepository.AddListDailySchedule(LstDailySchedulesToAdd, userID);
 
                     _context.SaveChanges();
                     IsSuccedd = true;
@@ -510,7 +511,7 @@ namespace DB.Repository.Classes
             }
             return IsSuccedd;
 
-        }
+         }
         //עידכון מערכת קבועה דרך האתר -ידני
         public AppScheduleRegular UpdateScheduleRegularByWebsite(AppScheduleRegular appScheduleRegular, int userID,DateTime date)
         {

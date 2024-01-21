@@ -13,6 +13,7 @@ namespace DB.Repository.Interfaces
         public List<Lesson> GetLessonsByDate(DateTime date, int idGroup);
         public AppPresence GetPresenceByStudentIdAndSchedualId(int studentId, int schedualId);
         public List<AppPresence> addOrUpdateAttendance(string date, int userId, List<AppPresence> Attendence,List<int> listdaily);
+         public List<PresencePerDay> GetPresenceByDay(DateTime date, int idGroup);
         // public List<AttendencePerDay> GetNochectByDateIdgroup(DateTime date, int idGroup, List<Lesson> lessons);
     }
 }

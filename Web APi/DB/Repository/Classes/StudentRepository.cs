@@ -150,7 +150,8 @@ namespace DB.Repository.Classes
                 SchoolsId = SchoolsId.Remove(SchoolsId.Length - 1);
                 var Array = SchoolsId.Split(",").ToList();
                 int skipCount = (page - 1) * pageSize;
-                return _context.AppStudentPerYearbooks.Include(s => s.Student.AppDocumentPerStudents).Include(i => i.Student.School.TabRequiredDocumentPerStudents).Include(y => y.Yearbook).Where(w => Array.Contains(w.Student.SchoolId.ToString()) == true && w.Yearbook != null && w.Yearbook.YearbookId == YearbookId).Select(s => s.Student).Skip(skipCount).Take(pageSize).ToList();
+                return _context.AppStudentPerYearbooks.Include(s => s.Student.AppDocumentPerStudents).Include(i => i.Student.School.TabRequiredDocumentPerStudents).Include(y => y.Yearbook).Include(s=>s.Student.Address).ThenInclude(s=>s.City).Include(s=>s.Student.Address.Neighborhood).Include(s=>s.Student.Birth).ThenInclude(s=>s.BirthCountry).Include(s=>s.Student.ContactInformation).Include(s=>s.Student.Status).Include(s=>s.Student.StatusStudent).Include(s=>s.Student.MotherTypeIdentity).Include(s=>s.Student.FatherTypeIdentity).Include(s=>s.Student.Gender).Include(s=>s.Student.TypeIdentity).Include(s=>s.Student.Birth.Citizenship).Include(s=>s.Student.Address.Street)
+                    .Where(w => Array.Contains(w.Student.SchoolId.ToString()) == true && w.Yearbook != null && w.Yearbook.YearbookId == YearbookId).Select(s => s.Student).Skip(skipCount).Take(pageSize).ToList();
             }
             catch (Exception e)
             {

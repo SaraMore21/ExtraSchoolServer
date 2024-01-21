@@ -9,6 +9,6 @@ namespace DB.Repository.Interfaces
 {
     public interface ITypePresenceRepository
     {
-        List<TTypePresence> GetAllPresence();
+        //List<TTypePresence> GetAllPresence();
     }
 }

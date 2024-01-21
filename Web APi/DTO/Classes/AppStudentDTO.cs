@@ -51,6 +51,58 @@ namespace DTO.Classes
         public AppAddressDTO Address { get; set; }
         public AppBirthDTO Birth { get; set; }
         public ICollection<AppContactPerStudentDTO> AppContactPerStudents { get; set; }
+
+
+
+        //שדות נוספים שהוספנו לצורך הצגה במסך הראשי
+        //עיר
+        public string CityName { get; set; }
+        //רחוב
+        public string StreetName { get; set; }
+        //מס' בית
+        public string HouseNum { get; set; }
+        //מס דירה
+        public string AptNum { get; set; }
+        //מיקוד
+        public int? ZipCode { get; set; }
+        //תיבת דואר
+        public int? PoBox { get; set; }
+        //טלפון 1
+        public string Phone1 { get; set; }
+        //טלפון 2
+        public string Phone2 { get; set; }
+        //נייד 1
+        public string Cell1 { get; set; }
+        //נייד 2
+        public string Cell2 { get; set; }
+        //נייד 3
+        public string Cell3 { get; set; }
+        //פקס
+        public string Fax { get; set; }
+        //מייל
+        public string Mail { get; set; }
+        //        סטטוס
+        public string Status { get; set; }
+        //        סטטוס תלמיד
+        public string StatusStudent { get; set; }
+        //            סוג זיהוי אם
+        public string MotherTypeIdentity { get; set; }
+        //            סוג זיהוי אב
+        public string FatherTypeIdentity { get; set; }
+        //            מין
+        public string Gender { get; set; }
+        //אזרחות
+        public string Citizenship { get; set; }
+        //תאריך לידה
+        public string BirtheDate { get; set; }
+        //ארץ לידה
+        public string BirtheCountry { get; set; }
+        //ארץ עליה
+        public string ImigrationCountry { get; set; }
+        //תאריך עליה
+        public string ImigrationDate { get; set; }
+        //סוג זיהוי
+        public string IdentityType { get; set; }
         // public virtual AppContactInformationDTO ContactInformation { get; set; }
         //public AppSchoolDTO School { get; set; }
         //public string FatherTypeIdentityNavigationD { get; set; }

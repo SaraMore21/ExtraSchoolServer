@@ -28,6 +28,7 @@ namespace DB.Model
             AppFolders = new HashSet<AppFolder>();
             AppGroups = new HashSet<AppGroup>();
             AppLecturerPerCourses = new HashSet<AppLecturerPerCourse>();
+            AppPresences = new HashSet<AppPresence>();
             AppProfessions = new HashSet<AppProfession>();
             AppScheduleRegulars = new HashSet<AppScheduleRegular>();
             AppStudentAssingments = new HashSet<AppStudentAssingment>();
@@ -77,7 +78,7 @@ namespace DB.Model
         public int? UserUpdatedId { get; set; }
         public DateTime? DateUpdated { get; set; }
         public int? CustomerId { get; set; }
-        //😀public string CoordinationCode { get; set; }
+        public string CoordinationCode { get; set; }
 
         public virtual AppAddress Adress { get; set; }
         public virtual AppContactInformation ContactInformation { get; set; }
@@ -105,6 +106,7 @@ namespace DB.Model
         public virtual ICollection<AppFolder> AppFolders { get; set; }
         public virtual ICollection<AppGroup> AppGroups { get; set; }
         public virtual ICollection<AppLecturerPerCourse> AppLecturerPerCourses { get; set; }
+        public virtual ICollection<AppPresence> AppPresences { get; set; }
         public virtual ICollection<AppProfession> AppProfessions { get; set; }
         public virtual ICollection<AppScheduleRegular> AppScheduleRegulars { get; set; }
         public virtual ICollection<AppStudentAssingment> AppStudentAssingments { get; set; }

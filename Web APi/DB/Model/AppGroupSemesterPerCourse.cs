@@ -11,9 +11,11 @@ namespace DB.Model
         {
             AppDailySchedules = new HashSet<AppDailySchedule>();
             AppDocumentPerCourses = new HashSet<AppDocumentPerCourse>();
+            AppMeetingTimes = new HashSet<AppMeetingTime>();
             AppScheduleRegulars = new HashSet<AppScheduleRegular>();
             AppTaskExsists = new HashSet<AppTaskExsist>();
             AppUserPerCourses = new HashSet<AppUserPerCourse>();
+            TabAttendanceMarkings = new HashSet<TabAttendanceMarking>();
         }
 
         public int IdgroupSemesterPerCourse { get; set; }
@@ -27,6 +29,13 @@ namespace DB.Model
         public DateTime? DateCreated { get; set; }
         public int? UserUpdatedId { get; set; }
         public DateTime? DateUpdate { get; set; }
+        public bool? ConditionalOnTheNumberOfRegistrants { get; set; }
+        public int? Location { get; set; }
+        public short? MaximumRegistrantsForTheCourse { get; set; }
+        public string MeetingName { get; set; }
+        public short? MinimumRegistrantsRequired { get; set; }
+        public short? NumberOfMeetings { get; set; }
+        public string Color { get; set; }
 
         public virtual AppCourse Course { get; set; }
         public virtual AppGroupPerYearbook Group { get; set; }
@@ -35,8 +44,10 @@ namespace DB.Model
         public virtual AppUserPerSchool UserUpdated { get; set; }
         public virtual ICollection<AppDailySchedule> AppDailySchedules { get; set; }
         public virtual ICollection<AppDocumentPerCourse> AppDocumentPerCourses { get; set; }
+        public virtual ICollection<AppMeetingTime> AppMeetingTimes { get; set; }
         public virtual ICollection<AppScheduleRegular> AppScheduleRegulars { get; set; }
         public virtual ICollection<AppTaskExsist> AppTaskExsists { get; set; }
         public virtual ICollection<AppUserPerCourse> AppUserPerCourses { get; set; }
+        public virtual ICollection<TabAttendanceMarking> TabAttendanceMarkings { get; set; }
     }
 }

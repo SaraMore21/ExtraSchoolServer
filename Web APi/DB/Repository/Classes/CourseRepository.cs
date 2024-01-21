@@ -29,6 +29,15 @@ namespace DB.Repository.Classes
             //var l=_context.AppGroupSemesterPerCourses.Include(s=>s.Semester).Include(c=>c.Course).Where(w => w.Semester.YearbookId == YearbookId && w.Course.SchoolId == SchoolId).ToList();
             return l;
         }
+        public List<AppGroupSemesterPerCourse> GetAllCourseBySchoolDAndYearbookId2(string SchoolsId, int YearbookId)
+        {
+
+            var l = _context.AppGroupSemesterPerCourses.Include(c => c.Course.School).Include(p => p.Course.Profession).Include(g => g.Group).ThenInclude(g => g.Group).Include(s => s.Semester).ThenInclude(y => y.Yearbook)
+                .Where(w => w.Semester != null && w.Semester.Yearbook != null && w.Semester.YearbookId == YearbookId && SchoolsId.Contains(w.Course.SchoolId.ToString())).ToList();
+
+            //var l=_context.AppGroupSemesterPerCourses.Include(s=>s.Semester).Include(c=>c.Course).Where(w => w.Semester.YearbookId == YearbookId && w.Course.SchoolId == SchoolId).ToList();
+            return l;
+        }
         public List<AppCourse> GetAllCourseBySchoolId(int SchoolId)
         {
             //return null;
@@ -154,7 +163,7 @@ namespace DB.Repository.Classes
 
         public AppCourse AddFatherCourse(AppCourse Course)
         {
-            if (_context.AppCourses.FirstOrDefault(f => f.Name == Course.Name && f.SchoolId == Course.SchoolId) != null) return null;
+            if (_context.AppCourses.FirstOrDefault(f => f.Name == Course.Name && f.SchoolId == Course.SchoolId && f.YearbookId==Course.YearbookId) != null) return null;
             _context.AppCourses.Add(Course);
             _context.SaveChanges();
             return Course;
@@ -213,5 +222,7 @@ namespace DB.Repository.Classes
         {
             return _context.AppCourses.FirstOrDefault(c => c.Idcourse == courseId && c.YearbookId == yearbookId);
         }
+
+       
     }
 }

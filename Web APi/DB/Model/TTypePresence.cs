@@ -7,14 +7,7 @@ namespace DB.Model
 {
     public partial class TTypePresence
     {
-        public TTypePresence()
-        {
-            AppPresences = new HashSet<AppPresence>();
-        }
-
-        public short IdtypePresence { get; set; }
+        public int IdtypePresence { get; set; }
         public string TypePresenceDes { get; set; }
-
-        public virtual ICollection<AppPresence> AppPresences { get; set; }
     }
 }
