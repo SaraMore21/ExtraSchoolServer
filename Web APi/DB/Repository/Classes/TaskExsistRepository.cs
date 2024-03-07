@@ -132,7 +132,7 @@ namespace DB.Repository.Classes
                 else
                 {
                     if (deleteTaskToStudents == true)
-                        _context.AppTaskToStudents.RemoveRange(x.AppTaskToStudents);
+                        _context.AppTaskToStudent.RemoveRange(x.AppTaskToStudents);
                     _context.AppTaskExsists.Remove(x);
                     _context.SaveChanges();
                     return true;

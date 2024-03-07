@@ -13,9 +13,12 @@ namespace DB.Model
             AppDocumentPerCourses = new HashSet<AppDocumentPerCourse>();
             AppMeetingTimes = new HashSet<AppMeetingTime>();
             AppScheduleRegulars = new HashSet<AppScheduleRegular>();
+            AppStudentsPerCourses = new HashSet<AppStudentsPerCourse>();
             AppTaskExsists = new HashSet<AppTaskExsist>();
             AppUserPerCourses = new HashSet<AppUserPerCourse>();
             TabAttendanceMarkings = new HashSet<TabAttendanceMarking>();
+            TabAttendanceMarkingsPermissions = new HashSet<TabAttendanceMarkingsPermission>();
+            TabTypesOfAttendanceSummaries = new HashSet<TabTypesOfAttendanceSummary>();
         }
 
         public int IdgroupSemesterPerCourse { get; set; }
@@ -46,8 +49,11 @@ namespace DB.Model
         public virtual ICollection<AppDocumentPerCourse> AppDocumentPerCourses { get; set; }
         public virtual ICollection<AppMeetingTime> AppMeetingTimes { get; set; }
         public virtual ICollection<AppScheduleRegular> AppScheduleRegulars { get; set; }
+        public virtual ICollection<AppStudentsPerCourse> AppStudentsPerCourses { get; set; }
         public virtual ICollection<AppTaskExsist> AppTaskExsists { get; set; }
         public virtual ICollection<AppUserPerCourse> AppUserPerCourses { get; set; }
         public virtual ICollection<TabAttendanceMarking> TabAttendanceMarkings { get; set; }
+        public virtual ICollection<TabAttendanceMarkingsPermission> TabAttendanceMarkingsPermissions { get; set; }
+        public virtual ICollection<TabTypesOfAttendanceSummary> TabTypesOfAttendanceSummaries { get; set; }
     }
 }

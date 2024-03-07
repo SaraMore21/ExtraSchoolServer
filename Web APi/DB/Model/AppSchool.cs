@@ -43,6 +43,7 @@ namespace DB.Model
             TTypeContacts = new HashSet<TTypeContact>();
             TabAgeGroups = new HashSet<TabAgeGroup>();
             TabAttendanceMarkings = new HashSet<TabAttendanceMarking>();
+            TabAttendanceMarkingsPermissions = new HashSet<TabAttendanceMarkingsPermission>();
             TabProfessionCategories = new HashSet<TabProfessionCategory>();
             TabRequiredDocumentPerCourses = new HashSet<TabRequiredDocumentPerCourse>();
             TabRequiredDocumentPerFatherCourses = new HashSet<TabRequiredDocumentPerFatherCourse>();
@@ -56,6 +57,7 @@ namespace DB.Model
             TabTaskExecutionStatuses = new HashSet<TabTaskExecutionStatus>();
             TabTypeAttendanceMarkings = new HashSet<TabTypeAttendanceMarking>();
             TabTypeGroups = new HashSet<TabTypeGroup>();
+            TabTypesOfAttendanceSummaries = new HashSet<TabTypesOfAttendanceSummary>();
         }
 
         public int Idschool { get; set; }
@@ -121,6 +123,7 @@ namespace DB.Model
         public virtual ICollection<TTypeContact> TTypeContacts { get; set; }
         public virtual ICollection<TabAgeGroup> TabAgeGroups { get; set; }
         public virtual ICollection<TabAttendanceMarking> TabAttendanceMarkings { get; set; }
+        public virtual ICollection<TabAttendanceMarkingsPermission> TabAttendanceMarkingsPermissions { get; set; }
         public virtual ICollection<TabProfessionCategory> TabProfessionCategories { get; set; }
         public virtual ICollection<TabRequiredDocumentPerCourse> TabRequiredDocumentPerCourses { get; set; }
         public virtual ICollection<TabRequiredDocumentPerFatherCourse> TabRequiredDocumentPerFatherCourses { get; set; }
@@ -134,5 +137,6 @@ namespace DB.Model
         public virtual ICollection<TabTaskExecutionStatus> TabTaskExecutionStatuses { get; set; }
         public virtual ICollection<TabTypeAttendanceMarking> TabTypeAttendanceMarkings { get; set; }
         public virtual ICollection<TabTypeGroup> TabTypeGroups { get; set; }
+        public virtual ICollection<TabTypesOfAttendanceSummary> TabTypesOfAttendanceSummaries { get; set; }
     }
 }

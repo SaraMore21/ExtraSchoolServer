@@ -20,13 +20,18 @@ namespace Services.Classes
         private readonly ISchoolRepository _schoolRepository;
         private readonly IMapper _mapper;
         public readonly IAgeGroupRepository _ageGroupRepository;
+        public readonly IStudentsPerCourseRepository _StudentsPerCourseRepository;
+        public readonly IStudentsPerCourseService _StudentsPerCourseService;
 
-        public GroupService(IGroupRepository groupRepository, IMapper mapper ,ISchoolRepository schoolRepository, IAgeGroupRepository ageGroupRepository)
+        public GroupService(IGroupRepository groupRepository, IMapper mapper ,ISchoolRepository schoolRepository, IAgeGroupRepository ageGroupRepository, IStudentsPerCourseService StudentsPerCourseService, IStudentsPerCourseRepository StudentsPerCourseRepository)
         {
             _groupRepository = groupRepository;
             _mapper = mapper;
             _schoolRepository = schoolRepository;
             _ageGroupRepository = ageGroupRepository;
+            _StudentsPerCourseRepository = StudentsPerCourseRepository;
+            _StudentsPerCourseService = StudentsPerCourseService;
+
         }
 
         //public List<AppGroupDTO> GetGroupsByIdSchool(int SchoolId, int YearbookId)
@@ -104,6 +109,11 @@ namespace Services.Classes
                     });
                 });
             }
+            var x = _StudentsPerCourseRepository.GetLIstCoursePerGroupId(GroupId);
+            x.ForEach(c => {
+                _StudentsPerCourseRepository.AddStudentToCourse(StudentId, c.IdgroupSemesterPerCourse); 
+            });
+       
             return r;
 
         }

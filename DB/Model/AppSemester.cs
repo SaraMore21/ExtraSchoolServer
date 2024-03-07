@@ -21,7 +21,9 @@ namespace DB.Model
         public DateTime? DateCreated { get; set; }
         public int? UserUpdatedId { get; set; }
         public DateTime? DateUpdated { get; set; }
+        public int? CoordinationTypeId { get; set; }
 
+        public virtual AppCoordinationType CoordinationType { get; set; }
         public virtual AppUserPerSchool UserCreated { get; set; }
         public virtual AppUserPerSchool UserUpdated { get; set; }
         public virtual AppYearbookPerSchool Yearbook { get; set; }

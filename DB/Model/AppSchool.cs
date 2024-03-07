@@ -11,6 +11,7 @@ namespace DB.Model
         {
             AppAppeals = new HashSet<AppAppeal>();
             AppContacts = new HashSet<AppContact>();
+            AppCoordinationPerSchools = new HashSet<AppCoordinationPerSchool>();
             AppCourseAssignments = new HashSet<AppCourseAssignment>();
             AppCourseRequirments = new HashSet<AppCourseRequirment>();
             AppCourses = new HashSet<AppCourse>();
@@ -27,6 +28,7 @@ namespace DB.Model
             AppFolders = new HashSet<AppFolder>();
             AppGroups = new HashSet<AppGroup>();
             AppLecturerPerCourses = new HashSet<AppLecturerPerCourse>();
+            AppPresences = new HashSet<AppPresence>();
             AppProfessions = new HashSet<AppProfession>();
             AppScheduleRegulars = new HashSet<AppScheduleRegular>();
             AppStudentAssingments = new HashSet<AppStudentAssingment>();
@@ -41,6 +43,7 @@ namespace DB.Model
             TTypeContacts = new HashSet<TTypeContact>();
             TabAgeGroups = new HashSet<TabAgeGroup>();
             TabAttendanceMarkings = new HashSet<TabAttendanceMarking>();
+            TabAttendanceMarkingsPermissions = new HashSet<TabAttendanceMarkingsPermission>();
             TabProfessionCategories = new HashSet<TabProfessionCategory>();
             TabRequiredDocumentPerCourses = new HashSet<TabRequiredDocumentPerCourse>();
             TabRequiredDocumentPerFatherCourses = new HashSet<TabRequiredDocumentPerFatherCourse>();
@@ -54,6 +57,7 @@ namespace DB.Model
             TabTaskExecutionStatuses = new HashSet<TabTaskExecutionStatus>();
             TabTypeAttendanceMarkings = new HashSet<TabTypeAttendanceMarking>();
             TabTypeGroups = new HashSet<TabTypeGroup>();
+            TabTypesOfAttendanceSummaries = new HashSet<TabTypesOfAttendanceSummary>();
         }
 
         public int Idschool { get; set; }
@@ -87,6 +91,7 @@ namespace DB.Model
         public virtual AppUserPerSchool UserUpdated { get; set; }
         public virtual ICollection<AppAppeal> AppAppeals { get; set; }
         public virtual ICollection<AppContact> AppContacts { get; set; }
+        public virtual ICollection<AppCoordinationPerSchool> AppCoordinationPerSchools { get; set; }
         public virtual ICollection<AppCourseAssignment> AppCourseAssignments { get; set; }
         public virtual ICollection<AppCourseRequirment> AppCourseRequirments { get; set; }
         public virtual ICollection<AppCourse> AppCourses { get; set; }
@@ -103,6 +108,7 @@ namespace DB.Model
         public virtual ICollection<AppFolder> AppFolders { get; set; }
         public virtual ICollection<AppGroup> AppGroups { get; set; }
         public virtual ICollection<AppLecturerPerCourse> AppLecturerPerCourses { get; set; }
+        public virtual ICollection<AppPresence> AppPresences { get; set; }
         public virtual ICollection<AppProfession> AppProfessions { get; set; }
         public virtual ICollection<AppScheduleRegular> AppScheduleRegulars { get; set; }
         public virtual ICollection<AppStudentAssingment> AppStudentAssingments { get; set; }
@@ -117,6 +123,7 @@ namespace DB.Model
         public virtual ICollection<TTypeContact> TTypeContacts { get; set; }
         public virtual ICollection<TabAgeGroup> TabAgeGroups { get; set; }
         public virtual ICollection<TabAttendanceMarking> TabAttendanceMarkings { get; set; }
+        public virtual ICollection<TabAttendanceMarkingsPermission> TabAttendanceMarkingsPermissions { get; set; }
         public virtual ICollection<TabProfessionCategory> TabProfessionCategories { get; set; }
         public virtual ICollection<TabRequiredDocumentPerCourse> TabRequiredDocumentPerCourses { get; set; }
         public virtual ICollection<TabRequiredDocumentPerFatherCourse> TabRequiredDocumentPerFatherCourses { get; set; }
@@ -130,5 +137,6 @@ namespace DB.Model
         public virtual ICollection<TabTaskExecutionStatus> TabTaskExecutionStatuses { get; set; }
         public virtual ICollection<TabTypeAttendanceMarking> TabTypeAttendanceMarkings { get; set; }
         public virtual ICollection<TabTypeGroup> TabTypeGroups { get; set; }
+        public virtual ICollection<TabTypesOfAttendanceSummary> TabTypesOfAttendanceSummaries { get; set; }
     }
 }

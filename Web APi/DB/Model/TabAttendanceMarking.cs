@@ -12,6 +12,7 @@ namespace DB.Model
             AppAttendanceHistories = new HashSet<AppAttendanceHistory>();
             AppPresences = new HashSet<AppPresence>();
             AppStudentAttendances = new HashSet<AppStudentAttendance>();
+            TabAttendanceSummaryCalculations = new HashSet<TabAttendanceSummaryCalculation>();
         }
 
         public int IdattendanceMarkings { get; set; }
@@ -33,5 +34,6 @@ namespace DB.Model
         public virtual ICollection<AppAttendanceHistory> AppAttendanceHistories { get; set; }
         public virtual ICollection<AppPresence> AppPresences { get; set; }
         public virtual ICollection<AppStudentAttendance> AppStudentAttendances { get; set; }
+        public virtual ICollection<TabAttendanceSummaryCalculation> TabAttendanceSummaryCalculations { get; set; }
     }
 }

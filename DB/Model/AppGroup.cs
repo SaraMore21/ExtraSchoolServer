@@ -24,9 +24,10 @@ namespace DB.Model
         public int? UserUpdatedId { get; set; }
         public DateTime? DateUpdated { get; set; }
         public string NameGroup { get; set; }
-        public string CoordinationCode { get; set; }
+        public int? CoordinationTypeId { get; set; }
 
         public virtual TabAgeGroup AgeGroup { get; set; }
+        public virtual AppCoordinationType CoordinationType { get; set; }
         public virtual TabListeningTime ListeningTime { get; set; }
         public virtual AppSchool School { get; set; }
         public virtual TabTypeGroup TypeGroup { get; set; }

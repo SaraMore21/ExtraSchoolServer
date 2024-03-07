@@ -65,6 +65,41 @@ namespace RavCevelGood.Controllers
                 return null;
             }
         }
+
+        [HttpPost("GetPresenceByRangeDateAndGroup/{fromDate}/{toDate}/{idGroup}")]
+        public ActionResult<List<AttendencePerDayDTO>> GetPresenceByRangeDateAndGroup(DateTime fromDate, DateTime toDate, int idGroup)
+        {
+            try
+            {
+                List<AttendencePerDayDTO> a = _presenceService.GetPresenceByRangeDateAndGroup(fromDate, toDate, idGroup);
+                return Ok(a);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return null;
+            }
+        }
+
+
+        [HttpPost("GetPresenceByRangeDateToAllGroupBySchool/{fromDate}/{toDate}/{schoolId}")]
+        public ActionResult<List<AttendencePerDayDTO>> GetPresenceByRangeDateToAllGroupBySchool(DateTime fromDate, DateTime toDate, int schoolId)
+        {
+            try
+            {
+                List<AttendencePerDayDTO> a = _presenceService.GetPresenceByRangeDateToAllGroupBySchool(fromDate, toDate, schoolId);
+                return Ok(a);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return null;
+            }
+        }
+
+
+
+
         [HttpPost("addOrUpdateAttendance/{date}/{userId}")]
         public IActionResult addOrUpdateAttendance(string date, int userId, List<AppPresenceDTO> AppPresenceDTO)
         {

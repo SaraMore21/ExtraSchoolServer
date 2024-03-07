@@ -150,12 +150,14 @@ namespace DB.Repository.Classes
         //    return _context.AppDailySchedules.Where(w => w.SchoolId == SchoolId &&w.ScheduleRegularId== IdSchedulRegular).AsNoTracking().Select(s=>s.IddailySchedule).ToList();
         //}
 
-        public void AddListDailySchedule(List<AppDailySchedule> lstDailySchedules,int userId=0)
+        public void AddListDailySchedule(List<AppDailySchedule> lstDailySchedules,int userId=0,bool isnewdailSchedules=false)
         {
             
-
-            _context.AppDailySchedules.AddRange(lstDailySchedules);
-            _context.SaveChanges();
+            if(isnewdailSchedules = true){
+                _context.AppDailySchedules.AddRange(lstDailySchedules);
+                _context.SaveChanges();
+            }
+          
 
             //int maxId = _context.AppDailySchedules.Max(ds => ds.IddailySchedule);
 
@@ -233,7 +235,7 @@ namespace DB.Repository.Classes
                 );
                 
 
-            }
+            }           
 
 
             );

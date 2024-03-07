@@ -186,7 +186,9 @@ namespace DB.Repository.Classes
             _context.SaveChanges();
             _context.AppUserPerCourses.Add(new AppUserPerCourse() { GroupSemesterPerCourseId = course.IdgroupSemesterPerCourse, FromDate = course.FromDate, ToDate = course.ToDate, UserId = TeacherId, UserCreatedId = course.UserCreatedId, DateCreated = DateTime.Today });
             _context.SaveChanges();
-            return _context.AppGroupSemesterPerCourses.Include(s => s.Semester).Include(g => g.Group.Group).FirstOrDefault(f => f.IdgroupSemesterPerCourse == course.IdgroupSemesterPerCourse);
+            
+           var x = _context.AppGroupSemesterPerCourses.Include(s => s.Semester).Include(g => g.Group.Group).FirstOrDefault(f => f.IdgroupSemesterPerCourse == course.IdgroupSemesterPerCourse);
+            return x;
         }
 
         public AppGroupSemesterPerCourse AddCordinatedCourse(AppGroupSemesterPerCourse course)

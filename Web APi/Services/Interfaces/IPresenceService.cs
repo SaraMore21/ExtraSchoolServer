@@ -14,5 +14,7 @@ namespace Services.Interfaces
         public List<AttendencePerDayDTO> GetNochectByDateIdgroup(DateTime date, int idGroup);
         public List<AppPresenceDTO> addOrUpdateAttendance(string date, int userId, List<AppPresenceDTO> presences);
         List<AttendencePerDayDTO> GetNochectByDay(DateTime date, int idGroup);
+        List<AttendencePerDayDTO> GetPresenceByRangeDateAndGroup(DateTime fromdate, DateTime todate, int idGroup);
+       public List<AttendencePerDayDTO> GetPresenceByRangeDateToAllGroupBySchool(DateTime fromDate, DateTime toDate, int schoolId);
     }
 }

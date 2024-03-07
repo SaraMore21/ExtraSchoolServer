@@ -17,16 +17,16 @@ namespace DB.Repository.Classes
             _context = context;
         }
         //לא בשימוש כרגע- שליפת שמות שכבות גיל לפי קוד תיאום
-        public List<string> GetAllNameAgeGroupsByCoordinationCode(string coordinationCode)
-        {
-          return  _context.TabAgeGroups.Where(ag => ag.CoordinationCode == coordinationCode).Select(t=>t.Name).Distinct().ToList();
-        }
+        //public List<string> GetAllNameAgeGroupsByCoordinationCode(string coordinationCode)
+        //{
+        //  return  _context.TabAgeGroups.Where(ag => ag.CoordinationCode == coordinationCode).Select(t=>t.Name).Distinct().ToList();
+        //}
 
         //שליפת שכבת גיל לפי קוד מוסד, קוד תיאום ושם
-        public TabAgeGroup GetAgeGroupByCoordinationCodeAndSchoolIdAndName(int schoolId, string coordinationCode, string name)
-        {
-            return _context.TabAgeGroups.FirstOrDefault(ag => ag.Name == name && ag.SchoolId == schoolId && ag.CoordinationCode == coordinationCode);
-        }
+        //public TabAgeGroup GetAgeGroupByCoordinationCodeAndSchoolIdAndName(int schoolId, string coordinationCode, string name)
+        //{
+        //    return _context.TabAgeGroups.FirstOrDefault(ag => ag.Name == name && ag.SchoolId == schoolId && ag.CoordinationCode == coordinationCode);
+        //}
 
 
         //שליפת שכבת גיל למוסדות

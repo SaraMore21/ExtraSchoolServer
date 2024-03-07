@@ -18,7 +18,7 @@ namespace Services.Interfaces
         bool EditCourse(int CourseId,string CourseCode, List<AppUserPerCourseDTO> ListUserPerCourse);
         AppCourseDTO AddFatherCourse(AppCourseDTO Course);
         List<AppGroupSemesterPerCourseDTO> GetAllCourseByFatherCourseId(int FatherCourseId);
-        AppGroupSemesterPerCourseDTO AddCourse(AppGroupSemesterPerCourseDTO course, int TeacherId);
+        AppGroupSemesterPerCourseDTO AddCourse(AppGroupSemesterPerCourseDTO course, int TeacherId,int yearbook);
         List<AppGroupSemesterPerCourseDTO> GetCoursesForGroup(int GroupId, DateTime scheduleDate);
         SecUserDTO GetUserPerCourse(int CourseId, DateTime Date);
         List<AppGroupSemesterPerCourseDTO> AddCoordinationsCourse(AppGroupSemesterPerCourseDTO Course, int YearbookId);

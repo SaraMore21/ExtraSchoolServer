@@ -200,6 +200,10 @@ namespace RavCevelGood
             CreateMap<TReasonForLeaving, TReasonForLeavingDTO>().ReverseMap();
             CreateMap<TReasonForLeavingDTO, TReasonForLeaving>().ReverseMap();
 
+            
+            CreateMap<AppStudentsPerCourseDTO, AppStudentsPerCourse>().ReverseMap();
+            CreateMap<AppStudentsPerCourse, AppStudentsPerCourseDTO>().ForMember(m => m.StudentName, opt => opt.MapFrom(mp => mp.Student != null ? mp.Student.LastName + " " + mp.Student.FirstName/* + " ," + mp.Student.Tz*/ : null))
+                .ForMember(m => m.StudentTz, opt => opt.MapFrom(mp => mp.Student != null ? mp.Student.Tz: null));
 
             CreateMap<AppStudentPerGroup, GroupWithCourseDTO>()
                 .ForMember(m => m.Group, opt => opt.MapFrom(mp => mp.Group != null ? mp.Group.Group : null))

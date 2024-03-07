@@ -24,7 +24,9 @@ namespace DB.Model
         public int? ProfessionCategoryId { get; set; }
         public bool? IsActive { get; set; }
         public int? UniqueCodeId { get; set; }
+        public int? CoordinationTypeId { get; set; }
 
+        public virtual AppCoordinationType CoordinationType { get; set; }
         public virtual AppUserPerSchool Coordinator { get; set; }
         public virtual TabProfessionCategory ProfessionCategory { get; set; }
         public virtual AppSchool School { get; set; }

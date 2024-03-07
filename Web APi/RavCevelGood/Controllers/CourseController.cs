@@ -127,12 +127,12 @@ namespace RavCevelGood.Controllers
             }
         }
         //הוספת קורס
-        [HttpPut("AddCourse/{TeacherId}")]
-        public IActionResult AddCourse(AppGroupSemesterPerCourseDTO course, int TeacherId)
+        [HttpPut("AddCourse/{TeacherId}/{yearbook}")]
+        public IActionResult AddCourse(AppGroupSemesterPerCourseDTO course, int TeacherId,int yearbook)
         {
             try
             {
-                return Ok(_courseService.AddCourse(course, TeacherId));
+                return Ok(_courseService.AddCourse(course, TeacherId,yearbook));
             }
             catch (Exception e)
             {

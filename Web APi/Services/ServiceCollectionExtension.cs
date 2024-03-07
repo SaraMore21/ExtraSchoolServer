@@ -58,6 +58,7 @@ namespace DB
             serviceCollection.AddTransient<ITypePresencesService, TypePresencesService>();
             serviceCollection.AddTransient<ICoordinationService, CoordinationService>();
             serviceCollection.AddTransient<IAttendanceMarkingService, AttendanceMarkingService>();
+            serviceCollection.AddTransient<IStudentsPerCourseService, StudentsPerCourseService>();
         }
 
 

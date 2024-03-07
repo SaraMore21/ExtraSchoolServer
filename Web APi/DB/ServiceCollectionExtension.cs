@@ -62,6 +62,7 @@ namespace DB
             serviceCollection.AddScoped<ITypePresenceRepository, TypePresenceRepository>();
             serviceCollection.AddScoped<ICoordinationRepository, CoordinationRepository>();
             serviceCollection.AddScoped<IAttendanceMarkingRepository, AttendanceMarkingRepository>();
+            serviceCollection.AddScoped<IStudentsPerCourseRepository, AppStudentsPerCourseRepository>();
 
         }
 

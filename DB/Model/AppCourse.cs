@@ -34,8 +34,31 @@ namespace DB.Model
         public int? UniqueCodeId { get; set; }
         public int? YearbookId { get; set; }
         public string Code { get; set; }
-        public string CoordinationCode { get; set; }
+        public int? CoordinationTypeId { get; set; }
+        public int AlternateCode { get; set; }
+        public short AssociateAcademicDegree { get; set; }
+        public int Capacity { get; set; }
+        public int CapacityArmorForWaiting { get; set; }
+        public short EducatEnglishLevelRequired { get; set; }
+        public short Education { get; set; }
+        public DateTime EndDate { get; set; }
+        public short FetalAttendancePercentage { get; set; }
+        public short FinalGradeEducation { get; set; }
+        public short HebrewLevelRequired { get; set; }
+        public short LearningPoints { get; set; }
+        public short Money { get; set; }
+        public bool? NoObligationAttend { get; set; }
+        public bool? OpeningConditionalOnNumberOfRegistrants { get; set; }
+        public short OrganizationalAffiliation { get; set; }
+        public short PassingGradeGivesAlevelOfHebrew { get; set; }
+        public int PlannedNumberOfRegistrants { get; set; }
+        public DateTime Season { get; set; }
+        public DateTime StartDate { get; set; }
+        public short SubjectFurtherEducation { get; set; }
+        public string Color { get; set; }
+        public int BuildingCurriculumContentsId { get; set; }
 
+        public virtual AppCoordinationType CoordinationType { get; set; }
         public virtual TLearningStyle LearningStyle { get; set; }
         public virtual AppProfession Profession { get; set; }
         public virtual AppSchool School { get; set; }

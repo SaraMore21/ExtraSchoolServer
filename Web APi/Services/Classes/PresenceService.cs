@@ -38,68 +38,134 @@ namespace Services.Classes
             {
                 lesson.hebrewDate = HebrewDate.GetHebrewJewishDateString(lesson.Date);
                 lesson.Id = i;
-                
+
             });
             return lessons;
         }
         public List<AttendencePerDayDTO> GetNochectByDateIdgroup(DateTime date, int idGroup)
+        {
+            //GroupRepository gr = new GroupRepository();
+            List<AttendencePerDayDTO> attendences = new List<AttendencePerDayDTO>();
+            List<AppStudentPerGroupDTO> students = new List<AppStudentPerGroupDTO>();
+            List<LessonDTO> lessons = GetLessonsByDate(date, idGroup);
+            students = _mapper.Map<List<AppStudentPerGroupDTO>>(_groupRepository.GetStudentPerGroup(idGroup, 0));
+
+            students.ForEach(s =>
             {
-                //GroupRepository gr = new GroupRepository();
-                List<AttendencePerDayDTO> attendences = new List<AttendencePerDayDTO>();
-                List<AppStudentPerGroupDTO> students = new List<AppStudentPerGroupDTO>();
-                List<LessonDTO> lessons = GetLessonsByDate(date, idGroup);
-                students = _mapper.Map<List<AppStudentPerGroupDTO>>(_groupRepository.GetStudentPerGroup(idGroup, 0));
-
-                students.ForEach(s =>
+                AttendencePerDayDTO attendenceDay = new AttendencePerDayDTO();
+                attendenceDay.NochecotPerLesson = new List<AttendancePerLessonDTO>();
+                lessons.ForEach(l =>
                 {
-                    AttendencePerDayDTO attendenceDay = new AttendencePerDayDTO();
-                    attendenceDay.NochecotPerLesson = new List<AttendancePerLessonDTO>();
-                    lessons.ForEach(l =>
+
+                    AppPresenceDTO presence = _mapper.Map<AppPresenceDTO>(_presenceRepository.GetPresenceByStudentIdAndSchedualId((int)s.StudentId, l.ScheduleId));
+
+                    AttendancePerLessonDTO attendenceLesson = new AttendancePerLessonDTO(l, presence);
+                    attendenceDay.NochecotPerLesson.Add(attendenceLesson);
+                }
+                );
+                attendenceDay.idStudent = (int)s.StudentId;
+                attendenceDay.nameStudent = s.Student.LastName + " " + s.Student.FirstName;
+                attendenceDay.tz = s.Student.Tz;
+                attendenceDay.date = date;
+                attendences.Add(attendenceDay);
+
+            });
+
+
+            return attendences;
+
+        }
+
+        public List<AttendencePerDayDTO> GetNochectByDay(DateTime date, int idGroup)
+        {
+            //GroupRepository gr = new GroupRepository();
+            List<AttendencePerDayDTO> attendences = new List<AttendencePerDayDTO>();
+
+            List<PresencePerDayDTO> LstPPDs = _mapper.Map<List<PresencePerDayDTO>>(_presenceRepository.GetPresenceByDay(date, idGroup));
+            List<int> lessonsId = new List<int>();
+            List<int> studentsId = new List<int>();
+            lessonsId = LstPPDs.GroupBy(obj => obj.Lesson.ScheduleId)
+            .Select(group => group.Key)
+            .ToList();
+            studentsId = LstPPDs.GroupBy(obj => obj.IdStudent)
+           .Select(group => group.Key)
+           .ToList();
+
+            List<PresencePerDayDTO> students = new List<PresencePerDayDTO>();
+            studentsId.ForEach(s => {
+                PresencePerDayDTO st = LstPPDs.FirstOrDefault(i => i.IdStudent == s);
+                students.Add(st);
+            });
+
+
+
+
+
+            students.ForEach(st =>
+            {
+                AttendencePerDayDTO attendenceDay = new AttendencePerDayDTO();
+                attendenceDay.NochecotPerLesson = new List<AttendancePerLessonDTO>();
+                lessonsId.ForEach(l =>
+                {
+                    PresencePerDayDTO PresencePerDay = LstPPDs.FirstOrDefault(o => o.Lesson.ScheduleId == l && o.IdStudent == st.IdStudent);
+                    if (PresencePerDay != null)
                     {
+                        AppPresenceDTO presence = PresencePerDay.Presence;
+                        presence.StudentId = PresencePerDay.IdStudent;
+                        presence.DailyScheduleId = PresencePerDay.Lesson.ScheduleId;
 
-                        AppPresenceDTO presence = _mapper.Map<AppPresenceDTO>(_presenceRepository.GetPresenceByStudentIdAndSchedualId((int)s.StudentId, l.ScheduleId));
-
-                        AttendancePerLessonDTO attendenceLesson = new AttendancePerLessonDTO(l, presence);
+                        LessonDTO ld = PresencePerDay.Lesson;
+                        AttendancePerLessonDTO attendenceLesson = new AttendancePerLessonDTO(ld, presence);
                         attendenceDay.NochecotPerLesson.Add(attendenceLesson);
                     }
+                }
                     );
-                    attendenceDay.idStudent = (int)s.StudentId;
-                    attendenceDay.nameStudent = s.Student.LastName + " " + s.Student.FirstName;
-                    attendenceDay.tz = s.Student.Tz;
+                if (attendenceDay != null)
+                {
+                    attendenceDay.idStudent = st.IdStudent;
+                    attendenceDay.nameStudent = st.LastName + " " + st.FirstName;
+                    attendenceDay.tz = st.Tz;
                     attendenceDay.date = date;
                     attendences.Add(attendenceDay);
 
-                });
+                }
+
+            });
 
 
-                return attendences;
+            return attendences;
 
-            }
+        }
 
-            public List<AttendencePerDayDTO> GetNochectByDay(DateTime date, int idGroup)
+        public List<AttendencePerDayDTO> GetPresenceByRangeDateAndGroup(DateTime fromdate, DateTime todate, int idGroup)
+        {
+            //GroupRepository gr = new GroupRepository();
+            List<AttendencePerDayDTO> attendences = new List<AttendencePerDayDTO>();
+
+            List<PresencePerDayDTO> LstPPDs = _mapper.Map<List<PresencePerDayDTO>>(_presenceRepository.GetPresenceByRangeDateAndGroup(fromdate, todate, idGroup));
+            List<int> lessonsId = new List<int>();
+            List<int> studentsId = new List<int>();
+            List<DateTime> schduleDate = new List<DateTime>();
+            lessonsId = LstPPDs.GroupBy(obj => obj.Lesson.ScheduleId)
+            .Select(group => group.Key)
+            .ToList();
+            studentsId = LstPPDs.GroupBy(obj => obj.IdStudent)
+           .Select(group => group.Key)
+           .ToList();
+            schduleDate = LstPPDs.GroupBy(obj => obj.Lesson.Date)
+           .Select(group => group.Key)
+           .ToList();
+
+            List<PresencePerDayDTO> students = new List<PresencePerDayDTO>();
+            studentsId.ForEach(s => {
+                PresencePerDayDTO st = LstPPDs.FirstOrDefault(i => i.IdStudent == s);
+                students.Add(st);
+            });
+
+
+
+            schduleDate.ForEach(d =>
             {
-                //GroupRepository gr = new GroupRepository();
-                List<AttendencePerDayDTO> attendences = new List<AttendencePerDayDTO>();
-
-                List<PresencePerDayDTO> LstPPDs = _mapper.Map<List<PresencePerDayDTO>>(_presenceRepository.GetPresenceByDay(date, idGroup));
-                List<int> lessonsId = new List<int>();
-                List<int> studentsId = new List<int>();
-                lessonsId = LstPPDs.GroupBy(obj => obj.Lesson.ScheduleId)
-                .Select(group => group.Key)
-                .ToList();
-                studentsId = LstPPDs.GroupBy(obj => obj.IdStudent)
-               .Select(group => group.Key)
-               .ToList();
-
-              List<PresencePerDayDTO> students = new List<PresencePerDayDTO>();
-               studentsId.ForEach(s => {
-                   PresencePerDayDTO st = LstPPDs.FirstOrDefault(i => i.IdStudent == s);
-                   students.Add(st);
-                });
-
-
-
-
 
                 students.ForEach(st =>
                 {
@@ -107,7 +173,7 @@ namespace Services.Classes
                     attendenceDay.NochecotPerLesson = new List<AttendancePerLessonDTO>();
                     lessonsId.ForEach(l =>
                     {
-                        PresencePerDayDTO PresencePerDay = LstPPDs.FirstOrDefault(o => o.Lesson.ScheduleId == l && o.IdStudent == st.IdStudent);
+                        PresencePerDayDTO PresencePerDay = LstPPDs.FirstOrDefault(o => o.Lesson.ScheduleId == l && o.IdStudent == st.IdStudent && o.Lesson.Date==d);
                         if (PresencePerDay != null)
                         {
                             AppPresenceDTO presence = PresencePerDay.Presence;
@@ -125,7 +191,80 @@ namespace Services.Classes
                         attendenceDay.idStudent = st.IdStudent;
                         attendenceDay.nameStudent = st.LastName + " " + st.FirstName;
                         attendenceDay.tz = st.Tz;
-                        attendenceDay.date = date;
+                        attendenceDay.date = d;
+                        attendences.Add(attendenceDay);
+
+                    }
+
+                });
+  
+
+            });
+            return attendences;
+
+
+
+
+        }
+
+
+
+        public List<AttendencePerDayDTO> GetPresenceByRangeDateToAllGroupBySchool(DateTime fromDate, DateTime toDate, int schoolId)
+
+        {
+            //GroupRepository gr = new GroupRepository();
+            List<AttendencePerDayDTO> attendences = new List<AttendencePerDayDTO>();
+
+            List<PresencePerDayDTO> LstPPDs = _mapper.Map<List<PresencePerDayDTO>>(_presenceRepository.GetPresenceByRangeDateToAllGroupByschool(fromDate, toDate, schoolId));
+            List<int> lessonsId = new List<int>();
+            List<int> studentsId = new List<int>();
+            List<DateTime> schduleDate = new List<DateTime>();
+            lessonsId = LstPPDs.GroupBy(obj => obj.Lesson.ScheduleId)
+            .Select(group => group.Key)
+            .ToList();
+            studentsId = LstPPDs.GroupBy(obj => obj.IdStudent)
+           .Select(group => group.Key)
+           .ToList();
+            schduleDate = LstPPDs.GroupBy(obj => obj.Lesson.Date)
+           .Select(group => group.Key)
+           .ToList();
+
+            List<PresencePerDayDTO> students = new List<PresencePerDayDTO>();
+            studentsId.ForEach(s => {
+                PresencePerDayDTO st = LstPPDs.FirstOrDefault(i => i.IdStudent == s);
+                students.Add(st);
+            });
+
+
+
+            schduleDate.ForEach(d =>
+            {
+
+                students.ForEach(st =>
+                {
+                    AttendencePerDayDTO attendenceDay = new AttendencePerDayDTO();
+                    attendenceDay.NochecotPerLesson = new List<AttendancePerLessonDTO>();
+                    lessonsId.ForEach(l =>
+                    {
+                        PresencePerDayDTO PresencePerDay = LstPPDs.FirstOrDefault(o => o.Lesson.ScheduleId == l && o.IdStudent == st.IdStudent && o.Lesson.Date == d);
+                        if (PresencePerDay != null)
+                        {
+                            AppPresenceDTO presence = PresencePerDay.Presence;
+                            presence.StudentId = PresencePerDay.IdStudent;
+                            presence.DailyScheduleId = PresencePerDay.Lesson.ScheduleId;
+
+                            LessonDTO ld = PresencePerDay.Lesson;
+                            AttendancePerLessonDTO attendenceLesson = new AttendancePerLessonDTO(ld, presence);
+                            attendenceDay.NochecotPerLesson.Add(attendenceLesson);
+                        }
+                    }
+                        );
+                    if (attendenceDay != null)
+                    {
+                        attendenceDay.idStudent = st.IdStudent;
+                        attendenceDay.nameStudent = st.LastName + " " + st.FirstName;
+                        attendenceDay.tz = st.Tz;
+                        attendenceDay.date = d;
                         attendences.Add(attendenceDay);
 
                     }
@@ -133,9 +272,17 @@ namespace Services.Classes
                 });
 
 
-                return attendences;
+            });
+            return attendences;
 
-            }
+
+
+
+        }
+
+
+
+
 
         public List<AppPresenceDTO> addOrUpdateAttendance(string date, int userId, List<AppPresenceDTO> presences)
         {
@@ -148,13 +295,13 @@ namespace Services.Classes
             catch (Exception e)
             {
                 string contact_email = "more21soft@gmail.com";
-                new MailService().SendEmail(contact_email, "הייתה בעיה בהעלאת הנוכחות:", e.Message + " \nבתאריך\n "+ date);
+                new MailService().SendEmail(contact_email, "הייתה בעיה בהעלאת הנוכחות:", e.Message + " \nבתאריך\n " + date);
                 return null;
             }
 
 
         }
 
-
-        }
-    } 
+        
+      
+    } } 

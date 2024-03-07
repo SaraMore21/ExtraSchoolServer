@@ -30,8 +30,10 @@ namespace DB.Model
         public int? TypeOfTaskCalculationId { get; set; }
         public int? ExecutionTypeOfTaskId { get; set; }
         public int? CheckTypeId { get; set; }
+        public int? CoordinationTypeId { get; set; }
 
         public virtual TCheckType CheckType { get; set; }
+        public virtual AppCoordinationType CoordinationType { get; set; }
         public virtual AppUserPerSchool Coordinator { get; set; }
         public virtual TabExecutionTypeOfTask ExecutionTypeOfTask { get; set; }
         public virtual AppSchool School { get; set; }

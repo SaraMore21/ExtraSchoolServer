@@ -645,12 +645,12 @@ namespace DB.Repository.Classes
         public AppStudentPerGroup DeleteGroupToStudent(int StudentPerGroupId)
         {
             var StudentPerGroups = _context.AppStudentPerGroups.FirstOrDefault(f => f.IdstudentPerGroup == StudentPerGroupId);
-            var TasksToStudents = _context.AppTaskToStudents.Include(t => t.TaskExsist.Course).Where(f => f.TaskExsist != null && f.TaskExsist.Course != null && f.TaskExsist.Course.GroupId == StudentPerGroups.GroupId && f.StudentId == StudentPerGroups.StudentId);
+            var TasksToStudents = _context.AppTaskToStudent.Include(t => t.TaskExsist.Course).Where(f => f.TaskExsist != null && f.TaskExsist.Course != null && f.TaskExsist.Course.GroupId == StudentPerGroups.GroupId && f.StudentId == StudentPerGroups.StudentId);
             if (TasksToStudents.FirstOrDefault(f => f.Grade != null || f.FinalScore != null) != null) return null;
 
             if (StudentPerGroups != null)
             {
-                _context.AppTaskToStudents.RemoveRange(TasksToStudents);
+                _context.AppTaskToStudent.RemoveRange(TasksToStudents);
                 _context.AppStudentPerGroups.Remove(StudentPerGroups);
                 _context.SaveChanges();
             }
@@ -683,7 +683,7 @@ namespace DB.Repository.Classes
 
         public bool AddTasksToStudent(List<AppTaskToStudent> listTaskToStudent)
         {
-            _context.AppTaskToStudents.AddRange(listTaskToStudent);
+            _context.AppTaskToStudent.AddRange(listTaskToStudent);
             _context.SaveChanges();
             return true;
         }

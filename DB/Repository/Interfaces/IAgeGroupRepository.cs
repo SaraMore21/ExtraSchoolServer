@@ -11,8 +11,8 @@ namespace DB.Repository.Interfaces
     {
         List<TabAgeGroup> GetLstAgeGroupBySchoolId(int schoolId);
         List<TabAgeGroup> GetAllAgeGroupsBySchools(string Schools);
-        List<String> GetAllNameAgeGroupsByCoordinationCode(string coordinationCode);
-        TabAgeGroup GetAgeGroupByCoordinationCodeAndSchoolIdAndName(int schoolId, string coordinationCode, string name);
+        //List<String> GetAllNameAgeGroupsByCoordinationCode(string coordinationCode);
+        //TabAgeGroup GetAgeGroupByCoordinationCodeAndSchoolIdAndName(int schoolId, string coordinationCode, string name);
 
     }
 }

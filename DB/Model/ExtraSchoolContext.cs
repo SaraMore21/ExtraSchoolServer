@@ -23,12 +23,26 @@ namespace DB.Model
         public virtual DbSet<AppAttendanceHistory> AppAttendanceHistories { get; set; }
         public virtual DbSet<AppAttendant> AppAttendants { get; set; }
         public virtual DbSet<AppBirth> AppBirths { get; set; }
+        public virtual DbSet<AppBuildingCurriculum> AppBuildingCurricula { get; set; }
+        public virtual DbSet<AppBuildingCurriculumContent> AppBuildingCurriculumContents { get; set; }
+        public virtual DbSet<AppBuildingCurriculumCourse> AppBuildingCurriculumCourses { get; set; }
+        public virtual DbSet<AppBuildingCurriculumDay> AppBuildingCurriculumDays { get; set; }
+        public virtual DbSet<AppBuildingCurriculumPurposeStudy> AppBuildingCurriculumPurposeStudies { get; set; }
+        public virtual DbSet<AppBuildingCurriculumRestriction> AppBuildingCurriculumRestrictions { get; set; }
+        public virtual DbSet<AppBuildingCurriculumStudent> AppBuildingCurriculumStudents { get; set; }
+        public virtual DbSet<AppBuildingCurriculumTime> AppBuildingCurriculumTimes { get; set; }
+        public virtual DbSet<AppBuildingCurriculumTypeLearn> AppBuildingCurriculumTypeLearns { get; set; }
         public virtual DbSet<AppContact> AppContacts { get; set; }
         public virtual DbSet<AppContactInformation> AppContactInformations { get; set; }
         public virtual DbSet<AppContactPerStudent> AppContactPerStudents { get; set; }
+        public virtual DbSet<AppCoordination> AppCoordinations { get; set; }
+        public virtual DbSet<AppCoordinationPerSchool> AppCoordinationPerSchools { get; set; }
+        public virtual DbSet<AppCoordinationType> AppCoordinationTypes { get; set; }
         public virtual DbSet<AppCourse> AppCourses { get; set; }
         public virtual DbSet<AppCourseAssignment> AppCourseAssignments { get; set; }
+        public virtual DbSet<AppCourseConditionRestriction> AppCourseConditionRestrictions { get; set; }
         public virtual DbSet<AppCourseRequirment> AppCourseRequirments { get; set; }
+        public virtual DbSet<AppCourseRestriction> AppCourseRestrictions { get; set; }
         public virtual DbSet<AppCustomer> AppCustomers { get; set; }
         public virtual DbSet<AppDailySchedule> AppDailySchedules { get; set; }
         public virtual DbSet<AppDocumentPerCourse> AppDocumentPerCourses { get; set; }
@@ -40,6 +54,7 @@ namespace DB.Model
         public virtual DbSet<AppDocumentPerTask> AppDocumentPerTasks { get; set; }
         public virtual DbSet<AppDocumentPerTaskExsist> AppDocumentPerTaskExsists { get; set; }
         public virtual DbSet<AppDocumentPerUser> AppDocumentPerUsers { get; set; }
+        public virtual DbSet<AppDraftBuildingCurriculumStudent> AppDraftBuildingCurriculumStudents { get; set; }
         public virtual DbSet<AppDynamicDetailsPerTypeSchool> AppDynamicDetailsPerTypeSchools { get; set; }
         public virtual DbSet<AppDynamicDetailsSchoolPerStudent> AppDynamicDetailsSchoolPerStudents { get; set; }
         public virtual DbSet<AppEasementPerStandard> AppEasementPerStandards { get; set; }
@@ -52,6 +67,8 @@ namespace DB.Model
         public virtual DbSet<AppGroupSemesterPerCourse> AppGroupSemesterPerCourses { get; set; }
         public virtual DbSet<AppLecturerPerCourse> AppLecturerPerCourses { get; set; }
         public virtual DbSet<AppLessonPerGroup> AppLessonPerGroups { get; set; }
+        public virtual DbSet<AppLocation> AppLocations { get; set; }
+        public virtual DbSet<AppMeetingTime> AppMeetingTimes { get; set; }
         public virtual DbSet<AppNote> AppNotes { get; set; }
         public virtual DbSet<AppPresence> AppPresences { get; set; }
         public virtual DbSet<AppProfession> AppProfessions { get; set; }
@@ -66,8 +83,10 @@ namespace DB.Model
         public virtual DbSet<AppStudentAssingment> AppStudentAssingments { get; set; }
         public virtual DbSet<AppStudentAttendance> AppStudentAttendances { get; set; }
         public virtual DbSet<AppStudentDailySchedule> AppStudentDailySchedules { get; set; }
+        public virtual DbSet<AppStudentPerAttendanceSummaryCalculation> AppStudentPerAttendanceSummaryCalculations { get; set; }
         public virtual DbSet<AppStudentPerGroup> AppStudentPerGroups { get; set; }
         public virtual DbSet<AppStudentPerYearbook> AppStudentPerYearbooks { get; set; }
+        public virtual DbSet<AppStudentsPerCourse> AppStudentsPerCourses { get; set; }
         public virtual DbSet<AppTask> AppTasks { get; set; }
         public virtual DbSet<AppTaskExsist> AppTaskExsists { get; set; }
         public virtual DbSet<AppTaskToStudent> AppTaskToStudents { get; set; }
@@ -82,9 +101,12 @@ namespace DB.Model
         public virtual DbSet<AppYearbook> AppYearbooks { get; set; }
         public virtual DbSet<AppYearbookPerSchool> AppYearbookPerSchools { get; set; }
         public virtual DbSet<CheckType> CheckTypes { get; set; }
+        public virtual DbSet<Field> Fields { get; set; }
         public virtual DbSet<SecUser> SecUsers { get; set; }
         public virtual DbSet<TCategory> TCategories { get; set; }
         public virtual DbSet<TCheckType> TCheckTypes { get; set; }
+        public virtual DbSet<TCondition> TConditions { get; set; }
+        public virtual DbSet<TCourseField> TCourseFields { get; set; }
         public virtual DbSet<TDynamicDetailsForTypeSchool> TDynamicDetailsForTypeSchools { get; set; }
         public virtual DbSet<TEasement> TEasements { get; set; }
         public virtual DbSet<TGender> TGenders { get; set; }
@@ -92,6 +114,7 @@ namespace DB.Model
         public virtual DbSet<TPaymentMethod> TPaymentMethods { get; set; }
         public virtual DbSet<TPaymentStatus> TPaymentStatuses { get; set; }
         public virtual DbSet<TReasonForLeaving> TReasonForLeavings { get; set; }
+        public virtual DbSet<TRestrictionType> TRestrictionTypes { get; set; }
         public virtual DbSet<TSchoolType> TSchoolTypes { get; set; }
         public virtual DbSet<TStandard> TStandards { get; set; }
         public virtual DbSet<TStatus> TStatuses { get; set; }
@@ -99,14 +122,19 @@ namespace DB.Model
         public virtual DbSet<TStatusAppel> TStatusAppels { get; set; }
         public virtual DbSet<TStatusStudent> TStatusStudents { get; set; }
         public virtual DbSet<TStatusTaskPerformance> TStatusTaskPerformances { get; set; }
+        public virtual DbSet<TTimeRange> TTimeRanges { get; set; }
         public virtual DbSet<TTypeAssingment> TTypeAssingments { get; set; }
         public virtual DbSet<TTypeContact> TTypeContacts { get; set; }
         public virtual DbSet<TTypeDeadLine> TTypeDeadLines { get; set; }
         public virtual DbSet<TTypeIdentity> TTypeIdentities { get; set; }
         public virtual DbSet<TTypePresence> TTypePresences { get; set; }
         public virtual DbSet<TTypeYear> TTypeYears { get; set; }
+        public virtual DbSet<TTypesOfAmount> TTypesOfAmounts { get; set; }
         public virtual DbSet<TabAgeGroup> TabAgeGroups { get; set; }
         public virtual DbSet<TabAttendanceMarking> TabAttendanceMarkings { get; set; }
+        public virtual DbSet<TabAttendanceMarkingsPermission> TabAttendanceMarkingsPermissions { get; set; }
+        public virtual DbSet<TabAttendanceSummaryCalculation> TabAttendanceSummaryCalculations { get; set; }
+        public virtual DbSet<TabAttendanceSummaryConnection> TabAttendanceSummaryConnections { get; set; }
         public virtual DbSet<TabCitizenship> TabCitizenships { get; set; }
         public virtual DbSet<TabCity> TabCities { get; set; }
         public virtual DbSet<TabCountry> TabCountries { get; set; }
@@ -132,6 +160,7 @@ namespace DB.Model
         public virtual DbSet<TabTypeQuestion> TabTypeQuestions { get; set; }
         public virtual DbSet<TabTypeTask> TabTypeTasks { get; set; }
         public virtual DbSet<TabTypeUser> TabTypeUsers { get; set; }
+        public virtual DbSet<TabTypesOfAttendanceSummary> TabTypesOfAttendanceSummaries { get; set; }
         public virtual DbSet<VCodeTable> VCodeTables { get; set; }
         public virtual DbSet<ארצות> ארצותs { get; set; }
         public virtual DbSet<גיליון1> גיליון1s { get; set; }
@@ -147,7 +176,7 @@ namespace DB.Model
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=ravcevel.database.windows.net;Database=ExtraSchool;persist security info=True;user id=voicesystem;password=Sari-30020010;multipleactiveresultsets=True;");
+                optionsBuilder.UseSqlServer("Server=ravcevel.database.windows.net;Database=ExtraSchool;persist security info=True;user id=voicesystem;password=Sari-30020010;multipleactiveresultsets=True; ");
             }
         }
 
@@ -176,7 +205,7 @@ namespace DB.Model
 
                 entity.Property(e => e.HouseNumber).HasMaxLength(10);
 
-                entity.Property(e => e.NeighborhoodId).HasColumnName("neighborhoodID");
+                entity.Property(e => e.NeighborhoodId).HasColumnName("NeighborhoodID");
 
                 entity.Property(e => e.StreetId).HasColumnName("StreetID");
 
@@ -443,6 +472,165 @@ namespace DB.Model
                     .HasConstraintName("FK_APP_Birth_UserPerSchool1");
             });
 
+            modelBuilder.Entity<AppBuildingCurriculum>(entity =>
+            {
+                entity.HasKey(e => e.BuildingCurriculumId);
+
+                entity.ToTable("APP_BuildingCurriculum", "Curr");
+
+                entity.HasIndex(e => e.LocationId, "IX_APP_BuildingCurriculum_LocationID");
+
+                entity.Property(e => e.BuildingCurriculumId).HasColumnName("BuildingCurriculumID");
+
+                entity.Property(e => e.LocationId).HasColumnName("LocationID");
+
+                entity.Property(e => e.RoomId).HasColumnName("RoomID");
+
+                entity.Property(e => e.SchoolId).HasColumnName("SchoolID");
+
+                entity.HasOne(d => d.Location)
+                    .WithMany(p => p.AppBuildingCurricula)
+                    .HasForeignKey(d => d.LocationId);
+            });
+
+            modelBuilder.Entity<AppBuildingCurriculumContent>(entity =>
+            {
+                entity.HasKey(e => e.BuildingCurriculumContentsId);
+
+                entity.ToTable("APP_BuildingCurriculumContents", "Curr");
+
+                entity.HasIndex(e => e.AppBuildingCurriculumBuildingCurriculumId, "IX_APP_BuildingCurriculumContents_APP_BuildingCurriculumBuildingCurriculumID");
+
+                entity.Property(e => e.BuildingCurriculumContentsId).HasColumnName("BuildingCurriculumContentsID");
+
+                entity.Property(e => e.AppBuildingCurriculumBuildingCurriculumId).HasColumnName("APP_BuildingCurriculumBuildingCurriculumID");
+
+                entity.Property(e => e.BuildingCurriculumId).HasColumnName("BuildingCurriculumID");
+
+                entity.HasOne(d => d.AppBuildingCurriculumBuildingCurriculum)
+                    .WithMany(p => p.AppBuildingCurriculumContents)
+                    .HasForeignKey(d => d.AppBuildingCurriculumBuildingCurriculumId);
+            });
+
+            modelBuilder.Entity<AppBuildingCurriculumCourse>(entity =>
+            {
+                entity.HasKey(e => e.BuildingCurriculumCourseId);
+
+                entity.ToTable("APP_BuildingCurriculumCourse", "Curr");
+
+                entity.Property(e => e.BuildingCurriculumCourseId).HasColumnName("BuildingCurriculumCourseID");
+
+                entity.Property(e => e.BuildingCurriculumId).HasColumnName("BuildingCurriculumID");
+
+                entity.Property(e => e.GroupSemesterPerCourseId).HasColumnName("GroupSemesterPerCourseID");
+            });
+
+            modelBuilder.Entity<AppBuildingCurriculumDay>(entity =>
+            {
+                entity.HasKey(e => e.BuildingCurriculumDayId);
+
+                entity.ToTable("APP_BuildingCurriculumDay", "Curr");
+
+                entity.HasIndex(e => e.AppBuildingCurriculumBuildingCurriculumId, "IX_APP_BuildingCurriculumDay_APP_BuildingCurriculumBuildingCurriculumID");
+
+                entity.Property(e => e.BuildingCurriculumDayId).HasColumnName("BuildingCurriculumDayID");
+
+                entity.Property(e => e.AppBuildingCurriculumBuildingCurriculumId).HasColumnName("APP_BuildingCurriculumBuildingCurriculumID");
+
+                entity.Property(e => e.BuildingCurriculumId).HasColumnName("BuildingCurriculumID");
+
+                entity.Property(e => e.DayId).HasColumnName("DayID");
+
+                entity.HasOne(d => d.AppBuildingCurriculumBuildingCurriculum)
+                    .WithMany(p => p.AppBuildingCurriculumDays)
+                    .HasForeignKey(d => d.AppBuildingCurriculumBuildingCurriculumId);
+            });
+
+            modelBuilder.Entity<AppBuildingCurriculumPurposeStudy>(entity =>
+            {
+                entity.HasKey(e => e.BuildingCurriculumPurposeStudiesId);
+
+                entity.ToTable("APP_BuildingCurriculumPurposeStudies", "Curr");
+
+                entity.HasIndex(e => e.AppBuildingCurriculumBuildingCurriculumId, "IX_APP_BuildingCurriculumPurposeStudies_APP_BuildingCurriculumBuildingCurriculumID");
+
+                entity.Property(e => e.BuildingCurriculumPurposeStudiesId).HasColumnName("BuildingCurriculumPurposeStudiesID");
+
+                entity.Property(e => e.AppBuildingCurriculumBuildingCurriculumId).HasColumnName("APP_BuildingCurriculumBuildingCurriculumID");
+
+                entity.HasOne(d => d.AppBuildingCurriculumBuildingCurriculum)
+                    .WithMany(p => p.AppBuildingCurriculumPurposeStudies)
+                    .HasForeignKey(d => d.AppBuildingCurriculumBuildingCurriculumId);
+            });
+
+            modelBuilder.Entity<AppBuildingCurriculumRestriction>(entity =>
+            {
+                entity.HasKey(e => e.BuildingCurriculumRestrictionsId);
+
+                entity.ToTable("APP_BuildingCurriculumRestrictions", "Curr");
+
+                entity.Property(e => e.BuildingCurriculumRestrictionsId).HasColumnName("BuildingCurriculumRestrictionsID");
+
+                entity.Property(e => e.BiggerThan).HasColumnName("Bigger_than");
+
+                entity.Property(e => e.BuildingCurriculumId).HasColumnName("BuildingCurriculumID");
+
+                entity.Property(e => e.FieldId).HasColumnName("FieldID");
+
+                entity.Property(e => e.SmallerThan).HasColumnName("Smaller_than");
+            });
+
+            modelBuilder.Entity<AppBuildingCurriculumStudent>(entity =>
+            {
+                entity.HasKey(e => e.BuildingCurriculumStudentId);
+
+                entity.ToTable("APP_BuildingCurriculumStudent", "Curr");
+
+                entity.Property(e => e.BuildingCurriculumId).HasColumnName("BuildingCurriculumID");
+
+                entity.Property(e => e.GroupSemesterPerCourseId).HasColumnName("GroupSemesterPerCourseID");
+
+                entity.Property(e => e.StudentId).HasColumnName("StudentID");
+            });
+
+            modelBuilder.Entity<AppBuildingCurriculumTime>(entity =>
+            {
+                entity.HasKey(e => e.BuildingCurriculumTimeId);
+
+                entity.ToTable("APP_BuildingCurriculumTime", "Curr");
+
+                entity.HasIndex(e => e.AppBuildingCurriculumBuildingCurriculumId, "IX_APP_BuildingCurriculumTime_APP_BuildingCurriculumBuildingCurriculumID");
+
+                entity.Property(e => e.BuildingCurriculumTimeId).HasColumnName("BuildingCurriculumTimeID");
+
+                entity.Property(e => e.AppBuildingCurriculumBuildingCurriculumId).HasColumnName("APP_BuildingCurriculumBuildingCurriculumID");
+
+                entity.Property(e => e.BuildingCurriculumId).HasColumnName("BuildingCurriculumID");
+
+                entity.HasOne(d => d.AppBuildingCurriculumBuildingCurriculum)
+                    .WithMany(p => p.AppBuildingCurriculumTimes)
+                    .HasForeignKey(d => d.AppBuildingCurriculumBuildingCurriculumId);
+            });
+
+            modelBuilder.Entity<AppBuildingCurriculumTypeLearn>(entity =>
+            {
+                entity.HasKey(e => e.BuildingCurriculumTypeLearnId);
+
+                entity.ToTable("APP_BuildingCurriculumTypeLearn", "Curr");
+
+                entity.HasIndex(e => e.AppBuildingCurriculumBuildingCurriculumId, "IX_APP_BuildingCurriculumTypeLearn_APP_BuildingCurriculumBuildingCurriculumID");
+
+                entity.Property(e => e.BuildingCurriculumTypeLearnId).HasColumnName("BuildingCurriculumTypeLearnID");
+
+                entity.Property(e => e.AppBuildingCurriculumBuildingCurriculumId).HasColumnName("APP_BuildingCurriculumBuildingCurriculumID");
+
+                entity.Property(e => e.BuildingCurriculumId).HasColumnName("BuildingCurriculumID");
+
+                entity.HasOne(d => d.AppBuildingCurriculumBuildingCurriculum)
+                    .WithMany(p => p.AppBuildingCurriculumTypeLearns)
+                    .HasForeignKey(d => d.AppBuildingCurriculumBuildingCurriculumId);
+            });
+
             modelBuilder.Entity<AppContact>(entity =>
             {
                 entity.HasKey(e => e.Idcontact)
@@ -603,6 +791,56 @@ namespace DB.Model
                     .HasConstraintName("FK_UserUpdated_ContactPerStudent");
             });
 
+            modelBuilder.Entity<AppCoordination>(entity =>
+            {
+                entity.HasKey(e => e.CoordinationId);
+
+                entity.ToTable("App_Coordination");
+
+                entity.Property(e => e.DateCreated).HasColumnType("date");
+
+                entity.Property(e => e.DateUpdated).HasColumnType("date");
+            });
+
+            modelBuilder.Entity<AppCoordinationPerSchool>(entity =>
+            {
+                entity.HasKey(e => e.IdcoordinationPerSchool);
+
+                entity.ToTable("App_CoordinationPerSchool");
+
+                entity.Property(e => e.IdcoordinationPerSchool).HasColumnName("IDCoordinationPerSchool");
+
+                entity.Property(e => e.DateCreated).HasColumnType("date");
+
+                entity.Property(e => e.DateUpdated).HasColumnType("date");
+
+                entity.HasOne(d => d.Coordination)
+                    .WithMany(p => p.AppCoordinationPerSchools)
+                    .HasForeignKey(d => d.CoordinationId)
+                    .HasConstraintName("FK_App_CoordinationPerSchool_App_Coordination");
+
+                entity.HasOne(d => d.School)
+                    .WithMany(p => p.AppCoordinationPerSchools)
+                    .HasForeignKey(d => d.SchoolId)
+                    .HasConstraintName("FK_App_CoordinationPerSchool_APP_School");
+            });
+
+            modelBuilder.Entity<AppCoordinationType>(entity =>
+            {
+                entity.HasKey(e => e.IdCoordinationType);
+
+                entity.ToTable("App_CoordinationType");
+
+                entity.Property(e => e.DateCreated).HasColumnType("date");
+
+                entity.Property(e => e.DateUpdated).HasColumnType("date");
+
+                entity.HasOne(d => d.IdCoordinationPerSchoolNavigation)
+                    .WithMany(p => p.AppCoordinationTypes)
+                    .HasForeignKey(d => d.IdCoordinationPerSchool)
+                    .HasConstraintName("FK_App_CoordinationType_App_CoordinationPerSchool");
+            });
+
             modelBuilder.Entity<AppCourse>(entity =>
             {
                 entity.HasKey(e => e.Idcourse)
@@ -612,21 +850,63 @@ namespace DB.Model
 
                 entity.Property(e => e.Idcourse).HasColumnName("IDCourse");
 
+                entity.Property(e => e.AssociateAcademicDegree).HasDefaultValueSql("(CONVERT([smallint],(0)))");
+
+                entity.Property(e => e.BuildingCurriculumContentsId).HasColumnName("BuildingCurriculumContentsID");
+
                 entity.Property(e => e.Code).HasMaxLength(200);
 
-                entity.Property(e => e.CoordinationCode).IsUnicode(false);
+                entity.Property(e => e.Color)
+                    .IsRequired()
+                    .HasDefaultValueSql("(N'')");
 
                 entity.Property(e => e.DateCreate).HasColumnType("date");
 
                 entity.Property(e => e.DateUpdate).HasColumnType("date");
 
+                entity.Property(e => e.EducatEnglishLevelRequired).HasDefaultValueSql("(CONVERT([smallint],(0)))");
+
+                entity.Property(e => e.Education).HasDefaultValueSql("(CONVERT([smallint],(0)))");
+
+                entity.Property(e => e.EndDate).HasDefaultValueSql("('0001-01-01T00:00:00.0000000')");
+
+                entity.Property(e => e.FetalAttendancePercentage).HasDefaultValueSql("(CONVERT([smallint],(0)))");
+
+                entity.Property(e => e.FinalGradeEducation).HasDefaultValueSql("(CONVERT([smallint],(0)))");
+
+                entity.Property(e => e.HebrewLevelRequired).HasDefaultValueSql("(CONVERT([smallint],(0)))");
+
+                entity.Property(e => e.LearningPoints).HasDefaultValueSql("(CONVERT([smallint],(0)))");
+
                 entity.Property(e => e.LearningStyleId).HasColumnName("LearningStyleID");
 
+                entity.Property(e => e.Money).HasDefaultValueSql("(CONVERT([smallint],(0)))");
+
                 entity.Property(e => e.Name).HasMaxLength(200);
+
+                entity.Property(e => e.NoObligationAttend)
+                    .IsRequired()
+                    .HasDefaultValueSql("(CONVERT([bit],(0)))");
+
+                entity.Property(e => e.OpeningConditionalOnNumberOfRegistrants)
+                    .IsRequired()
+                    .HasDefaultValueSql("(CONVERT([bit],(0)))");
+
+                entity.Property(e => e.OrganizationalAffiliation).HasDefaultValueSql("(CONVERT([smallint],(0)))");
+
+                entity.Property(e => e.PassingGradeGivesAlevelOfHebrew)
+                    .HasColumnName("PassingGradeGivesALevelOfHebrew")
+                    .HasDefaultValueSql("(CONVERT([smallint],(0)))");
 
                 entity.Property(e => e.ProfessionId).HasColumnName("ProfessionID");
 
                 entity.Property(e => e.SchoolId).HasColumnName("SchoolID");
+
+                entity.Property(e => e.Season).HasDefaultValueSql("('0001-01-01T00:00:00.0000000')");
+
+                entity.Property(e => e.StartDate).HasDefaultValueSql("('0001-01-01T00:00:00.0000000')");
+
+                entity.Property(e => e.SubjectFurtherEducation).HasDefaultValueSql("(CONVERT([smallint],(0)))");
 
                 entity.Property(e => e.UniqueCodeId).HasColumnName("UniqueCodeID");
 
@@ -635,6 +915,11 @@ namespace DB.Model
                 entity.Property(e => e.UserUpdatedId).HasColumnName("UserUpdatedID");
 
                 entity.Property(e => e.YearbookId).HasColumnName("YearbookID");
+
+                entity.HasOne(d => d.CoordinationType)
+                    .WithMany(p => p.AppCourses)
+                    .HasForeignKey(d => d.CoordinationTypeId)
+                    .HasConstraintName("FK_APP_Course_App_CoordinationType");
 
                 entity.HasOne(d => d.LearningStyle)
                     .WithMany(p => p.AppCourses)
@@ -736,6 +1021,21 @@ namespace DB.Model
                     .HasConstraintName("FK_APP_CourseAssignments_UserPerSchool1");
             });
 
+            modelBuilder.Entity<AppCourseConditionRestriction>(entity =>
+            {
+                entity.HasKey(e => e.CourseRestrictionsId);
+
+                entity.ToTable("APP_CourseConditionRestriction", "Curr");
+
+                entity.Property(e => e.CourseRestrictionsId).HasColumnName("CourseRestrictionsID");
+
+                entity.Property(e => e.ConditionId).HasColumnName("conditionID");
+
+                entity.Property(e => e.CourseFieldId).HasColumnName("CourseFieldID");
+
+                entity.Property(e => e.SchoolId).HasColumnName("schoolID");
+            });
+
             modelBuilder.Entity<AppCourseRequirment>(entity =>
             {
                 entity.HasKey(e => e.IdcourseRequirements)
@@ -797,6 +1097,19 @@ namespace DB.Model
                     .WithMany(p => p.AppCourseRequirments)
                     .HasForeignKey(d => d.YearBookPerSchoolId)
                     .HasConstraintName("FK_APP_CourseRequirment_YearbookPerSchool");
+            });
+
+            modelBuilder.Entity<AppCourseRestriction>(entity =>
+            {
+                entity.HasKey(e => e.CourseRestrictionsId);
+
+                entity.ToTable("APP_CourseRestrictions", "Curr");
+
+                entity.Property(e => e.CourseRestrictionsId).HasColumnName("CourseRestrictionsID");
+
+                entity.Property(e => e.ConditionId).HasColumnName("conditionID");
+
+                entity.Property(e => e.SchoolId).HasColumnName("schoolID");
             });
 
             modelBuilder.Entity<AppCustomer>(entity =>
@@ -1507,6 +1820,19 @@ namespace DB.Model
                     .HasConstraintName("FK_UserUpdated_DocumentPerUser");
             });
 
+            modelBuilder.Entity<AppDraftBuildingCurriculumStudent>(entity =>
+            {
+                entity.HasKey(e => e.DraftBuildingCurriculumStudentId);
+
+                entity.ToTable("APP_DraftBuildingCurriculumStudent", "Curr");
+
+                entity.Property(e => e.BuildingCurriculumId).HasColumnName("BuildingCurriculumID");
+
+                entity.Property(e => e.GroupSemesterPerCourseId).HasColumnName("GroupSemesterPerCourseID");
+
+                entity.Property(e => e.StudentId).HasColumnName("StudentID");
+            });
+
             modelBuilder.Entity<AppDynamicDetailsPerTypeSchool>(entity =>
             {
                 entity.HasKey(e => e.IddynamicDetailsPerTypeSchool);
@@ -1769,8 +2095,6 @@ namespace DB.Model
 
                 entity.Property(e => e.AgeGroupId).HasColumnName("AgeGroupID");
 
-                entity.Property(e => e.CoordinationCode).IsUnicode(false);
-
                 entity.Property(e => e.DateCreated).HasColumnType("date");
 
                 entity.Property(e => e.DateUpdated).HasColumnType("date");
@@ -1795,6 +2119,11 @@ namespace DB.Model
                     .WithMany(p => p.AppGroups)
                     .HasForeignKey(d => d.AgeGroupId)
                     .HasConstraintName("FK_APP_Group_TAB_AgeGroup");
+
+                entity.HasOne(d => d.CoordinationType)
+                    .WithMany(p => p.AppGroups)
+                    .HasForeignKey(d => d.CoordinationTypeId)
+                    .HasConstraintName("FK_APP_Group_App_CoordinationType");
 
                 entity.HasOne(d => d.ListeningTime)
                     .WithMany(p => p.AppGroups)
@@ -1887,8 +2216,6 @@ namespace DB.Model
                 entity.Property(e => e.DateCreated).HasColumnType("date");
 
                 entity.Property(e => e.DateUpdate).HasColumnType("date");
-
-                entity.Property(e => e.FromDate).HasColumnType("date");
 
                 entity.Property(e => e.GroupId).HasColumnName("GroupID");
 
@@ -2013,6 +2340,46 @@ namespace DB.Model
                     .HasConstraintName("FK_UserUpdated_LessonPerGroup");
             });
 
+            modelBuilder.Entity<AppLocation>(entity =>
+            {
+                entity.HasKey(e => e.Idlocation);
+
+                entity.ToTable("APP_Location", "Curr");
+
+                entity.HasIndex(e => e.AppAddressIdaddress, "IX_APP_Location_APP_AddressIDAddress");
+
+                entity.Property(e => e.Idlocation).HasColumnName("IDLocation");
+
+                entity.Property(e => e.AddressId).HasColumnName("AddressID");
+
+                entity.Property(e => e.AppAddressIdaddress).HasColumnName("APP_AddressIDAddress");
+
+                entity.HasOne(d => d.AppAddressIdaddressNavigation)
+                    .WithMany(p => p.AppLocations)
+                    .HasForeignKey(d => d.AppAddressIdaddress);
+            });
+
+            modelBuilder.Entity<AppMeetingTime>(entity =>
+            {
+                entity.HasKey(e => e.MeetingTimesId);
+
+                entity.ToTable("APP_MeetingTimes", "Curr");
+
+                entity.HasIndex(e => e.GroupSemesterPerCourseId, "IX_APP_MeetingTimes_GroupSemesterPerCourseID");
+
+                entity.Property(e => e.MeetingTimesId).HasColumnName("MeetingTimesID");
+
+                entity.Property(e => e.GroupSemesterPerCourseId).HasColumnName("GroupSemesterPerCourseID");
+
+                entity.Property(e => e.UserCreatedId).HasColumnName("UserCreatedID");
+
+                entity.Property(e => e.UserUpdatedId).HasColumnName("UserUpdatedID");
+
+                entity.HasOne(d => d.GroupSemesterPerCourse)
+                    .WithMany(p => p.AppMeetingTimes)
+                    .HasForeignKey(d => d.GroupSemesterPerCourseId);
+            });
+
             modelBuilder.Entity<AppNote>(entity =>
             {
                 entity.HasKey(e => e.Idnote);
@@ -2077,29 +2444,33 @@ namespace DB.Model
                 entity.HasOne(d => d.DailySchedule)
                     .WithMany(p => p.AppPresences)
                     .HasForeignKey(d => d.DailyScheduleId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Presence_DailySchedule");
+                    .HasConstraintName("FK_APP_Presence_APP_DailySchedule");
+
+                entity.HasOne(d => d.School)
+                    .WithMany(p => p.AppPresences)
+                    .HasForeignKey(d => d.SchoolId)
+                    .HasConstraintName("FK_APP_Presence_app_school");
 
                 entity.HasOne(d => d.Student)
                     .WithMany(p => p.AppPresences)
                     .HasForeignKey(d => d.StudentId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Presence_Student");
+                    .HasConstraintName("FK_APP_Presence_app_student");
 
                 entity.HasOne(d => d.TypePresence)
                     .WithMany(p => p.AppPresences)
                     .HasForeignKey(d => d.TypePresenceId)
-                    .HasConstraintName("FK_Presence_TypePresence");
+                    .HasConstraintName("FK_APP_Presence_TAB_AttendanceMarkings");
 
                 entity.HasOne(d => d.UserCreated)
                     .WithMany(p => p.AppPresenceUserCreateds)
                     .HasForeignKey(d => d.UserCreatedId)
-                    .HasConstraintName("FK_Presence_UserCreate");
+                    .HasConstraintName("FK_APP_Presence_App_UserPerSchool2");
 
                 entity.HasOne(d => d.UserUpdated)
                     .WithMany(p => p.AppPresenceUserUpdateds)
                     .HasForeignKey(d => d.UserUpdatedId)
-                    .HasConstraintName("FK_Presence_UserUpdate");
+                    .HasConstraintName("FK_APP_Presence_App_UserPerSchool1");
             });
 
             modelBuilder.Entity<AppProfession>(entity =>
@@ -2127,6 +2498,11 @@ namespace DB.Model
                 entity.Property(e => e.UserCreatedId).HasColumnName("UserCreatedID");
 
                 entity.Property(e => e.UserUpdatedId).HasColumnName("UserUpdatedID");
+
+                entity.HasOne(d => d.CoordinationType)
+                    .WithMany(p => p.AppProfessions)
+                    .HasForeignKey(d => d.CoordinationTypeId)
+                    .HasConstraintName("FK_APP_Profession_App_CoordinationType");
 
                 entity.HasOne(d => d.Coordinator)
                     .WithMany(p => p.AppProfessionCoordinators)
@@ -2400,6 +2776,11 @@ namespace DB.Model
                 entity.Property(e => e.UserUpdatedId).HasColumnName("UserUpdatedID");
 
                 entity.Property(e => e.YearbookId).HasColumnName("YearbookID");
+
+                entity.HasOne(d => d.CoordinationType)
+                    .WithMany(p => p.AppSemesters)
+                    .HasForeignKey(d => d.CoordinationTypeId)
+                    .HasConstraintName("FK_APP_Semester_App_CoordinationType");
 
                 entity.HasOne(d => d.UserCreated)
                     .WithMany(p => p.AppSemesterUserCreateds)
@@ -2830,6 +3211,19 @@ namespace DB.Model
                     .HasConstraintName("FK_StudentDailySchedule_UserUpdated");
             });
 
+            modelBuilder.Entity<AppStudentPerAttendanceSummaryCalculation>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToTable("APP_StudentPerAttendanceSummaryCalculations");
+
+                entity.Property(e => e.DateCreated).HasColumnType("datetime");
+
+                entity.Property(e => e.DateUpdated).HasColumnType("datetime");
+
+                entity.Property(e => e.IdstudentPerAttendanceSummaryCalculations).HasColumnName("IDStudentPerAttendanceSummaryCalculations");
+            });
+
             modelBuilder.Entity<AppStudentPerGroup>(entity =>
             {
                 entity.HasKey(e => e.IdstudentPerGroup)
@@ -2917,6 +3311,23 @@ namespace DB.Model
                     .HasConstraintName("FK_StudentPerYearbook_Yearbook");
             });
 
+            modelBuilder.Entity<AppStudentsPerCourse>(entity =>
+            {
+                entity.HasKey(e => e.IdstudentsPerCourse);
+
+                entity.ToTable("AppStudentsPerCourse");
+
+                entity.Property(e => e.IdstudentsPerCourse).HasColumnName("IDStudentsPerCourse");
+
+                entity.Property(e => e.DateCreated).HasColumnType("datetime");
+
+                entity.Property(e => e.DateUpdated).HasColumnType("datetime");
+
+                entity.Property(e => e.FromDate).HasColumnType("datetime");
+
+                entity.Property(e => e.ToDate).HasColumnType("datetime");
+            });
+
             modelBuilder.Entity<AppTask>(entity =>
             {
                 entity.HasKey(e => e.Idtask);
@@ -2958,6 +3369,11 @@ namespace DB.Model
                     .HasForeignKey(d => d.CheckTypeId)
                     .OnDelete(DeleteBehavior.SetNull)
                     .HasConstraintName("FK_APP_Task_T_CheckType");
+
+                entity.HasOne(d => d.CoordinationType)
+                    .WithMany(p => p.AppTasks)
+                    .HasForeignKey(d => d.CoordinationTypeId)
+                    .HasConstraintName("FK_APP_Task_App_CoordinationType");
 
                 entity.HasOne(d => d.Coordinator)
                     .WithMany(p => p.AppTaskCoordinators)
@@ -3650,6 +4066,15 @@ namespace DB.Model
                 entity.Property(e => e.Name).HasMaxLength(50);
             });
 
+            modelBuilder.Entity<Field>(entity =>
+            {
+                entity.ToTable("Field");
+
+                entity.Property(e => e.FieldId).HasColumnName("FieldID");
+
+                entity.Property(e => e.FieldName).IsRequired();
+            });
+
             modelBuilder.Entity<SecUser>(entity =>
             {
                 entity.HasKey(e => e.Iduser);
@@ -3713,6 +4138,28 @@ namespace DB.Model
                 entity.Property(e => e.IdcheckType).HasColumnName("IDCheckType");
 
                 entity.Property(e => e.Name).HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<TCondition>(entity =>
+            {
+                entity.HasKey(e => e.Idcondition);
+
+                entity.ToTable("T_Condition");
+
+                entity.Property(e => e.Idcondition).HasColumnName("IDCondition");
+
+                entity.Property(e => e.NameCondition).HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<TCourseField>(entity =>
+            {
+                entity.HasKey(e => e.CourseFieldId);
+
+                entity.ToTable("T_CourseField", "Curr");
+
+                entity.Property(e => e.CourseFieldId).HasColumnName("CourseFieldID");
+
+                entity.Property(e => e.CourseFieldDes).IsRequired();
             });
 
             modelBuilder.Entity<TDynamicDetailsForTypeSchool>(entity =>
@@ -3798,6 +4245,17 @@ namespace DB.Model
                     .WithMany(p => p.TReasonForLeavings)
                     .HasForeignKey(d => d.SchoolId)
                     .HasConstraintName("FK_ReasonForLeaving_School");
+            });
+
+            modelBuilder.Entity<TRestrictionType>(entity =>
+            {
+                entity.HasKey(e => e.RestrictionTypeId);
+
+                entity.ToTable("T_RestrictionType", "Curr");
+
+                entity.Property(e => e.RestrictionTypeId).HasColumnName("RestrictionTypeID");
+
+                entity.Property(e => e.RestrictionTypeDes).IsRequired();
             });
 
             modelBuilder.Entity<TSchoolType>(entity =>
@@ -3891,6 +4349,17 @@ namespace DB.Model
                     .HasConstraintName("FK_T_StatusTaskPerformance_APP_School");
             });
 
+            modelBuilder.Entity<TTimeRange>(entity =>
+            {
+                entity.HasKey(e => e.IdtimeRange);
+
+                entity.ToTable("T_TimeRange");
+
+                entity.Property(e => e.IdtimeRange).HasColumnName("IDTimeRange");
+
+                entity.Property(e => e.NameTimeRange).HasMaxLength(50);
+            });
+
             modelBuilder.Entity<TTypeAssingment>(entity =>
             {
                 entity.HasKey(e => e.IdtypeAssingment);
@@ -3964,6 +4433,17 @@ namespace DB.Model
                 entity.Property(e => e.IdtypeYears).HasColumnName("IDTypeYears");
             });
 
+            modelBuilder.Entity<TTypesOfAmount>(entity =>
+            {
+                entity.HasKey(e => e.IdtypesOfAmount);
+
+                entity.ToTable("T_TypesOfAmount");
+
+                entity.Property(e => e.IdtypesOfAmount).HasColumnName("IDTypesOfAmount");
+
+                entity.Property(e => e.NameTypesOfAmount).HasMaxLength(50);
+            });
+
             modelBuilder.Entity<TabAgeGroup>(entity =>
             {
                 entity.HasKey(e => e.IdageGroup);
@@ -3972,11 +4452,14 @@ namespace DB.Model
 
                 entity.Property(e => e.IdageGroup).HasColumnName("IDAgeGroup");
 
-                entity.Property(e => e.CoordinationCode).IsUnicode(false);
-
                 entity.Property(e => e.Name).HasMaxLength(50);
 
                 entity.Property(e => e.SchoolId).HasColumnName("SchoolID");
+
+                entity.HasOne(d => d.CoordinationType)
+                    .WithMany(p => p.TabAgeGroups)
+                    .HasForeignKey(d => d.CoordinationTypeId)
+                    .HasConstraintName("FK_TAB_AgeGroup_App_CoordinationType");
 
                 entity.HasOne(d => d.School)
                     .WithMany(p => p.TabAgeGroups)
@@ -4009,6 +4492,11 @@ namespace DB.Model
 
                 entity.Property(e => e.UserUpdatedId).HasColumnName("UserUpdatedID");
 
+                entity.HasOne(d => d.Group)
+                    .WithMany(p => p.TabAttendanceMarkings)
+                    .HasForeignKey(d => d.GroupId)
+                    .HasConstraintName("FK_TAB_AttendanceMarkings_APP_GroupSemesterPerCourse");
+
                 entity.HasOne(d => d.MarkingType)
                     .WithMany(p => p.TabAttendanceMarkings)
                     .HasForeignKey(d => d.MarkingTypeId)
@@ -4028,6 +4516,87 @@ namespace DB.Model
                     .WithMany(p => p.TabAttendanceMarkingUserUpdateds)
                     .HasForeignKey(d => d.UserUpdatedId)
                     .HasConstraintName("FK_AttendanceMarkings_UserUpdated");
+            });
+
+            modelBuilder.Entity<TabAttendanceMarkingsPermission>(entity =>
+            {
+                entity.HasKey(e => e.IdAttendanceMarkingsPermissions);
+
+                entity.ToTable("TAB_AttendanceMarkingsPermissions");
+
+                entity.Property(e => e.IdAttendanceMarkingsPermissions).HasColumnName("idAttendanceMarkingsPermissions");
+
+                entity.Property(e => e.DateCreated).HasColumnType("datetime");
+
+                entity.Property(e => e.DateUpdated).HasColumnType("datetime");
+
+                entity.Property(e => e.TypeAttedanceMarkingid).HasMaxLength(50);
+
+                entity.HasOne(d => d.Group)
+                    .WithMany(p => p.TabAttendanceMarkingsPermissions)
+                    .HasForeignKey(d => d.GroupId)
+                    .HasConstraintName("FK_TAB_AttendanceMarkingsPermissions_APP_GroupSemesterPerCourse");
+
+                entity.HasOne(d => d.School)
+                    .WithMany(p => p.TabAttendanceMarkingsPermissions)
+                    .HasForeignKey(d => d.SchoolId)
+                    .HasConstraintName("FK_TAB_AttendanceMarkingsPermissions_APP_School");
+            });
+
+            modelBuilder.Entity<TabAttendanceSummaryCalculation>(entity =>
+            {
+                entity.HasKey(e => e.IdattendanceSummaryCalculations);
+
+                entity.ToTable("TAB_AttendanceSummaryCalculations");
+
+                entity.Property(e => e.IdattendanceSummaryCalculations).HasColumnName("IDAttendanceSummaryCalculations");
+
+                entity.Property(e => e.DateCreated).HasColumnType("datetime");
+
+                entity.Property(e => e.DateUpdated).HasColumnType("datetime");
+
+                entity.HasOne(d => d.AmountidConditionalNavigation)
+                    .WithMany(p => p.TabAttendanceSummaryCalculationAmountidConditionalNavigations)
+                    .HasForeignKey(d => d.AmountidConditional)
+                    .HasConstraintName("FK_TAB_AttendanceSummaryCalculations_T_Condition");
+
+                entity.HasOne(d => d.AttendencMarking)
+                    .WithMany(p => p.TabAttendanceSummaryCalculations)
+                    .HasForeignKey(d => d.AttendencMarkingId)
+                    .HasConstraintName("FK_TAB_AttendanceSummaryCalculations_TAB_AttendanceMarkings");
+
+                entity.HasOne(d => d.SpecificConditionNavigation)
+                    .WithMany(p => p.TabAttendanceSummaryCalculationSpecificConditionNavigations)
+                    .HasForeignKey(d => d.SpecificCondition)
+                    .HasConstraintName("FK_TAB_AttendanceSummaryCalculations_T_Condition1");
+
+                entity.HasOne(d => d.TimeRange)
+                    .WithMany(p => p.TabAttendanceSummaryCalculations)
+                    .HasForeignKey(d => d.TimeRangeId)
+                    .HasConstraintName("FK_TAB_AttendanceSummaryCalculations_T_TimeRange");
+
+                entity.HasOne(d => d.TypesOfAmount)
+                    .WithMany(p => p.TabAttendanceSummaryCalculations)
+                    .HasForeignKey(d => d.TypesOfAmountId)
+                    .HasConstraintName("FK_TAB_AttendanceSummaryCalculations_T_TypesOfAmount");
+
+                entity.HasOne(d => d.TypesOfAttendanceSummaries)
+                    .WithMany(p => p.TabAttendanceSummaryCalculations)
+                    .HasForeignKey(d => d.TypesOfAttendanceSummariesId)
+                    .HasConstraintName("FK_TAB_AttendanceSummaryCalculations_TAB_TypesOfAttendanceSummaries");
+            });
+
+            modelBuilder.Entity<TabAttendanceSummaryConnection>(entity =>
+            {
+                entity.HasKey(e => e.IdattendanceSummaryConnection);
+
+                entity.ToTable("TAB_AttendanceSummaryConnection");
+
+                entity.Property(e => e.IdattendanceSummaryConnection).HasColumnName("IDAttendanceSummaryConnection");
+
+                entity.Property(e => e.IdattendanceSummaryCalculations).HasColumnName("IDAttendanceSummaryCalculations");
+
+                entity.Property(e => e.IdtypesOfAttendanceSummaries).HasColumnName("IDTypesOfAttendanceSummaries");
             });
 
             modelBuilder.Entity<TabCitizenship>(entity =>
@@ -4571,9 +5140,13 @@ namespace DB.Model
 
                 entity.Property(e => e.DateUpdated).HasColumnType("date");
 
+                entity.Property(e => e.GroupId).HasColumnName("GroupID");
+
                 entity.Property(e => e.SchoolId).HasColumnName("SchoolID");
 
                 entity.Property(e => e.TypeAttendanceName).HasMaxLength(200);
+
+                entity.Property(e => e.TypePresenceId).HasColumnName("TypePresenceID");
 
                 entity.Property(e => e.UserCreatedId).HasColumnName("UserCreatedID");
 
@@ -4603,8 +5176,6 @@ namespace DB.Model
 
                 entity.Property(e => e.IdtypeGroup).HasColumnName("IDTypeGroup");
 
-                entity.Property(e => e.CoordinationCode).IsUnicode(false);
-
                 entity.Property(e => e.DateCreated).HasColumnType("date");
 
                 entity.Property(e => e.DateUpdated).HasColumnType("date");
@@ -4616,6 +5187,11 @@ namespace DB.Model
                 entity.Property(e => e.UserCreatedId).HasColumnName("UserCreatedID");
 
                 entity.Property(e => e.UserUpdatedId).HasColumnName("UserUpdatedID");
+
+                entity.HasOne(d => d.CoordinationType)
+                    .WithMany(p => p.TabTypeGroups)
+                    .HasForeignKey(d => d.CoordinationTypeId)
+                    .HasConstraintName("FK_TAB_TypeGroup_App_CoordinationType");
 
                 entity.HasOne(d => d.School)
                     .WithMany(p => p.TabTypeGroups)
@@ -4715,6 +5291,33 @@ namespace DB.Model
                     .WithMany(p => p.TabTypeUserUserUpdateds)
                     .HasForeignKey(d => d.UserUpdatedId)
                     .HasConstraintName("FK_UserUpdated_TypeUser");
+            });
+
+            modelBuilder.Entity<TabTypesOfAttendanceSummary>(entity =>
+            {
+                entity.HasKey(e => e.IdtypesOfAttendanceSummaries);
+
+                entity.ToTable("TAB_TypesOfAttendanceSummaries");
+
+                entity.Property(e => e.IdtypesOfAttendanceSummaries).HasColumnName("IDTypesOfAttendanceSummaries");
+
+                entity.Property(e => e.DateCreated).HasColumnType("datetime");
+
+                entity.Property(e => e.DateUpdated).HasColumnType("datetime");
+
+                entity.Property(e => e.TypesOfAttendanceSummariesName).HasMaxLength(50);
+
+                entity.Property(e => e.VerbalExplanation).HasMaxLength(50);
+
+                entity.HasOne(d => d.Group)
+                    .WithMany(p => p.TabTypesOfAttendanceSummaries)
+                    .HasForeignKey(d => d.GroupId)
+                    .HasConstraintName("FK_TAB_TypesOfAttendanceSummaries_APP_GroupSemesterPerCourse");
+
+                entity.HasOne(d => d.School)
+                    .WithMany(p => p.TabTypesOfAttendanceSummaries)
+                    .HasForeignKey(d => d.SchoolId)
+                    .HasConstraintName("FK_TAB_TypesOfAttendanceSummaries_APP_School");
             });
 
             modelBuilder.Entity<VCodeTable>(entity =>

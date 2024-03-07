@@ -116,6 +116,8 @@ namespace DB.Model
             AppStudentPerYearbookUserUpdateds = new HashSet<AppStudentPerYearbook>();
             AppStudentUserCreateds = new HashSet<AppStudent>();
             AppStudentUserUpdateds = new HashSet<AppStudent>();
+            AppStudentsPerCourseUserCreateds = new HashSet<AppStudentsPerCourse>();
+            AppStudentsPerCourseUserUpdateds = new HashSet<AppStudentsPerCourse>();
             AppTaskCoordinators = new HashSet<AppTask>();
             AppTaskExsistCoordinators = new HashSet<AppTaskExsist>();
             AppTaskExsistUserCreateds = new HashSet<AppTaskExsist>();
@@ -329,6 +331,8 @@ namespace DB.Model
         public virtual ICollection<AppStudentPerYearbook> AppStudentPerYearbookUserUpdateds { get; set; }
         public virtual ICollection<AppStudent> AppStudentUserCreateds { get; set; }
         public virtual ICollection<AppStudent> AppStudentUserUpdateds { get; set; }
+        public virtual ICollection<AppStudentsPerCourse> AppStudentsPerCourseUserCreateds { get; set; }
+        public virtual ICollection<AppStudentsPerCourse> AppStudentsPerCourseUserUpdateds { get; set; }
         public virtual ICollection<AppTask> AppTaskCoordinators { get; set; }
         public virtual ICollection<AppTaskExsist> AppTaskExsistCoordinators { get; set; }
         public virtual ICollection<AppTaskExsist> AppTaskExsistUserCreateds { get; set; }

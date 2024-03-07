@@ -15,8 +15,9 @@ namespace DB.Model
         public int IdageGroup { get; set; }
         public string Name { get; set; }
         public int? SchoolId { get; set; }
-        public string CoordinationCode { get; set; }
+        public int? CoordinationTypeId { get; set; }
 
+        public virtual AppCoordinationType CoordinationType { get; set; }
         public virtual AppSchool School { get; set; }
         public virtual ICollection<AppGroup> AppGroups { get; set; }
     }

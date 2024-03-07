@@ -69,7 +69,7 @@ namespace DB.Repository.Classes
 
         public AppCourse AddFatherCourse(AppCourse FatherCourse)
         {
-            if (_context.AppCourses.FirstOrDefault(f => f.Name == FatherCourse.Name && f.SchoolId == FatherCourse.SchoolId) != null) return null;
+            if (_context.AppCourses.FirstOrDefault(f => f.Name == FatherCourse.Name && f.SchoolId == FatherCourse.SchoolId && f.YearbookId == FatherCourse.YearbookId) != null) return null;
             _context.AppCourses.Add(FatherCourse);
             _context.SaveChanges();
             return _context.AppCourses.Include(s => s.School).Include(p => p.Profession).Include(l => l.LearningStyle).ToList().LastOrDefault(l => l.Idcourse == FatherCourse.Idcourse);
