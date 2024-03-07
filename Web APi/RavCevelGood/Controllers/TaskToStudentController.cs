@@ -26,10 +26,10 @@ namespace RavCevelGood.Controllers
             return Ok(_TaskToStudentService.GetAllTaskToStudentByTaskExsistID(taskToStudentId, SchoolID, YearbookId));
         }
 
-        [HttpPost("AddOrUpdate/{SchoolID}/{YearbookId}/{isAotomat}")]
-        public IActionResult AddOrUpdate(int SchoolID, int YearbookId, AppTaskToStudentDTO TaskToStudentDTO, bool isAotomat)
+        [HttpPost("AddOrUpdate/{SchoolID}/{YearbookId}/{isAotomat}/{courseid}")]
+        public IActionResult AddOrUpdate(int SchoolID, int YearbookId, AppTaskToStudentDTO TaskToStudentDTO, bool isAotomat,int courseid)
         {
-            return Ok(_TaskToStudentService.AddOrUpdate(SchoolID, YearbookId, TaskToStudentDTO, isAotomat));
+            return Ok(_TaskToStudentService.AddOrUpdate(SchoolID, YearbookId, TaskToStudentDTO, isAotomat,courseid));
         }
 
         [HttpGet("DeleteTaskToStudent/{SchoolID}/{TaskToStudentId}")]

@@ -19,8 +19,10 @@ namespace DB.Model
             AppStandardPerStudents = new HashSet<AppStandardPerStudent>();
             AppStudentAttendances = new HashSet<AppStudentAttendance>();
             AppStudentDailySchedules = new HashSet<AppStudentDailySchedule>();
+            AppStudentPerAttendanceSummaryCalculations = new HashSet<AppStudentPerAttendanceSummaryCalculation>();
             AppStudentPerGroups = new HashSet<AppStudentPerGroup>();
             AppStudentPerYearbooks = new HashSet<AppStudentPerYearbook>();
+            AppStudentsPerCourses = new HashSet<AppStudentsPerCourse>();
             AppTaskToStudents = new HashSet<AppTaskToStudent>();
         }
 
@@ -87,8 +89,10 @@ namespace DB.Model
         public virtual ICollection<AppStandardPerStudent> AppStandardPerStudents { get; set; }
         public virtual ICollection<AppStudentAttendance> AppStudentAttendances { get; set; }
         public virtual ICollection<AppStudentDailySchedule> AppStudentDailySchedules { get; set; }
+        public virtual ICollection<AppStudentPerAttendanceSummaryCalculation> AppStudentPerAttendanceSummaryCalculations { get; set; }
         public virtual ICollection<AppStudentPerGroup> AppStudentPerGroups { get; set; }
         public virtual ICollection<AppStudentPerYearbook> AppStudentPerYearbooks { get; set; }
+        public virtual ICollection<AppStudentsPerCourse> AppStudentsPerCourses { get; set; }
         public virtual ICollection<AppTaskToStudent> AppTaskToStudents { get; set; }
     }
 }

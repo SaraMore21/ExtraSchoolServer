@@ -18,7 +18,7 @@ namespace DB.Repository.Interfaces
         List<AppLessonPerGroup> GetNumLessonAvailable(int GroupId, DateTime ScheduleDate);
         Tuple<AppGroupSemesterPerCourse, AppUserPerSchool,int> GetDailyScheduleDetailsByScheduleRegular(int GroupId, DateTime ScheduleDate, TimeSpan StartTime, TimeSpan EndTime);
         bool DeleteDailySchedule(int IdDailySchedule);
-        void AddListDailySchedule(List<AppDailySchedule> lstDailySchedules,int userId=0);
+        void AddListDailySchedule(List<AppDailySchedule> lstDailySchedules, int userId = 0, bool isnewdailSchedules=false);
         void SetScheduleRegularIdNull(List<AppDailySchedule> dailyScheduleOld);
         List<AppDailySchedule> getDailyScheduleByScheduleRegularID(int ScheduleRegularID);
         //List<int> GetListIdDailySchedule(int SchoolId,int IdSchedulRegular);

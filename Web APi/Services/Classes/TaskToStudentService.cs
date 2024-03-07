@@ -10,21 +10,24 @@ namespace Services.Classes
     public class TaskToStudentService : ITaskToStudentService
     {
         private ITaskToStudentRepository _TaskToStudentRepository;
+        private IStudentsPerCourseRepository _StudentsPerCourseRepository;
         private IMapper _mapper;
 
-        public TaskToStudentService(ITaskToStudentRepository TaskToStudentRepository, IMapper mapper)
+        public TaskToStudentService(ITaskToStudentRepository TaskToStudentRepository, IStudentsPerCourseRepository StudentsPerCourseRepository, IMapper mapper)
         {
             _TaskToStudentRepository = TaskToStudentRepository;
+            _StudentsPerCourseRepository = StudentsPerCourseRepository;
             _mapper = mapper;
         }
 
-        public AppTaskToStudentDTO AddOrUpdate(int schoolID, int yearbookId, AppTaskToStudentDTO TaskToStudent, bool isAotomat)
+        public AppTaskToStudentDTO AddOrUpdate(int schoolID, int yearbookId, AppTaskToStudentDTO TaskToStudent, bool isAotomat,int courseid)
         {
             if (isAotomat)
             {
                 _TaskToStudentRepository.UpdateScoreStudentPerQuestions(_mapper.Map<List<AppScoreStudentPerQuestionsOfTask>>(TaskToStudent.AppScoreStudentPerQuestionsOfTasks));
             }
             AppTaskToStudent t = _TaskToStudentRepository.AddOrUpdate(schoolID, yearbookId, _mapper.Map<AppTaskToStudent>(TaskToStudent));
+            _StudentsPerCourseRepository.AddOrUpdateGradePerCourse(schoolID, courseid,(int)TaskToStudent.TaskExsistId, (float)TaskToStudent.FinalScore,(int) TaskToStudent.StudentId);
             var a = _mapper.Map<AppTaskToStudentDTO>(t);
             return a;
         }
@@ -46,6 +49,8 @@ namespace Services.Classes
         }
         public bool EditScoreToStudents(List<AppTaskToStudentDTO> ListTaskToStudent)
         {
+            
+         
             return _TaskToStudentRepository.EditScoreToStudents(_mapper.Map<List<AppTaskToStudent>>(ListTaskToStudent));
         }
         //שליפת ציונוי התלמידות לשאלה
@@ -56,6 +61,7 @@ namespace Services.Classes
 
         public List<AppScoreStudentPerQuestionsOfTaskDTO> EditScoreQuestionToStudents(List<AppScoreStudentPerQuestionsOfTaskDTO> ListScoreQuestionPerStudent)
         {
+
             return _mapper.Map<List<AppScoreStudentPerQuestionsOfTaskDTO>>(_TaskToStudentRepository.EditScoreQuestionToStudents(_mapper.Map<List<AppScoreStudentPerQuestionsOfTask>>(ListScoreQuestionPerStudent)));
         }
 

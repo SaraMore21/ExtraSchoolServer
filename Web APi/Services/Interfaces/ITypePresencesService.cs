@@ -9,6 +9,6 @@ namespace Services.Interfaces
 {
     public interface ITypePresencesService
     {
-        List<TTypePresenceDTO> GetAllPresence();
+        //List<TTypePresenceDTO> GetAllPresence();
     }
 }

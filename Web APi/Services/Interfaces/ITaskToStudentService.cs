@@ -10,7 +10,7 @@ namespace Services.Interfaces
     public interface ITaskToStudentService
     {
         public List<AppTaskToStudentDTO> GetAllTaskToStudentByTaskExsistID(int tasxExsistId, int schoolID, int yearbookId);
-        AppTaskToStudentDTO AddOrUpdate(int schoolID, int yearbookId, AppTaskToStudentDTO TaskToStudent, bool isAotomat);
+        AppTaskToStudentDTO AddOrUpdate(int schoolID, int yearbookId, AppTaskToStudentDTO TaskToStudent,bool isAotomat,int courseid);
         bool DeleteTaskToStudent(int schoolID, int yearbookId, int idTaskExsist);
         bool UpdateActiveTask(int schoolID, int taskToStudentId, bool isActive);
         bool EditScoreToStudents(List<AppTaskToStudentDTO> ListTaskToStudent);

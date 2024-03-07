@@ -13,9 +13,12 @@ namespace DB.Repository.Classes
     {
         private readonly ExtraSchoolContext _context;
 
-        public TaskToStudentRepository(ExtraSchoolContext context)
+        private readonly IStudentsPerCourseRepository _studentsPerCourseRepository;
+
+        public TaskToStudentRepository(ExtraSchoolContext context, IStudentsPerCourseRepository studentsPerCourseRepository)
         {
             _context = context;
+            _studentsPerCourseRepository = studentsPerCourseRepository;
         }
 
         public TStatusTaskPerformance GetDefaultStatusPerSchoolId(int schoollId)
@@ -88,7 +91,7 @@ namespace DB.Repository.Classes
 
                 }
 
-                _context.AppTaskToStudents.AddRange(listTaskToStudent);
+                _context.AppTaskToStudent.AddRange(listTaskToStudent);
                 _context.SaveChanges();
             }
 
@@ -108,11 +111,11 @@ namespace DB.Repository.Classes
                 TaskToStudent.ReceivePayment = null;
                 TaskToStudent.Student = null;
                 TaskToStudent.StatusTaskPerformanceId = GetDefaultStatusPerSchoolId(schoolID).Id;
-                _context.AppTaskToStudents.Add(TaskToStudent);
+                _context.AppTaskToStudent.Add(TaskToStudent);
             }
             else
             {
-                var x = _context.AppTaskToStudents.FirstOrDefault(f => f.IdtaskToStudent == TaskToStudent.IdtaskToStudent);
+                var x = _context.AppTaskToStudent.FirstOrDefault(f => f.IdtaskToStudent == TaskToStudent.IdtaskToStudent);
                 if (x != null)
                 {
                     x.AdministratorApproval = TaskToStudent.AdministratorApproval;
@@ -139,7 +142,7 @@ namespace DB.Repository.Classes
 
             }
             _context.SaveChanges();
-            TaskToStudent = _context.AppTaskToStudents.Include(i => i.Student).Include(i => i.ReceivePayment.User).Include(i => i.PaymentStatus).Include(i => i.PaymentMethod)
+            TaskToStudent = _context.AppTaskToStudent.Include(i => i.Student).Include(i => i.ReceivePayment.User).Include(i => i.PaymentStatus).Include(i => i.PaymentMethod)
                  .Include(i => i.AppScoreStudentPerQuestionsOfTasks.OrderBy(o => o.QuestionOfTask.Number)).ThenInclude(t => t.QuestionOfTask).FirstOrDefault(f => f.IdtaskToStudent == TaskToStudent.IdtaskToStudent);
             return TaskToStudent;
         }
@@ -147,10 +150,10 @@ namespace DB.Repository.Classes
         //מחיקת מטלה לתלמיד
         public bool DeleteTaskToStudent(int schoolID, int yearbookId, int idTaskToStudent)
         {
-            var x = _context.AppTaskToStudents.FirstOrDefault(f => f.IdtaskToStudent == idTaskToStudent);
+            var x = _context.AppTaskToStudent.FirstOrDefault(f => f.IdtaskToStudent == idTaskToStudent);
             if (x != null)
             {
-                _context.AppTaskToStudents.Remove(x);
+                _context.AppTaskToStudent.Remove(x);
                 _context.SaveChanges();
                 return true;
             }
@@ -160,7 +163,7 @@ namespace DB.Repository.Classes
         //שליפת כל המטלות של תלמידות של מטלה מסויימת
         public List<AppTaskToStudent> GetAllTaskToStudentByTaskExsistID(int SchoolId, int YearbookId, int TaskExsistID)
         {
-            var x = _context.AppTaskToStudents.Include(i => i.Student).Include(i => i.ReceivePayment.User).Include(s=>s.StatusTaskPerformance).Include(i => i.PaymentStatus).Include(i => i.PaymentMethod).
+            var x = _context.AppTaskToStudent.Include(i => i.Student).Include(i => i.ReceivePayment.User).Include(s=>s.StatusTaskPerformance).Include(i => i.PaymentStatus).Include(i => i.PaymentMethod).
                   Include(i => i.AppScoreStudentPerQuestionsOfTasks.OrderBy(o => o.QuestionOfTask.Number)).ThenInclude(t => t.QuestionOfTask).Where(w => w.TaskExsistId == TaskExsistID && w.YearBookId == YearbookId).ToList();
             return x;
         }
@@ -168,13 +171,13 @@ namespace DB.Repository.Classes
         //עידכון הפעיל של המטלה
         public bool UpdateActiveTask(int schoolID, int taskToStudentId, bool isActive)
         {
-            var x = _context.AppTaskToStudents.FirstOrDefault(f => f.IdtaskToStudent == taskToStudentId);
+            var x = _context.AppTaskToStudent.FirstOrDefault(f => f.IdtaskToStudent == taskToStudentId);
             if (x != null)
             {
                 if (isActive == true)
                 {
                     //הפיכת המטלה ללא פעיל - לא יתכן שתי מטלות לתלמידה פעילות לאותה מטלה
-                    AppTaskToStudent task = _context.AppTaskToStudents.FirstOrDefault(f => x.TaskExsistId == f.TaskExsistId && x.StudentId == f.StudentId && f.IsActiveTask == true);
+                    AppTaskToStudent task = _context.AppTaskToStudent.FirstOrDefault(f => x.TaskExsistId == f.TaskExsistId && x.StudentId == f.StudentId && f.IsActiveTask == true);
                     if (task != null)
                     {
                         task.IsActiveTask = false;
@@ -195,13 +198,15 @@ namespace DB.Repository.Classes
         public bool EditScoreToStudents(List<AppTaskToStudent> ListTaskToStudent)
         {
             AppTaskToStudent CurrentTaskToStudent;
-            var LTTS = _context.AppTaskToStudents.ToList().Where(w => ListTaskToStudent.FirstOrDefault(f => f.IdtaskToStudent == w.IdtaskToStudent) != null).ToList();
+            var LTTS = _context.AppTaskToStudent.ToList().Where(w => ListTaskToStudent.FirstOrDefault(f => f.IdtaskToStudent == w.IdtaskToStudent) != null).ToList();
             foreach (var taskToStudent in LTTS)
             {
                 CurrentTaskToStudent = ListTaskToStudent.FirstOrDefault(f => f.IdtaskToStudent == taskToStudent.IdtaskToStudent);
                 taskToStudent.Grade = CurrentTaskToStudent.Grade;
                 taskToStudent.FinalScore = CurrentTaskToStudent.FinalScore;
                 taskToStudent.StatusTaskPerformanceId = CurrentTaskToStudent.StatusTaskPerformanceId;
+                AppTaskExsist taskExsist = _context.AppTaskExsists.FirstOrDefault(t => t.IdexsistTask == taskToStudent.TaskExsistId);
+                _studentsPerCourseRepository.AddOrUpdateGradePerCourse((int)taskExsist.SchoolId, (int)taskExsist.CourseId, taskExsist.IdexsistTask, (int)CurrentTaskToStudent.FinalScore, (int)taskToStudent.StudentId);
             }
             _context.SaveChanges();
             return true;
@@ -235,7 +240,7 @@ namespace DB.Repository.Classes
                 var ezer = SQ.Score;
                 ScorePerQuestion = ListScoreQuestionPerStudent.FirstOrDefault(f => f.IdscoreStudentPerQuestionsOfTask == SQ.IdscoreStudentPerQuestionsOfTask);
                 SQ.Score = ScorePerQuestion?.Score;
-                TS = _context.AppTaskToStudents.Include(t => t.TaskExsist).FirstOrDefault(f => f.IdtaskToStudent == ScorePerQuestion.TaskToStudentId);
+                TS = _context.AppTaskToStudent.Include(t => t.TaskExsist).FirstOrDefault(f => f.IdtaskToStudent == ScorePerQuestion.TaskToStudentId);
                 TS.Grade += SQ.QuestionOfTask.Percent * ScorePerQuestion.Score / 100 - (SQ.QuestionOfTask.Percent * ezer / 100);
             }
             _context.SaveChanges();

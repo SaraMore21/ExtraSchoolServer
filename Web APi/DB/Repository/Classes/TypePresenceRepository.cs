@@ -16,10 +16,10 @@ namespace DB.Repository.Classes
         {
             _context = context;
         }
-        public List<TTypePresence> GetAllPresence()
-        {
-            return _context.TTypePresences.ToList();
-        }
+        //public List<TTypePresence> GetAllPresence()
+        //{
+        //    return _context.TTypePresences.ToList();
+        //}
 
     }
 }

@@ -13,7 +13,7 @@ namespace DB.Repository.Classes
     {
         private readonly ExtraSchoolContext _context;
         private readonly IDailyScheduleRepository _DailyScheduleRepository;
-
+        public bool isnewdailSchedules = false;
         public ScheduleRegularRepository(ExtraSchoolContext context, IDailyScheduleRepository DailyScheduleRepository)
         {
             _context = context;
@@ -285,6 +285,8 @@ namespace DB.Repository.Classes
                         CourseId = scheduleRegular.CourseId,
                         IsChange = false
                     };
+
+                    isnewdailSchedules = true;
                     LstDailySchedules.Add(dailySchedule);
                 }
                 else
@@ -317,7 +319,7 @@ namespace DB.Repository.Classes
             dailyScheduleOldOfGroup.ForEach(f => f.ScheduleRegularId = null);
             _context.SaveChanges();
            
-            _DailyScheduleRepository.AddListDailySchedule(LstDailySchedules,(int)scheduleRegular.UserCreatedId);
+            _DailyScheduleRepository.AddListDailySchedule(LstDailySchedules,(int)scheduleRegular.UserCreatedId, isnewdailSchedules);
             
         }
 //
@@ -480,7 +482,7 @@ namespace DB.Repository.Classes
                             if (dailyScheduleOld.IsChange == false && (dailyScheduleOld.AppPresences == null) || dailyScheduleOld.AppPresences.Count() == 0)
                             {
                                 dailyScheduleOld.DateCreated = DateTime.Today;
-                                dailyScheduleOld.UserCreatedId = userID;
+                                dailyScheduleOld.UserCreatedId = userID; 
                                 dailyScheduleOld.ScheduleRegularId = appScheduleRegular.IdscheduleRegular;
                                 dailyScheduleOld.LearningStyleId = 2;
                                 dailyScheduleOld.NumLesson = appScheduleRegular.LessonPerGroup.NumLesson;
@@ -495,11 +497,13 @@ namespace DB.Repository.Classes
                                 dailyScheduleOld.UserUpdatedId = userID;
                                 dailyScheduleOld.ScheduleRegularId = appScheduleRegular.IdscheduleRegular;
                             }
+                            LstDailySchedulesToAdd.Add(dailyScheduleOld);
                         }
 
                     }
-                    _context.AppDailySchedules.AddRange(LstDailySchedulesToAdd);
+                    //_context.AppDailySchedules.AddRange(LstDailySchedulesToAdd);
 
+                    _DailyScheduleRepository.AddListDailySchedule(LstDailySchedulesToAdd, userID, isnewdailSchedules);
 
                     _context.SaveChanges();
                     IsSuccedd = true;
@@ -510,7 +514,7 @@ namespace DB.Repository.Classes
             }
             return IsSuccedd;
 
-        }
+         }
         //עידכון מערכת קבועה דרך האתר -ידני
         public AppScheduleRegular UpdateScheduleRegularByWebsite(AppScheduleRegular appScheduleRegular, int userID,DateTime date)
         {

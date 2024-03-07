@@ -972,7 +972,35 @@ namespace Services.Classes
 
                 string str = ReadExcel(path, nameTab);
                 List<AppScheduleRegularXL> ScheduleRegular = JsonConvert.DeserializeObject<List<AppScheduleRegularXL>>(str);
-                ScheduleRegular = ScheduleRegular.Where(w => w.IDCourse != "" && w.IDCourse != null).ToList();
+                List<AppScheduleRegularXL> InvalidSchedules = new List<AppScheduleRegularXL>();
+                ScheduleRegular.ForEach(con =>
+                {
+                    try
+                    {
+
+                        if (con.IDCourse != null)
+                        {
+
+                            int lastSpaceIndex = con.IDCourse.LastIndexOf(' ');
+                            if (lastSpaceIndex != -1)
+                            {
+                                //con.ProfessionId  = con.ProfessionId.Substring(lastSpaceIndex,con.ProfessionId.Length-1-lastSpaceIndex);
+                                con.IDCourse = con.IDCourse.Substring(lastSpaceIndex + 1);
+
+                            }
+                            else
+                            {
+                                InvalidSchedules.Add(con);
+                            }
+
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        InvalidSchedules.Add(con);
+                    }
+                });
+                        ScheduleRegular = ScheduleRegular.Where(w => w.IDCourse != "" && w.IDCourse != null).ToList();
 
                 int resInt;
                 //double resdouble;
@@ -985,7 +1013,7 @@ namespace Services.Classes
                 List<AppScheduleRegular> NewSchedules = new List<AppScheduleRegular>();
                 List<AppScheduleRegular> SchedulesToDelete = new List<AppScheduleRegular>();
                 List<AppScheduleRegular> SchedulesMultiple = new List<AppScheduleRegular>();
-                List<AppScheduleRegularXL> InvalidSchedules = new List<AppScheduleRegularXL>();
+                
                 List<AppScheduleRegular> SchedulesRegularExsist = new List<AppScheduleRegular>();
                 //  List<AppDailySchedule> DailyScheduleExsist = new List<AppDailySchedule>();
                 List<AppDailySchedule> DailyScheduleOld = new List<AppDailySchedule>();
@@ -1050,7 +1078,7 @@ namespace Services.Classes
                         //שליפת של השיעור פר קבוצה התואם
                         short? DayOfWeek = short.TryParse(s.DayOfWeek, out resShort) ? resShort : (short?)null;
                         short? NumLesson = short.TryParse(s.NumLesson, out resShort) ? resShort : (short?)null;
-                        if (DayOfWeek == 0 || DayOfWeek == null || NumLesson == null || NumLesson == 0)
+                        if (DayOfWeek == 0 || DayOfWeek == null || NumLesson == null )
                         {
                             InvalidSchedules.Add(s);
                             continue;
@@ -1095,8 +1123,7 @@ namespace Services.Classes
                                 //בדיקה אם המורה לא משובצת לקבוצה כלשהיא
                                 //bool ValidTeacher= _ScheduleRegularRepository.isValidTeacher(AppScheduleRegular.CourseId, AppScheduleRegular.StartDate, 
                                 //AppScheduleRegular.EndDate, AppScheduleRegular.LessonPerGroupId);
-
-                                //שליפה של הליסט של המערכות היומיות  החופפות של הקבוצה
+ 
                                 DailyScheduleOldOfGroup = DailyScheduleOld.Where(w => (Convert.ToInt32(w.ScheduleDate.Value.DayOfWeek) + 1) == LessonPerGroup.DayOfWeek &&
                                  w.StartTime < LessonPerGroup.EndTime &&
                                  w.EndTime > LessonPerGroup.StartTime &&
@@ -2168,12 +2195,13 @@ namespace Services.Classes
                         fatherCourse = new AppCourseDTO();
                        if( con.ProfessionId != null)
                         {
-
-                            int Index = con.ProfessionId.IndexOf(' ');
-                            if (Index != -1)
+                           
+                            int lastSpaceIndex = con.ProfessionId.LastIndexOf(' ');
+                            if (lastSpaceIndex != -1)
                             {
-                                con.ProfessionId  = con.ProfessionId.Substring(0,Index);
-                                
+                                //con.ProfessionId  = con.ProfessionId.Substring(lastSpaceIndex,con.ProfessionId.Length-1-lastSpaceIndex);
+                                con.ProfessionId = con.ProfessionId.Substring(lastSpaceIndex + 1);
+
                             }
                             else
                             {
@@ -2183,10 +2211,11 @@ namespace Services.Classes
                         }
                         if (con.LearningStyleId != null)
                         {
-                            int Index = con.LearningStyleId.IndexOf(' ');
+                            int Index = con.LearningStyleId.LastIndexOf(' ');
                             if (Index != -1)
                             {
-                                con.LearningStyleId = con.LearningStyleId.Substring(0,Index);
+                                //con.LearningStyleId = con.LearningStyleId.Substring(Index, con.LearningStyleId.Length-1-Index)
+                                con.LearningStyleId = con.LearningStyleId.Substring(Index + 1);
 
                             }
                             else
@@ -2325,10 +2354,11 @@ namespace Services.Classes
                         if (con.SemesterId != null)
                         {
 
-                            int Index = con.SemesterId.IndexOf(' ');
+                            int Index = con.SemesterId.LastIndexOf(' ');
                             if (Index != -1)
                             {
-                                con.SemesterId = con.SemesterId.Substring(0, Index);
+                                //con.SemesterId = con.SemesterId.Substring(Index, con.SemesterId.Length-1-Index);
+                                con.SemesterId = con.SemesterId.Substring(Index + 1);
 
                             }
                             else
@@ -2339,10 +2369,11 @@ namespace Services.Classes
                         }
                         if (con.CourseId != null)
                         {
-                            int Index = con.CourseId.IndexOf(' ');
+                            int Index = con.CourseId.LastIndexOf(' ');
                             if (Index != -1)
                             {
-                                con.CourseId = con.CourseId.Substring(0, Index);
+                                //con.CourseId = con.CourseId.Substring(Index, con.CourseId.Length-1-Index);
+                                con.CourseId = con.CourseId.Substring(Index + 1);
 
                             }
                             else
@@ -2352,10 +2383,11 @@ namespace Services.Classes
                         }
                         if (con.GroupId != null)
                         {
-                            int Index = con.GroupId.IndexOf(' ');
+                            int Index = con.GroupId.LastIndexOf(' ');
                             if (Index != -1)
                             {
-                                con.GroupId = con.GroupId.Substring(0, Index);
+                                //con.GroupId = con.GroupId.Substring(Index, con.GroupId.Length-1-Index);
+                                con.GroupId = con.GroupId.Substring(Index + 1);
 
                             }
                             else
@@ -2365,10 +2397,11 @@ namespace Services.Classes
                         }
                         if (con.teacherTz != null)
                         {
-                            int Index = con.teacherTz.IndexOf(' ');
+                            int Index = con.teacherTz.LastIndexOf(' ');
                             if (Index != -1)
                             {
-                                con.teacherTz = con.teacherTz.Substring(0, Index);
+                                //con.teacherTz = con.teacherTz.Substring(Index, con.teacherTz.Length-1-Index);
+                                con.teacherTz = con.teacherTz.Substring(Index + 1);
 
                             }
                             else
@@ -2377,7 +2410,7 @@ namespace Services.Classes
                             }
                         }
 
-                        if (con.SemesterId == null || con.CourseId == null || con.GroupId == null || con.Code == null)
+                        if (con.SemesterId == null || con.CourseId == null || con.GroupId == null)
                         {
                             TzInvalid.Add(con);
                         }
@@ -2390,9 +2423,18 @@ namespace Services.Classes
                             }
                            
                             else {
-                                var FromDate = double.TryParse(con.fromDate, out timeSpanRes1) ? DateTime.FromOADate(timeSpanRes1) : (DateTime?)null;
-                                var ToDate = double.TryParse(con.toDate, out timeSpanRes1) ? DateTime.FromOADate(timeSpanRes1) : (DateTime?)null;
-                                var semester = _CourseRepository.GetSemesterById(int.Parse(con.SemesterId),idyearbookPerSchool);
+                                var semester = _CourseRepository.GetSemesterById(int.Parse(con.SemesterId), idyearbookPerSchool);
+                                DateTime FromDate;
+                                DateTime ToDate;
+                                if (con.fromDate==null)
+                                   FromDate = (DateTime)semester.FromDate;
+                                else
+                                FromDate = (DateTime)(double.TryParse(con.fromDate, out timeSpanRes1) ? DateTime.FromOADate(timeSpanRes1) : (DateTime?)null);
+                                if (con.toDate == null)    
+                                    ToDate = (DateTime)semester.ToDate;
+                                else
+                                ToDate = (DateTime)(double.TryParse(con.toDate, out timeSpanRes1) ? DateTime.FromOADate(timeSpanRes1) : (DateTime?)null);
+ 
                                 if (FromDate > ToDate)
                                     TzInvalid.Add(con);
                                 else if (semester == null)
@@ -2692,7 +2734,7 @@ namespace Services.Classes
                 {
 
                     currStr = "A" + (i + 2);
-                    sheet1.Range[currStr].Value = "" + lp[i].Idprofession + " " + lp[i].Name;
+                    sheet1.Range[currStr].Value = "" + lp[i].Name + " " + lp[i].Idprofession;
                 }
                 List<TLearningStyleDTO> lls = _mapper.Map<List<TLearningStyleDTO>>(_SchoolRepository.GetAllLearningStyles());
 
@@ -2703,7 +2745,7 @@ namespace Services.Classes
                 {
 
                     currStr = "B" + (i1 + 2);
-                    sheet1.Range[currStr].Value = "" + lls[i1].IdlearningStyle + " " + lls[i1].Name;
+                    sheet1.Range[currStr].Value = "" + lls[i1].Name + " " + lls[i1].IdlearningStyle;
                 }
 
 
@@ -2804,7 +2846,7 @@ namespace Services.Classes
                 {
 
                     currStr = "A" + (i + 2);
-                    sheet1.Range[currStr].Value = "" + ls[i].Idsemester + " " + ls[i].Name;
+                    sheet1.Range[currStr].Value = "" + ls[i].Name + " " + ls[i].Idsemester;
                 }
                 List<AppCourseDTO> lfc = _mapper.Map<List<AppCourseDTO>>(_FatherCourseRepository.GetListFatherCoursesBySchoolAndYearbook(idschool+',',idYearbook));
 
@@ -2815,7 +2857,7 @@ namespace Services.Classes
                 {
 
                     currStr = "B" + (i1 + 2);
-                    sheet1.Range[currStr].Value = "" + lfc[i1].Idcourse + " " + lfc[i1].Name;
+                    sheet1.Range[currStr].Value = "" + lfc[i1].Name + " " + lfc[i1].Idcourse;
                 }
 
                 List<AppGroupPerYearbookDTO> lg = _mapper.Map<List<AppGroupPerYearbookDTO>>(_GroupRepository.GetGroupsByIdSchool(idschool + ',', idYearbook));
@@ -2827,7 +2869,7 @@ namespace Services.Classes
                 {
 
                     currStr = "C" + (i2 + 2);
-                    sheet1.Range[currStr].Value = "" + lg[i2].IdgroupPerYearbook + " " + lg[i2].Group.NameGroup;
+                    sheet1.Range[currStr].Value = "" + lg[i2].Group.NameGroup + " " + lg[i2].IdgroupPerYearbook;
                 }
                 List<AppUserPerSchoolDTO> lups = _mapper.Map<List<AppUserPerSchoolDTO>>(_UserRepository.GetUsersBySchoolIDAndYearbookId(idschool + ',', idYearbook));
 
@@ -2838,7 +2880,7 @@ namespace Services.Classes
                 {
 
                     currStr = "D" + (i3 + 2);
-                    sheet1.Range[currStr].Value = "" + lups[i3].User.Tz + " " + lups[i3].LastName +" "+ lups[i3].FirstName;
+                    sheet1.Range[currStr].Value = "" + lups[i3].LastName +" "+ lups[i3].FirstName+" " +lups[i3].User.Tz;
                 }
 
 
@@ -2888,8 +2930,96 @@ namespace Services.Classes
             }
 
         }
+        public byte[] downloadScheduleRegularExcel(string idschool, int idYearbook)
+        {
+            try
+            {
+                //Create a Workbook object
+                Spire.Xls.Workbook workbook = new Spire.Xls.Workbook();
 
-        
+                //Get the first worksheet
+
+                Spire.Xls.Worksheet sheet = workbook.Worksheets[0];
+                sheet.Name = "מערכת קבועה להעלאה";
+                sheet.IsRightToLeft = true;
+                //Add text to cell B2 and set its font style
+
+                sheet.Range["A1"].Value = "קוד קורס";
+                sheet.Range["A1"].Style.Font.IsBold = true;
+                sheet.Range["B1"].Value = "יום בשבוע";
+                sheet.Range["B1"].Style.Font.IsBold = true;
+                sheet.Range["C1"].Value = "מספר שיעור";
+                sheet.Range["C1"].Style.Font.IsBold = true;
+                
+                //sheet.Range["B2"].Style.KnownColor = ExcelColors.LightTurquoise;
+
+
+
+                Spire.Xls.Worksheet sheet1 = workbook.Worksheets[1];
+                sheet1.Name = "codeList";
+                sheet1.Range["A1"].Value = "קורס";
+                sheet1.Range["A1"].Style.Font.IsBold = true;
+                sheet1.IsRightToLeft = true;
+
+
+                Spire.Xls.Worksheet sheet2 = workbook.Worksheets[2];
+                sheet2.Remove();
+
+                //Set the values of the drop-down list
+                int idYearbookPerSchool = _YearbookPerSchool.GetYearbookPerSchoolIdByYearbookIdSchoolId(int.Parse(idschool), idYearbook);
+                List<AppGroupSemesterPerCourse> lgpc= _mapper.Map <List<AppGroupSemesterPerCourse>>(_CourseRepository.GetAllCourseBySchoolDAndYearbookId2(idschool,  idYearbookPerSchool));
+                lgpc = lgpc.OrderBy(p => p.Course.Name).ToList();
+                string currStr;
+                int i;
+                for (i = 0; i < lgpc.Count; i++)
+                {
+
+                    currStr = "A" + (i + 2);
+                    sheet1.Range[currStr].Value = "" + lgpc[i].Course.Name + " " + lgpc[i].Group.Group.NameGroup+" " + lgpc[i].IdgroupSemesterPerCourse;
+                }
+                
+
+
+                sheet.Range["A2"].DataValidation.Values = new string[] { "=codeList!$A$2:$A$" + (i + 1) }; //new string[] { "France", "Japan", "Canada", "China", "Germany" };
+                                                                                                           //Create a drop-down list in the specified cell
+
+                sheet.Range["A2"].DataValidation.IsSuppressDropDownArrow = false;
+
+              
+
+                // var fileName = "fatherCourse" + DateTime.UtcNow.AddHours(2).ToString("dd-MM-yyyyHH_mm") + ".xlsx";
+
+                //Save the result document
+                //  var a = Regex.Replace(KnownFolders.GetPath(KnownFolder.Downloads), @"\\\\", "\\") + "\\";
+                //string userProfilePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                //string downloadsPath = System.IO.Path.Combine(userProfilePath, "Downloads\\");
+
+                //var a = Regex.Replace(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\Downloads", @"\\\\", "\\") + "\\";
+                //workbook.SaveToFile("D:\\ExtraSchool\\Server\\current\\Web APi\\Services\\Downloaded Excels\\" + fileName, ExcelVersion.Version2016);
+
+
+                // new MailService().SendEmailWithAttachment(email, "קובץ קורסי אב", "מצורף קובץ תבנית עבור טבלת קורסי אב להעלאה", "D:\\ExtraSchool\\Server\\current\\Web APi\\Services\\Downloaded Excels\\" + fileName);
+                //new MailService().SendEmail("more21soft@gmail.com", "מיקום נוכחי", "userProfilePath: " + userProfilePath+ " downloadsPath: "+ downloadsPath);
+                using (var memoryStream = new MemoryStream())
+                {
+                    workbook.SaveToStream(memoryStream, FileFormat.Version2016);
+                    return memoryStream.ToArray();
+                }
+            }
+            catch (Exception e)
+            {
+                new MailService().SendEmail("more21soft@gmail.com", "שגיאה בהורדת קובץ אקסל של קורסים", e.Message + "מיקום השגיאה:" + e.StackTrace);
+                throw e;
+            }
+
+        }
+
+
     }
-
 }
+
+
+
+
+
+

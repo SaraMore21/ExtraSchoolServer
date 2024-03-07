@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DTO.Classes
 {
-    public class AttendencePerDay
+    public class AttendencePerDayDTO
         {
-            public List<AttendancePerLesson> NochecotPerLesson { get; set; }
+            public List<AttendancePerLessonDTO> NochecotPerLesson { get; set; }
             public DateTime date { get; set; }
             public string nameStudent { get; set; }
             public string tz { get; set; }

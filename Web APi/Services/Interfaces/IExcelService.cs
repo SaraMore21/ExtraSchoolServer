@@ -14,5 +14,6 @@ namespace Services.Interfaces
         void ExportExcelFile(int schoolId);
          byte[] downloadFatherCourseExcel(string idschool);
          byte[] downloadCourseExcel(string idschool, int idYearbook);
+        byte[] downloadScheduleRegularExcel(string idschool, int idYearbook);
     }
 }

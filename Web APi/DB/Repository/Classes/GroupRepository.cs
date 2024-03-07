@@ -94,7 +94,7 @@ namespace DB.Repository.Classes
                 _context.SaveChanges();
                 return 2;
             }
-            return 1;
+            return 1; 
         }
 
 
@@ -291,12 +291,12 @@ namespace DB.Repository.Classes
         {
 
             var StudentPerGroups = _context.AppStudentPerGroups.FirstOrDefault(f => f.StudentId == StudentId && f.GroupId == GroupId);
-            var TasksToStudents = _context.AppTaskToStudents.Include(t => t.TaskExsist.Course).Where(f => f.TaskExsist != null && f.TaskExsist.Course != null && f.TaskExsist.Course.GroupId == StudentPerGroups.GroupId && f.StudentId == StudentPerGroups.StudentId);
+            var TasksToStudents = _context.AppTaskToStudent.Include(t => t.TaskExsist.Course).Where(f => f.TaskExsist != null && f.TaskExsist.Course != null && f.TaskExsist.Course.GroupId == StudentPerGroups.GroupId && f.StudentId == StudentPerGroups.StudentId);
             if (TasksToStudents.FirstOrDefault(f => f.Grade != null || f.FinalScore != null) != null) return null;
 
             if (StudentPerGroups != null)
             {
-                _context.AppTaskToStudents.RemoveRange(TasksToStudents);
+                _context.AppTaskToStudent.RemoveRange(TasksToStudents);
                 _context.AppStudentPerGroups.Remove(StudentPerGroups);
                 _context.SaveChanges();
             }

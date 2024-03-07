@@ -26,6 +26,6 @@ namespace DB.Repository.Interfaces
         AppGroupSemesterPerCourse AddCordinatedCourse(AppGroupSemesterPerCourse course);
         Tuple<AppGroupSemesterPerCourse,List<AppSchool>> TestGetCoordinatedCourse();
         AppCourse checkIfExistCourseIdInSchoolByYearbook(int courseId, int yearbookId);
-
+        List<AppGroupSemesterPerCourse> GetAllCourseBySchoolDAndYearbookId2(string idschool, int idYearbookPerSchool);
     }
 }

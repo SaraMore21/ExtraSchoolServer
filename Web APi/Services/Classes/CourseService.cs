@@ -19,13 +19,14 @@ namespace Services.Classes
         private readonly IMapper _mapper;
         private readonly ISchoolRepository _schoolRepository;
         private readonly IGroupRepository _groupRepository;
-
-        public CourseService(IMapper mapper, ICourseRepository courseRepository, ISchoolRepository schoolRepository, IGroupRepository groupRepository) {
+        private readonly IStudentsPerCourseService _StudentsPerCourseService;
+               public CourseService(IMapper mapper, ICourseRepository courseRepository, ISchoolRepository schoolRepository, IGroupRepository groupRepository, IStudentsPerCourseService StudentsPerCourseService) {
             _courseRepository = courseRepository;
             _mapper = mapper;
             _schoolRepository = schoolRepository;
             _groupRepository = groupRepository;
-        }
+            _StudentsPerCourseService = StudentsPerCourseService;
+    }
 
         //public AppGroupSemesterPerCourseDTO AddCourse(int SchoolId, int SemesterId, int CourseId, int GroupId, DateTime SemesterFromDate, DateTime SemesterToDate, int TeacherId, int YearbookId,int UserCreatedId, AppCourseDTO Course)
         //{
@@ -73,9 +74,10 @@ namespace Services.Classes
             return _mapper.Map<List<AppGroupSemesterPerCourseDTO>>(_courseRepository.GetAllCourseByFatherCourseId(FatherCourseId));
         }
 
-        public AppGroupSemesterPerCourseDTO AddCourse(AppGroupSemesterPerCourseDTO course, int TeacherId)
+        public AppGroupSemesterPerCourseDTO AddCourse(AppGroupSemesterPerCourseDTO course, int TeacherId,int yearbook)
         {
             var result = _courseRepository.AddCourse(_mapper.Map<AppGroupSemesterPerCourse>(course),TeacherId);
+            var x=_StudentsPerCourseService.AddListStudentsPerGroupToCourse((int)course.GroupId, result.IdgroupSemesterPerCourse, yearbook);
            return  _mapper.Map<AppGroupSemesterPerCourseDTO>(result);
         }
 

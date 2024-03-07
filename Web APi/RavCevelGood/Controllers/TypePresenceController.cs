@@ -19,10 +19,10 @@ namespace RavCevelGood.Controllers
         }
 
 
-        [HttpGet("GetAllPresence")]
-        public IActionResult GetAllPresence()
-        {
-            return Ok(_TypePresencesService.GetAllPresence());
-        }
+        //[HttpGet("GetAllPresence")]
+        //public IActionResult GetAllPresence()
+        //{
+        //    return Ok(_TypePresencesService.GetAllPresence());
+        //}
     }
 }

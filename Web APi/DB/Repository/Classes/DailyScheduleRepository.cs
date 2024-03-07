@@ -15,7 +15,7 @@ namespace DB.Repository.Classes
 
         private readonly ExtraSchoolContext _context;
         private readonly IPresenceRepository _presenceRepository;
-        const int PRESENT = 2;
+        const int PRESENT = 5;
         public List<int> idDailySchdule = new List<int>();
         public DailyScheduleRepository(ExtraSchoolContext context, IPresenceRepository presenceRepository)
         {
@@ -109,11 +109,22 @@ namespace DB.Repository.Classes
             ))
             != null)
                 return new Tuple<AppDailySchedule, string>(null, "מורה זו משובצת בטווח השעות הרצויות");
-            _context.AppDailySchedules.Add(DailySchedule);
-            _context.SaveChanges();
-            DailySchedule = _context.AppDailySchedules.Include(i => i.Course.Course).Include(i => i.Course.AppUserPerCourses).ThenInclude(i => i.User).Include(i => i.LearningStyle).Include(i => i.Teacher).FirstOrDefault(f => f.IddailySchedule == DailySchedule.IddailySchedule);
-            return Tuple.Create(DailySchedule, "השיעור נוסף בהצלחה");
+            try
+            {
+                _context.AppDailySchedules.Add(DailySchedule);
+                _context.SaveChanges();
+                DailySchedule = _context.AppDailySchedules.Include(i => i.Course.Course).Include(i => i.Course.AppUserPerCourses).ThenInclude(i => i.User).Include(i => i.LearningStyle).Include(i => i.Teacher).FirstOrDefault(f => f.IddailySchedule == DailySchedule.IddailySchedule);
+
+                return Tuple.Create(DailySchedule, "השיעור נוסף בהצלחה");
+            }
+            catch (Exception e){ 
+
+                throw e;
+            }
         }
+
+
+
         //שליפת נתוני מערכת יומית לפי מערכת קבועה 
         public Tuple<AppGroupSemesterPerCourse, AppUserPerSchool, int> GetDailyScheduleDetailsByScheduleRegular(int GroupId, DateTime ScheduleDate, TimeSpan StartTime, TimeSpan EndTime)
         {
@@ -139,12 +150,14 @@ namespace DB.Repository.Classes
         //    return _context.AppDailySchedules.Where(w => w.SchoolId == SchoolId &&w.ScheduleRegularId== IdSchedulRegular).AsNoTracking().Select(s=>s.IddailySchedule).ToList();
         //}
 
-        public void AddListDailySchedule(List<AppDailySchedule> lstDailySchedules,int userId=0)
+        public void AddListDailySchedule(List<AppDailySchedule> lstDailySchedules,int userId=0,bool isnewdailSchedules=false)
         {
             
-
-            _context.AppDailySchedules.AddRange(lstDailySchedules);
-            _context.SaveChanges();
+            if(isnewdailSchedules = true){
+                _context.AppDailySchedules.AddRange(lstDailySchedules);
+                _context.SaveChanges();
+            }
+          
 
             //int maxId = _context.AppDailySchedules.Max(ds => ds.IddailySchedule);
 
@@ -222,7 +235,7 @@ namespace DB.Repository.Classes
                 );
                 
 
-            }
+            }           
 
 
             );

@@ -17,5 +17,6 @@ namespace DTO.Classes
         public DateTime? DateCreated { get; set; }
         public int? UserUpdatedId { get; set; }
         public DateTime? DateUpdated { get; set; }
+        public int? GroupId { get; set; }
     }
 }

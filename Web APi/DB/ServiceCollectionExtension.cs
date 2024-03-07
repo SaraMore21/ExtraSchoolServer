@@ -58,9 +58,12 @@ namespace DB
             serviceCollection.AddScoped<ILessonPerGroupRepository, LessonPerGroupRepository>();
             serviceCollection.AddScoped<IAttendanceRepository, AttendanceRepository>();
             serviceCollection.AddScoped<IStatusTaskPerformanceRepository, StatusTaskPerformanceRepository>();
-            serviceCollection.AddScoped<IPresenceRepository, PresenceRepository>();
+            serviceCollection.AddScoped<IPresenceRepository, Presence>();
             serviceCollection.AddScoped<ITypePresenceRepository, TypePresenceRepository>();
             serviceCollection.AddScoped<ICoordinationRepository, CoordinationRepository>();
+            serviceCollection.AddScoped<IAttendanceMarkingRepository, AttendanceMarkingRepository>();
+            serviceCollection.AddScoped<IStudentsPerCourseRepository, AppStudentsPerCourseRepository>();
+
         }
 
         public static void RegisterPayContext(this IServiceCollection serviceCollection, IConfiguration configuration, ILoggerFactory loggerFactory)
