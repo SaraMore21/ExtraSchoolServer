@@ -34,7 +34,7 @@ namespace RavCevelGood.Controllers
          //   String str = "";
             try
             {
-                new MailService().SendEmail("sariw1292@gmail.com", "תחילה", "");
+                new MailService().SendEmail("asmmore21@gmail.com", "תחילת הפונקציה של ההעלאה", "הנתונים שהגיעו לפונקציה"+ " schoolId " + schoolId+ " userId " + userId+ " idyearbookPerSchool " + idyearbookPerSchool+ " StartDateStr " + StartDateStr+ " EndDateStr " + EndDateStr+ " isFull " + isFull+ " IsNew " + IsNew);
                 var file = Request.Form.Files[0];
                // str+="sent mail.\n now running: var file = Request.Form.Files[0]; \n file is:" + file;
                 var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), "Resources");
