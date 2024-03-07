@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4JQcnJ+NUEm/msoUYNEk5PIPZ4BDfrt0JZUwtMY+oZA2ZFOZf53hVbCqnsiare06w21fZCVgk4t2qvFjE7g/uQ==",
+  "dgSpecHash": "GtV6z7GIf8UumAfib8vmZDKjkJsbT5DNvA+xOIA+B58YA/UL51j5d/R/dCddpD4JiB6Qfp/ImPVLkbEtch/MwA==",
   "success": true,
-  "projectFilePath": "D:\\ExtraSchool\\Server\\current\\Web APi\\RavCevelGood\\RavCevelGood.csproj",
+  "projectFilePath": "D:\\extraschoolCurrent\\ExtraSchoolServer\\Web APi\\RavCevelGood\\RavCevelGood.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\This_user\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\This_user\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

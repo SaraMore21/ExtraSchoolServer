@@ -9622,25 +9622,22 @@
   },
   "packageFolders": {
     "C:\\Users\\This_user\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ExtraSchool\\Server\\current\\Web APi\\RavCevelGood\\RavCevelGood.csproj",
+      "projectUniqueName": "D:\\extraschoolCurrent\\ExtraSchoolServer\\Web APi\\RavCevelGood\\RavCevelGood.csproj",
       "projectName": "RavCevelGood",
-      "projectPath": "D:\\ExtraSchool\\Server\\current\\Web APi\\RavCevelGood\\RavCevelGood.csproj",
+      "projectPath": "D:\\extraschoolCurrent\\ExtraSchoolServer\\Web APi\\RavCevelGood\\RavCevelGood.csproj",
       "packagesPath": "C:\\Users\\This_user\\.nuget\\packages\\",
-      "outputPath": "D:\\ExtraSchool\\Server\\current\\Web APi\\RavCevelGood\\obj\\",
+      "outputPath": "D:\\extraschoolCurrent\\ExtraSchoolServer\\Web APi\\RavCevelGood\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\This_user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9654,8 +9651,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\ExtraSchool\\Server\\current\\Web APi\\Services\\Services.csproj": {
-              "projectPath": "D:\\ExtraSchool\\Server\\current\\Web APi\\Services\\Services.csproj"
+            "D:\\extraschoolCurrent\\ExtraSchoolServer\\Web APi\\Services\\Services.csproj": {
+              "projectPath": "D:\\extraschoolCurrent\\ExtraSchoolServer\\Web APi\\Services\\Services.csproj"
             }
           }
         }
@@ -9743,7 +9740,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   },
