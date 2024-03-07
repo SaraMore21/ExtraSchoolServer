@@ -8706,25 +8706,22 @@
   },
   "packageFolders": {
     "C:\\Users\\This_user\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ExtraSchool\\Server\\current\\Web APi\\Services\\Services.csproj",
+      "projectUniqueName": "D:\\extraschoolCurrent\\ExtraSchoolServer\\Web APi\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "D:\\ExtraSchool\\Server\\current\\Web APi\\Services\\Services.csproj",
+      "projectPath": "D:\\extraschoolCurrent\\ExtraSchoolServer\\Web APi\\Services\\Services.csproj",
       "packagesPath": "C:\\Users\\This_user\\.nuget\\packages\\",
-      "outputPath": "D:\\ExtraSchool\\Server\\current\\Web APi\\Services\\obj\\",
+      "outputPath": "D:\\extraschoolCurrent\\ExtraSchoolServer\\Web APi\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\This_user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8738,11 +8735,11 @@
         "net5.0": {
           "targetAlias": "netcoreapp5.0",
           "projectReferences": {
-            "D:\\ExtraSchool\\Server\\current\\Web APi\\DB\\DB.csproj": {
-              "projectPath": "D:\\ExtraSchool\\Server\\current\\Web APi\\DB\\DB.csproj"
+            "D:\\extraschoolCurrent\\ExtraSchoolServer\\Web APi\\DB\\DB.csproj": {
+              "projectPath": "D:\\extraschoolCurrent\\ExtraSchoolServer\\Web APi\\DB\\DB.csproj"
             },
-            "D:\\ExtraSchool\\Server\\current\\Web APi\\DTO\\DTO.csproj": {
-              "projectPath": "D:\\ExtraSchool\\Server\\current\\Web APi\\DTO\\DTO.csproj"
+            "D:\\extraschoolCurrent\\ExtraSchoolServer\\Web APi\\DTO\\DTO.csproj": {
+              "projectPath": "D:\\extraschoolCurrent\\ExtraSchoolServer\\Web APi\\DTO\\DTO.csproj"
             }
           }
         }
@@ -8825,7 +8822,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   },

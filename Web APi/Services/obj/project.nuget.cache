@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/kDKehNblfdTjn2Otlrz6aELU3iZAL8QQ9pZQvRyjGXCtJEH2Ol8Wz9fIVv4V6J3Dkhzhe73XQYv2gJHgbmo2Q==",
+  "dgSpecHash": "+D3VLFGyOiq/iydcY8Sd54EZZRGvRhqzYZi3P4mTydCqWeq7a2cclEErtwJNP7yzA7FRRIBmeJ1t2DTe+vOV6A==",
   "success": true,
-  "projectFilePath": "D:\\ExtraSchool\\Server\\current\\Web APi\\Services\\Services.csproj",
+  "projectFilePath": "D:\\extraschoolCurrent\\ExtraSchoolServer\\Web APi\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\This_user\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\This_user\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
